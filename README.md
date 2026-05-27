@@ -7,9 +7,6 @@ and iterates to completion) comes from **verifiable, agentic, multi-turn RL on a
 executable-task set, applied to a strong base model** — the recipe Cursor used for Composer. This
 repo builds that environment from the bottom up, one provable rung at a time.
 
-This repo is standalone. It reuses data from the sibling `opencode-language-model` repo / the
-`easystore` drive only as a data source; it shares no code.
-
 ## The model-agnostic core (built once, reused at every rung)
 
 - `acrl/tasks/` — assemble executable coding tasks `{prompt, files, test command, pass criteria}`.
