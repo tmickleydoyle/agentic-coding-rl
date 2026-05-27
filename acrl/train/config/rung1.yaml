@@ -32,8 +32,10 @@ lora_alpha: 32
 lora_dropout: 0.0
 lora_target_modules: all-linear
 
-# vLLM rollouts (colocated on the same GPU as training)
-use_vllm: true
+# vLLM rollouts. Off by default: colocate mode needs a coordinated trl+vllm+torch
+# bump (see pyproject pins). With vLLM off, TRL uses HF generation (slower, but works
+# on the pinned CUDA-12.4 stack). Flip to true once you've validated a colocate stack.
+use_vllm: false
 vllm_mode: colocate
 vllm_gpu_memory_utilization: 0.3
 

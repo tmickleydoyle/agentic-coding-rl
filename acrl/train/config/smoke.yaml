@@ -32,8 +32,8 @@ lora_alpha: 32
 lora_dropout: 0.0
 lora_target_modules: all-linear
 
-# vLLM rollouts (colocated on the same GPU as training)
-use_vllm: true
+# vLLM off (see rung1.yaml). HF generation is plenty for a 2-step sanity check.
+use_vllm: false
 vllm_mode: colocate
 vllm_gpu_memory_utilization: 0.3
 

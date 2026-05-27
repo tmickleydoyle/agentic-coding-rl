@@ -73,7 +73,8 @@ def _from_mbpp(split: str | None, limit: int | None) -> list[Task]:
 
     # MBPP "test" split is the conventional eval slice; "train"/"prompt" are smaller.
     hf_split = "train" if split == "train" else "test"
-    ds = load_dataset("mbpp", split=hf_split)
+    # Namespaced id: datasets>=3 dropped bare canonical ids like "mbpp".
+    ds = load_dataset("google-research-datasets/mbpp", split=hf_split)
     tasks = []
     for row in ds:
         code = row["code"]

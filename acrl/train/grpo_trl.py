@@ -51,6 +51,7 @@ def main() -> None:
     ap.add_argument("--task-source", default=None, choices=["bundled", "mbpp", "humaneval"])
     ap.add_argument("--wandb", action="store_true", help="log metrics to Weights & Biases")
     ap.add_argument("--run-name", default=None, help="W&B run name")
+    ap.add_argument("--no-vllm", action="store_true", help="disable vLLM rollouts (use HF generation)")
     args = ap.parse_args()
 
     cfg = _load_config(args.config)
@@ -66,6 +67,8 @@ def main() -> None:
         cfg["report_to"] = "wandb"
     if args.run_name:
         cfg["run_name"] = args.run_name
+    if args.no_vllm:
+        cfg["use_vllm"] = False
 
     import os
 
@@ -101,7 +104,7 @@ def main() -> None:
         task_type="CAUSAL_LM",
     )
 
-    grpo_args = GRPOConfig(
+    grpo_kwargs = dict(
         output_dir=cfg.get("output_dir", "outputs/rung1"),
         num_generations=cfg.get("num_generations", 8),
         per_device_train_batch_size=cfg.get("per_device_train_batch_size", 8),
@@ -113,9 +116,6 @@ def main() -> None:
         max_steps=cfg.get("max_steps", 50),
         temperature=cfg.get("temperature", 0.8),
         top_p=cfg.get("top_p", 0.95),
-        use_vllm=cfg.get("use_vllm", True),
-        vllm_mode=cfg.get("vllm_mode", "colocate"),
-        vllm_gpu_memory_utilization=cfg.get("vllm_gpu_memory_utilization", 0.3),
         bf16=cfg.get("bf16", True),
         gradient_checkpointing=cfg.get("gradient_checkpointing", True),
         logging_steps=cfg.get("logging_steps", 1),
@@ -124,6 +124,15 @@ def main() -> None:
         run_name=cfg.get("run_name") or f"rung1-{cfg.get('task_source', 'bundled')}",
         log_completions=True,
     )
+    # vLLM kwargs are only valid/needed when rollouts use vLLM. The colocate mode
+    # (vllm_mode) requires a coordinated trl+vllm+torch bump; with vLLM off, TRL
+    # falls back to HF generation, which works across more versions.
+    if cfg.get("use_vllm", True):
+        grpo_kwargs["use_vllm"] = True
+        grpo_kwargs["vllm_mode"] = cfg.get("vllm_mode", "colocate")
+        grpo_kwargs["vllm_gpu_memory_utilization"] = cfg.get("vllm_gpu_memory_utilization", 0.3)
+
+    grpo_args = GRPOConfig(**grpo_kwargs)
 
     trainer = GRPOTrainer(
         model=cfg["model"],

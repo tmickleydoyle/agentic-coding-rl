@@ -9,8 +9,9 @@ MODEL="${MODEL:-Qwen/Qwen2.5-Coder-1.5B-Instruct}"
 cd "$REPO_DIR"
 echo "[setup] repo: $REPO_DIR"
 
-# GPU training deps (torch usually preinstalled on RunPod pytorch images).
-pip install -e ".[gpu,judge,wandb]"
+# GPU training deps, pinned to a coherent CUDA-12.4 stack (see pyproject [gpu]).
+# The pytorch cu124 index ensures torch resolves to a build the pod driver supports.
+pip install -e ".[gpu,judge,wandb]" --extra-index-url https://download.pytorch.org/whl/cu124
 
 # Warm the HF caches so the training run doesn't stall on first download.
 echo "[setup] prefetching model: $MODEL"
@@ -25,7 +26,7 @@ PY
 python - <<'PY'
 try:
     from datasets import load_dataset
-    load_dataset("mbpp", split="test")
+    load_dataset("google-research-datasets/mbpp", split="test")
     print("mbpp cached")
 except Exception as e:
     print(f"mbpp prefetch skipped: {e}")

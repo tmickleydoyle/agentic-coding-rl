@@ -11,18 +11,21 @@ requires-python = ">=3.10"
 # locally (CPU/Mac) without pulling CUDA-only packages. GPU training deps live
 # in the [gpu] extra and are installed on the RunPod box only.
 dependencies = [
-    "datasets>=2.18.0",
+    "datasets>=2.18.0,<4.0",
 ]
 
 [project.optional-dependencies]
-# Installed on the RunPod GPU box (rungs 1-2). vLLM/torch are CUDA-targeted.
+# Installed on the RunPod GPU box (rungs 1-2). Pinned to a coherent CUDA-12.4 stack:
+# unbounded ranges resolved to bleeding-edge (torch cu130 / trl 1.x) that broke on the
+# pod driver and the trainer API. torch is the cu124 build from the pytorch index --
+# install via: pip install -e ".[gpu]" --extra-index-url https://download.pytorch.org/whl/cu124
 gpu = [
-    "torch>=2.4.0",
-    "transformers>=4.46.0",
-    "trl>=0.13.0",
-    "peft>=0.13.0",
-    "vllm>=0.6.3",
-    "accelerate>=1.0.0",
+    "torch==2.5.1",
+    "transformers==4.49.0",
+    "trl==0.16.1",
+    "peft==0.14.0",
+    "vllm==0.7.2",
+    "accelerate==1.3.0",
     "pyyaml>=6.0",
 ]
 # Optional Claude-Haiku judge reward (rung-1 plumbing smoke test only).
