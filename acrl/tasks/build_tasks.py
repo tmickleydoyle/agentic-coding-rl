@@ -78,12 +78,19 @@ def _from_mbpp(split: str | None, limit: int | None) -> list[Task]:
     tasks = []
     for row in ds:
         code = row["code"]
+        row_tests = list(row["test_list"])
+        # MBPP's text omits the function name; the asserts pin it (and the I/O
+        # contract). Showing them is the standard MBPP protocol and lets the model
+        # name its function to match the reward tests instead of guessing.
+        prompt = row["text"].strip()
+        if row_tests:
+            prompt += "\n\nYour solution must pass these tests:\n" + "\n".join(row_tests)
         tasks.append(
             Task(
                 task_id=f"mbpp/{row['task_id']}",
-                prompt=row["text"].strip(),
+                prompt=prompt,
                 entry_point=_entry_point_from_code(code),
-                tests=list(row["test_list"]),
+                tests=row_tests,
                 canonical_solution=code,
                 split=split or hf_split,
                 setup=row.get("test_setup_code", "") or "",

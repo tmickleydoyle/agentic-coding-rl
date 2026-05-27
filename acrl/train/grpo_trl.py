@@ -52,6 +52,8 @@ def main() -> None:
     ap.add_argument("--wandb", action="store_true", help="log metrics to Weights & Biases")
     ap.add_argument("--run-name", default=None, help="W&B run name")
     ap.add_argument("--no-vllm", action="store_true", help="disable vLLM rollouts (use HF generation)")
+    ap.add_argument("--learning-rate", type=float, default=None)
+    ap.add_argument("--output-dir", default=None)
     args = ap.parse_args()
 
     cfg = _load_config(args.config)
@@ -69,6 +71,10 @@ def main() -> None:
         cfg["run_name"] = args.run_name
     if args.no_vllm:
         cfg["use_vllm"] = False
+    if args.learning_rate is not None:
+        cfg["learning_rate"] = args.learning_rate
+    if args.output_dir:
+        cfg["output_dir"] = args.output_dir
 
     import os
 
