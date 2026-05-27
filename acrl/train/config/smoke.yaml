@@ -1,0 +1,45 @@
+# Smoke test: confirm the full loop (load -> rollout -> sandbox reward -> GRPO step ->
+# adapter save) on bundled offline tasks for pennies, before spending on a real MBPP run.
+# Launch:  CONFIG=acrl/train/config/smoke.yaml bash runpod/run.sh
+
+model: Qwen/Qwen2.5-Coder-1.5B-Instruct
+
+# Tasks (zero download)
+task_source: bundled        # bundled | mbpp | humaneval
+task_split: train
+task_limit: null
+
+# Reward
+reward: verifiable          # verifiable (tests pass) | judge (Haiku smoke test only)
+reward_timeout: 10.0
+
+# GRPO (tiny: just enough to exercise the loop)
+output_dir: outputs/smoke
+num_generations: 4          # K samples per prompt (group size)
+per_device_train_batch_size: 4
+gradient_accumulation_steps: 1
+learning_rate: 1.0e-6
+beta: 0.04                  # KL leash to the frozen reference
+max_prompt_length: 512
+max_completion_length: 256
+max_steps: 2
+temperature: 0.8
+top_p: 0.95
+
+# LoRA
+lora_r: 16
+lora_alpha: 32
+lora_dropout: 0.0
+lora_target_modules: all-linear
+
+# vLLM rollouts (colocated on the same GPU as training)
+use_vllm: true
+vllm_mode: colocate
+vllm_gpu_memory_utilization: 0.3
+
+# System
+bf16: true
+gradient_checkpointing: true
+logging_steps: 1
+save_steps: 100             # >max_steps: skip checkpointing in this 2-step run
+report_to: none

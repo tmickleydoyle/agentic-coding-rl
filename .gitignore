@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+
+# Training / data artifacts (large, regenerable)
+checkpoints/
+outputs/
+runs/
+wandb/
+*.pth
+*.safetensors
+data/cache/
+data/tasks_cache/
+*.log
+
+# Secrets (WANDB_API_KEY, ANTHROPIC_API_KEY, ...)
+.env
+.env.*
+
+# Sandbox scratch
+.sandbox_scratch/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

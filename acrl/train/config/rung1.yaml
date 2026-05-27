@@ -1,0 +1,45 @@
+# Rung 1: prove the RL loop moves a verifiable reward on a small model.
+# Goal is signal, not a finished model. Start on the bundled offline tasks to confirm
+# wiring, then switch task_source to "mbpp" for a real (still cheap) run.
+
+model: Qwen/Qwen2.5-Coder-1.5B-Instruct
+
+# Tasks
+task_source: bundled        # bundled | mbpp | humaneval
+task_split: train
+task_limit: null
+
+# Reward
+reward: verifiable          # verifiable (tests pass) | judge (Haiku smoke test only)
+reward_timeout: 10.0
+
+# GRPO
+output_dir: outputs/rung1
+num_generations: 8          # K samples per prompt (group size)
+per_device_train_batch_size: 8
+gradient_accumulation_steps: 2
+learning_rate: 1.0e-6
+beta: 0.04                  # KL leash to the frozen reference
+max_prompt_length: 512
+max_completion_length: 256
+max_steps: 50
+temperature: 0.8
+top_p: 0.95
+
+# LoRA
+lora_r: 16
+lora_alpha: 32
+lora_dropout: 0.0
+lora_target_modules: all-linear
+
+# vLLM rollouts (colocated on the same GPU as training)
+use_vllm: true
+vllm_mode: colocate
+vllm_gpu_memory_utilization: 0.3
+
+# System
+bf16: true
+gradient_checkpointing: true
+logging_steps: 1
+save_steps: 25
+report_to: none

@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentic-coding-rl"
+version = "0.1.0"
+description = "Incremental RL environment toward a Composer-2.5-class agentic coding model"
+requires-python = ">=3.10"
+# Core deps are intentionally light so the sandbox + reward + task code runs
+# locally (CPU/Mac) without pulling CUDA-only packages. GPU training deps live
+# in the [gpu] extra and are installed on the RunPod box only.
+dependencies = [
+    "datasets>=2.18.0",
+]
+
+[project.optional-dependencies]
+# Installed on the RunPod GPU box (rungs 1-2). vLLM/torch are CUDA-targeted.
+gpu = [
+    "torch>=2.4.0",
+    "transformers>=4.46.0",
+    "trl>=0.13.0",
+    "peft>=0.13.0",
+    "vllm>=0.6.3",
+    "accelerate>=1.0.0",
+    "pyyaml>=6.0",
+]
+# Optional Claude-Haiku judge reward (rung-1 plumbing smoke test only).
+judge = [
+    "anthropic>=0.39.0",
+]
+# Optional live training metrics (--wandb). Needs WANDB_API_KEY exported on the box.
+wandb = [
+    "wandb>=0.18",
+]
+dev = [
+    "pytest>=7.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["acrl*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
