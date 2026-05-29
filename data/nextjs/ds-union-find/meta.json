@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/ds-union-find",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "lib/union-find.ts",
+  "summary": "Disjoint-set DSU with path compression + union by rank: find/union/connected/count"
+}

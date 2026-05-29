@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/math-fraction",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "lib/fraction.ts",
+  "summary": "Auto-reduced Fraction class with add/sub/mul/div, sign normalization, toString/valueOf"
+}

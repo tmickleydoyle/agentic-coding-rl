@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/range-display",
+  "framework": "nextjs",
+  "difficulty": "easy",
+  "entry_point": "components/RangeDisplay.tsx",
+  "summary": "Controlled range input + live numeric display"
+}

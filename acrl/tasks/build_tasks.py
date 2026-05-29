@@ -34,14 +34,20 @@ class Task:
     task_id: str
     prompt: str  # natural-language instruction (without the code-format suffix)
     entry_point: str
-    tests: list[str]  # independent snippets; reward = fraction that pass
+    tests: list[str]  # independent snippets; reward = fraction that pass (Python tasks only)
     canonical_solution: str = ""
     split: str = "train"
     setup: str = ""  # code prepended before candidate (e.g. MBPP test_setup_code)
     metadata: dict[str, Any] = field(default_factory=dict)
+    # Multi-file tasks (nextjs, repo-level) populate these; Python tasks leave them as default.
+    files: dict[str, str] | None = None  # starter files {relpath: content}
+    framework: str = "python"  # "python" or "nextjs"
 
     def model_prompt(self) -> str:
         """The full instruction shown to the policy."""
+        # Multi-file tasks ship their own full description; don't append the Python suffix.
+        if self.framework != "python":
+            return self.prompt
         return self.prompt + CODE_INSTRUCTION
 
 
@@ -136,6 +142,12 @@ def load_tasks(
         tasks = _from_mbpp(split, limit)
     elif source == "humaneval":
         tasks = _from_humaneval(split, limit)
+    elif source == "nextjs":
+        from acrl.tasks._nextjs import load_nextjs_tasks
+        tasks = load_nextjs_tasks(split)
+    elif source.startswith("multipl-e-"):
+        from acrl.tasks._multipl_e import load_multipl_e
+        tasks = load_multipl_e(source, split=split, limit=limit)
     else:
         raise ValueError(f"unknown task source: {source!r}")
     if limit:
@@ -159,6 +171,7 @@ def to_dataset(tasks: list[Task]):
                 "entry_point": t.entry_point,
                 "tests": t.tests,
                 "setup": t.setup,
+                "framework": t.framework,
             }
             for t in tasks
         ]

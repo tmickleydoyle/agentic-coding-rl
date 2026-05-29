@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/word-count",
+  "framework": "nextjs",
+  "difficulty": "easy",
+  "entry_point": "components/WordCount.tsx",
+  "summary": "Textarea + whitespace-tolerant word count"
+}

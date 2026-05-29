@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/game-2048",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "lib/g2048.ts",
+  "summary": "2048 slide (one merge per tile) and directional move returning gained score"
+}

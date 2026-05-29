@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/radio-group",
+  "framework": "nextjs",
+  "difficulty": "easy",
+  "entry_point": "components/RadioGroup.tsx",
+  "summary": "Single-select radio group with selected display, starts 'none'"
+}

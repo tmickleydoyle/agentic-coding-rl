@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/fix-accordion-multi",
+  "framework": "nextjs",
+  "difficulty": "medium-simple",
+  "entry_point": "components/Accordion.tsx",
+  "summary": "Accordion forces single-open; panels should toggle independently"
+}

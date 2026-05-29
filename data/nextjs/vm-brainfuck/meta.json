@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/vm-brainfuck",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "lib/brainfuck.ts",
+  "summary": "Brainfuck interpreter with 8-bit wrap tape, bracket matching, step cap"
+}

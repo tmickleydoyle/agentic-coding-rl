@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/api-calc",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/api/calc/route.ts",
+  "summary": "POST computes add/sub/mul/div; 400 on bad op, non-number, or div by zero"
+}

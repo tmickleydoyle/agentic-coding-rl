@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/api-signup-validate",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/api/signup/route.ts",
+  "summary": "POST validates email + password, returns per-field errors or ok"
+}

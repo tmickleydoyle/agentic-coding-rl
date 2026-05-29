@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/multi-step-checkout",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "components/Checkout.tsx",
+  "summary": "3-page checkout (Cart/Shipping/Confirmation) with state preserved across Back"
+}

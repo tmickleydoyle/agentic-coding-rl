@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/filter-sort-table",
+  "framework": "nextjs",
+  "difficulty": "medium-hard",
+  "entry_point": "components/Table.tsx",
+  "summary": "Table with text filter, sortable headers (asc/desc), pagination 3/page; filter resets page"
+}

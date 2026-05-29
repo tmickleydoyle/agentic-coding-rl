@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/checkbox-group",
+  "framework": "nextjs",
+  "difficulty": "easy",
+  "entry_point": "components/CheckboxGroup.tsx",
+  "summary": "Multi-select checkboxes with live count"
+}

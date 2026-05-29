@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/theme-context-toggle",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "components/App.tsx",
+  "summary": "Theme passed via React Context across Provider + consumer components"
+}

@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/util-retry",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "lib/retry.ts",
+  "summary": "retry<T>(fn, attempts) retries rejecting promise; rejects with last error"
+}

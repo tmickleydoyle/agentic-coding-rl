@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/algo-line-diff",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "lib/line-diff.ts",
+  "summary": "LCS-based minimal order-preserving line diff emitting eq/add/del entries"
+}

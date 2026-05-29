@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/util-trie",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "lib/trie.ts",
+  "summary": "Trie with insert/has/startsWith/delete (prunes) and sorted wordsWithPrefix"
+}

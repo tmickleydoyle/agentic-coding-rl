@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/vm-mini-lisp",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "lib/lisp.ts",
+  "summary": "Mini-Lisp: parse s-exprs; arithmetic, < > =, if, let scoping; nested"
+}

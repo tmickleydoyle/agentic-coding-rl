@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/api-rate-limit-sliding",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/api/limit/route.ts",
+  "summary": "Sliding-window rate limiter via timestamp log; 200 remaining or 429 retryAfter"
+}

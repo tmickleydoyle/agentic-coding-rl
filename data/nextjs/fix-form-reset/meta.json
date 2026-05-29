@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/fix-form-reset",
+  "framework": "nextjs",
+  "difficulty": "medium-simple",
+  "entry_point": "components/ResetForm.tsx",
+  "summary": "Reset clears inputs but not validation errors; must clear both"
+}

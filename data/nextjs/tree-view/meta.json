@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/tree-view",
+  "framework": "nextjs",
+  "difficulty": "medium-hard",
+  "entry_point": "components/Tree.tsx",
+  "summary": "Recursive tree view: per-node expand/collapse, collapsed nodes hide all descendants"
+}

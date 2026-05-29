@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/editable-cell-grid",
+  "framework": "nextjs",
+  "difficulty": "medium-hard",
+  "entry_point": "components/Grid.tsx",
+  "summary": "Editable grid: dbl-click to edit, Enter commits, Escape cancels, one cell editable at a time"
+}

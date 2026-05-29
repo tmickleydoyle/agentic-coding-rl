@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/api-jwt-lite",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/api/auth/route.ts",
+  "summary": "JWT-lite: POST issues signed token with exp; GET verifies Bearer, 401 on tamper/expiry"
+}

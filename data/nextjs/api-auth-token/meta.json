@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/api-auth-token",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/api/auth/route.ts",
+  "summary": "POST issues deterministic token for valid creds, 401 otherwise, 400 if missing"
+}

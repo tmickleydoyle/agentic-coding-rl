@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/util-expr-eval",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "lib/expr-eval.ts",
+  "summary": "Recursive-descent arithmetic evaluator: precedence, parens, unary, errors"
+}

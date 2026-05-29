@@ -1,0 +1,8 @@
+{
+  "task_id": "nextjs/toast-system",
+  "framework": "nextjs",
+  "split": "test",
+  "difficulty": "medium",
+  "entry_point": "components/App.tsx",
+  "summary": "Toast notifications via custom hook + Context + consumer component"
+}

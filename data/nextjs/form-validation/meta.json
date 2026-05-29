@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/form-validation",
+  "framework": "nextjs",
+  "difficulty": "medium-simple",
+  "entry_point": "components/SignupForm.tsx",
+  "summary": "Sign-up form with email + password validation on submit"
+}

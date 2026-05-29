@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/api-order-status",
+  "framework": "nextjs",
+  "difficulty": "medium-hard",
+  "entry_point": "app/api/orders/route.ts",
+  "summary": "Order state machine: POST advances pending->paid->shipped->delivered; GET reads"
+}

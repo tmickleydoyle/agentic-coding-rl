@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/two-step-form",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "components/TwoStepForm.tsx",
+  "summary": "Two-step form: name then email; Back preserves name; Submit disabled when empty"
+}

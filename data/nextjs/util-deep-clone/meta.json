@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/util-deep-clone",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "lib/deep-clone.ts",
+  "summary": "deepClone<T>(v) deep copy; nested objects/arrays independent of source"
+}

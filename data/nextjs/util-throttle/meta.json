@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/util-throttle",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "lib/throttle.ts",
+  "summary": "throttle(fn, ms) fires immediately then at most once per ms window"
+}

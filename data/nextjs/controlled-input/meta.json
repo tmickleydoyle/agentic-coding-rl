@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/controlled-input",
+  "framework": "nextjs",
+  "difficulty": "easy",
+  "entry_point": "components/Greeting.tsx",
+  "summary": "Controlled input + derived greeting"
+}

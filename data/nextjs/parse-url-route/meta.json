@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/parse-url-route",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "lib/route.ts",
+  "summary": "Express-style route matcher: :param, :param? optional, :path* wildcard tail, static segments, decode"
+}

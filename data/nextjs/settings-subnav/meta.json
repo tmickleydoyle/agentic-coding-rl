@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/settings-subnav",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "components/Settings.tsx",
+  "summary": "Three settings sub-pages each with own state preserved across navigation"
+}

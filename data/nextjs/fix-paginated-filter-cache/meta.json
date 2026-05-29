@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/fix-paginated-filter-cache",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "components/PaginatedList.tsx",
+  "summary": "Page cache keyed by page number ignores active filter; serves stale rows"
+}

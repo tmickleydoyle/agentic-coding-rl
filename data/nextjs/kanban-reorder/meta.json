@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/kanban-reorder",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "components/Board.tsx",
+  "summary": "Kanban with move/reorder cards across and within columns via index-shift-correct actions"
+}

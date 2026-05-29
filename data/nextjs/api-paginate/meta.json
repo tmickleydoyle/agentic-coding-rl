@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/api-paginate",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/api/paginate/route.ts",
+  "summary": "GET paginates a fixed dataset with page/limit, clamps, 400 on bad params"
+}

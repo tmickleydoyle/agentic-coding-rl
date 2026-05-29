@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/ds-fenwick",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "lib/fenwick.ts",
+  "summary": "Fenwick/BIT with update, prefixSum, rangeSum, O(n) fromArray build"
+}

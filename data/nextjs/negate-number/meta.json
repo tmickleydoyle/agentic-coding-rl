@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/negate-number",
+  "framework": "nextjs",
+  "difficulty": "easy",
+  "entry_point": "components/Negate.tsx",
+  "summary": "Number input + button that flips the sign on click"
+}

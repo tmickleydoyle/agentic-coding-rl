@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/math-matrix",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "lib/matrix.ts",
+  "summary": "Matrix multiply/transpose/identity/determinant/inverse with dimension checks"
+}

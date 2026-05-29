@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/tabbed-form-saves",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "components/TabbedForms.tsx",
+  "summary": "Tabs with per-tab inputs + independent save buttons + preserved state"
+}

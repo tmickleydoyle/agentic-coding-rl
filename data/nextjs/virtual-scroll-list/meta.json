@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/virtual-scroll-list",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "components/VirtualList.tsx",
+  "summary": "Windowed list: render only rows visible for scrollTop plus overscan, absolutely positioned"
+}

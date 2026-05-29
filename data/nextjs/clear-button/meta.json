@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/clear-button",
+  "framework": "nextjs",
+  "difficulty": "easy",
+  "entry_point": "components/ClearableInput.tsx",
+  "summary": "Input + Clear button (disabled when empty)"
+}

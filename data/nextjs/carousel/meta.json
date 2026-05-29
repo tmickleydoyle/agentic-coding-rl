@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/carousel",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "components/Carousel.tsx",
+  "summary": "Carousel: Prev/Next wrap around, single active slide, dot indicators reflect + jump"
+}

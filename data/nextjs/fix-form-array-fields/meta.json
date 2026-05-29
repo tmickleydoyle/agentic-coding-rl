@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/fix-form-array-fields",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "components/FieldArray.tsx",
+  "summary": "Field values keyed by array index; removing a middle row shifts values"
+}

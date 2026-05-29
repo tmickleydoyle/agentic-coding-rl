@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/spreadsheet-grid",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "components/Spreadsheet.tsx",
+  "summary": "3x3 grid with =A1+B2 formula engine; live recompute of dependents; #ERR on bad ref/cycle"
+}

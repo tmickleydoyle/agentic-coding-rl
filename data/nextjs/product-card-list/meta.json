@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/product-card-list",
+  "framework": "nextjs",
+  "difficulty": "medium-simple",
+  "entry_point": "components/ProductList.tsx",
+  "summary": "List composes ProductCard children + shared types.ts; in-stock count"
+}

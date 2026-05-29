@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/fix-calendar-grid",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "components/CalendarGrid.tsx",
+  "summary": "Wrong leading weekday offset and leap-year February length in month grid"
+}
