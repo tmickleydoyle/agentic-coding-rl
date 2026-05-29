@@ -1,0 +1,8 @@
+{
+  "task_id": "nextjs/data-table",
+  "framework": "nextjs",
+  "split": "test",
+  "difficulty": "medium",
+  "entry_point": "components/DataTable.tsx",
+  "summary": "Sortable table composing header + row subcomponents; sort by name/age across 4 files"
+}

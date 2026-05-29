@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/fix-temperature-convert",
+  "framework": "nextjs",
+  "difficulty": "easy",
+  "entry_point": "components/TempConverter.tsx",
+  "summary": "C-to-F converter omits the +32 term; fix formula F=C*9/5+32"
+}

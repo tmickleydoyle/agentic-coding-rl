@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/vm-rpn",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "lib/rpn.ts",
+  "summary": "RPN evaluator (+ - * / neg) with errors plus shunting-yard infixToRPN"
+}

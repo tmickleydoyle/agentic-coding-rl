@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/fix-todo-toggle",
+  "framework": "nextjs",
+  "difficulty": "medium-simple",
+  "entry_point": "components/TodoList.tsx",
+  "summary": "Per-item todo toggle marks every item done instead of just one"
+}

@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/util-topo-sort",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "lib/topo-sort.ts",
+  "summary": "Kahn topological sort over edge list; deterministic order; throws on cycle"
+}

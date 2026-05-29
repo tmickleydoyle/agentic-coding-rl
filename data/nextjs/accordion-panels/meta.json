@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/accordion-panels",
+  "framework": "nextjs",
+  "difficulty": "medium-simple",
+  "entry_point": "components/Accordion.tsx",
+  "summary": "Multi-panel accordion; independent toggle per panel, aria-expanded reflects state"
+}

@@ -1,0 +1,8 @@
+{
+  "task_id": "nextjs/pagination",
+  "framework": "nextjs",
+  "split": "test",
+  "difficulty": "medium-simple",
+  "entry_point": "components/Paginated.tsx",
+  "summary": "Paginate items (5/page) with prev/next, indicator, clamped bounds"
+}

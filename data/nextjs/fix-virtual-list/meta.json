@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/fix-virtual-list",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "components/VirtualList.tsx",
+  "summary": "Virtual list visible-range math drops the last partial row after scroll"
+}

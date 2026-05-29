@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/parse-markdown",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "lib/markdown.ts",
+  "summary": "Markdown subset to HTML: headings, bold/italic/code, lists, links, paragraphs, HTML-escaping"
+}

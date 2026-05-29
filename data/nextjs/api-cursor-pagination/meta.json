@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/api-cursor-pagination",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/api/items/route.ts",
+  "summary": "Opaque base64 cursor pagination over ordered dataset; nextCursor/hasMore; 400 on bad input"
+}

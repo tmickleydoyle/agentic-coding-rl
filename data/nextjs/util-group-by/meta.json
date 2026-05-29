@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/util-group-by",
+  "framework": "nextjs",
+  "difficulty": "easy",
+  "entry_point": "lib/group-by.ts",
+  "summary": "groupBy<T>(arr, keyFn) -> Record<string, T[]>; preserves order; [] -> {}"
+}

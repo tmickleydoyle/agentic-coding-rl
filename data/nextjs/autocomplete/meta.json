@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/autocomplete",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "components/Autocomplete.tsx",
+  "summary": "Autocomplete: case-insensitive substring suggestions, click to fill, hide on empty/pick"
+}

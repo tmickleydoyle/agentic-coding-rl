@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/util-parse-query",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "lib/parse-query.ts",
+  "summary": "parseQuery/stringifyQuery; repeated keys -> array; decode %20 and +"
+}

@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/parse-cron",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "lib/cron.ts",
+  "summary": "5-field cron matcher: *, n, a-b ranges, lists, */step, a-b/step against a Date"
+}

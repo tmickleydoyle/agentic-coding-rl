@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/tab-component",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "components/Tabs.tsx",
+  "summary": "Tabs with active state, aria-selected, content panel"
+}

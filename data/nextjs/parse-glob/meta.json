@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/parse-glob",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "lib/glob.ts",
+  "summary": "Glob to RegExp + matcher: *, **, ?, [abc]/[a-z] classes, {a,b} alternation over slash paths"
+}

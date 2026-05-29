@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/fix-async-search-race",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "hooks/useSearch.ts",
+  "summary": "Out-of-order search responses overwrite newer results; guard with a seq id"
+}

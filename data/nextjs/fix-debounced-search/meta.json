@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/fix-debounced-search",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "hooks/useDebounce.ts",
+  "summary": "useDebounce never clears prior timeout; fires per keystroke not once"
+}

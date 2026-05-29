@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/counter-button",
+  "framework": "nextjs",
+  "difficulty": "easy",
+  "entry_point": "components/Counter.tsx",
+  "summary": "Counter with click handler + state"
+}

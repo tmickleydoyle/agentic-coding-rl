@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/api-slugify",
+  "framework": "nextjs",
+  "difficulty": "easy",
+  "entry_point": "app/api/slugify/route.ts",
+  "summary": "POST slugifies a title; 400 when title missing or empty"
+}

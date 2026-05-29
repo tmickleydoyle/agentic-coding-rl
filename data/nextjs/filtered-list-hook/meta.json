@@ -1,0 +1,6 @@
+{
+  "task_id": "filtered-list-hook",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry": "components/FilteredList.tsx"
+}

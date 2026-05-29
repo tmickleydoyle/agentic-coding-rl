@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/parse-json",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "lib/json.ts",
+  "summary": "Hand-written JSON parser: objects/arrays/strings-with-escapes/numbers, errors on malformed input"
+}

@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/util-debounce",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "lib/debounce.ts",
+  "summary": "debounce(fn, ms) fires only after ms of quiet; resets timer; latest args"
+}

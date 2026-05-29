@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/command-palette",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "components/CommandPalette.tsx",
+  "summary": "Filterable grouped command palette; arrow keys wrap highlight skipping headers, Enter runs"
+}

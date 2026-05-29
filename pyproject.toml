@@ -27,6 +27,10 @@ gpu = [
     "vllm==0.7.2",
     "accelerate==1.3.0",
     "pyyaml>=6.0",
+    # QLoRA (4-bit) SFT for scaling to larger Qwen3.5 (27B+). Only needed for QUANT=4bit;
+    # bf16 LoRA needs nothing beyond peft. NOTE: the qwen3_5 runs use a newer transformers/
+    # vllm stack than the pins above (5.9 / 0.17) installed at pod-setup; match bnb to that.
+    "bitsandbytes>=0.43.0",
 ]
 # Optional Claude-Haiku judge reward (rung-1 plumbing smoke test only).
 judge = [

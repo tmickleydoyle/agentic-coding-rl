@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/fix-undo-redo",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "hooks/useUndoable.ts",
+  "summary": "New edit after undo must clear redo future; undo must stop at initial state"
+}

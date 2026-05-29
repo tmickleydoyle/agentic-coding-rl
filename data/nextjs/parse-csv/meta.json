@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/parse-csv",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "lib/csv.ts",
+  "summary": "RFC-4180 CSV parser: quoted fields, embedded commas/newlines, escaped quotes, CRLF, custom delimiter"
+}

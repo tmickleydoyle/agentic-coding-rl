@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/api-feedback",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/api/feedback/route.ts",
+  "summary": "POST stores 1-5 rating (400 otherwise); GET returns count and average"
+}

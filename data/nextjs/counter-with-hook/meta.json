@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/counter-with-hook",
+  "framework": "nextjs",
+  "difficulty": "medium-simple",
+  "entry_point": "components/Counter.tsx",
+  "summary": "Counter using a separate hooks/useCounter.ts file; dec is clamped at 0"
+}

@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/password-toggle",
+  "framework": "nextjs",
+  "difficulty": "easy",
+  "entry_point": "components/PasswordField.tsx",
+  "summary": "Toggle input type password/text + matching button label"
+}

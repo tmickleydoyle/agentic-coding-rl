@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/game-sudoku",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "lib/sudoku.ts",
+  "summary": "Sudoku isValid, findConflicts, and backtracking solve (no mutation)"
+}

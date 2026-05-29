@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/util-min-heap",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "lib/min-heap.ts",
+  "summary": "Array-backed MinHeap<T> push/pop/peek/heapify + kSmallest helper"
+}

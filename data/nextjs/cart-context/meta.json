@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/cart-context",
+  "framework": "nextjs",
+  "difficulty": "medium-hard",
+  "entry_point": "components/App.tsx",
+  "summary": "Cart Context shared by product list + summary: add/remove updates qty + total live"
+}

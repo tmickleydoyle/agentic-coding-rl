@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/uppercase-input",
+  "framework": "nextjs",
+  "difficulty": "easy",
+  "entry_point": "components/UppercaseInput.tsx",
+  "summary": "Controlled input + uppercase echo"
+}

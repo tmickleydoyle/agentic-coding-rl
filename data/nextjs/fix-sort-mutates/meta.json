@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/fix-sort-mutates",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "components/SortedList.tsx",
+  "summary": "Component sorts its rows prop in place; must sort a copy instead"
+}

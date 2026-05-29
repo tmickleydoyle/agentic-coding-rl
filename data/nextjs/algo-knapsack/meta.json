@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/algo-knapsack",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "lib/knapsack.ts",
+  "summary": "0/1 knapsack DP with chosen-index reconstruction plus min-coin coinChange"
+}

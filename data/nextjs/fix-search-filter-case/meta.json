@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/fix-search-filter-case",
+  "framework": "nextjs",
+  "difficulty": "easy",
+  "entry_point": "components/SearchFilter.tsx",
+  "summary": "List text filter is case-sensitive; should be case-insensitive substring"
+}

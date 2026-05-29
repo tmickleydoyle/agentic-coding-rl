@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/vm-stack-machine",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "lib/stackvm.ts",
+  "summary": "Stack VM: PUSH/ADD/.../DUP/SWAP/PRINT/JZ/JMP/LABEL/HALT with jumps"
+}

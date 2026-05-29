@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/game-minesweeper",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "lib/minesweeper.ts",
+  "summary": "Minesweeper reveal with flood-fill on zero cells, countAdjacent, mine hit"
+}

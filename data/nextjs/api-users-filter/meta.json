@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/api-users-filter",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/api/users/route.ts",
+  "summary": "GET filters fixed users by role and minAge (combinable); 400 on bad minAge"
+}

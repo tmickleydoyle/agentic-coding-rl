@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/util-binary-search",
+  "framework": "nextjs",
+  "difficulty": "easy",
+  "entry_point": "lib/binary-search.ts",
+  "summary": "binarySearch(sortedArr, target) returns index or -1; O(log n)"
+}

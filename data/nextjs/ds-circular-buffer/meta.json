@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/ds-circular-buffer",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "lib/circular-buffer.ts",
+  "summary": "Fixed-capacity RingBuffer<T> with overwrite-oldest push, shift, wrap-around toArray"
+}

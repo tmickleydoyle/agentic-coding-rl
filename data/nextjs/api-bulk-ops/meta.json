@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/api-bulk-ops",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/api/bulk/route.ts",
+  "summary": "Atomic bulk create/update/delete: validate all first, 422 with errors or apply all"
+}

@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/search-filter",
+  "framework": "nextjs",
+  "difficulty": "medium-simple",
+  "entry_point": "components/SearchFilter.tsx",
+  "summary": "Case-insensitive substring filter of an items list via controlled input"
+}

@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/dropdown-select",
+  "framework": "nextjs",
+  "difficulty": "easy",
+  "entry_point": "components/Picker.tsx",
+  "summary": "Controlled <select> with picked-value display"
+}

@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/util-event-emitter",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "lib/event-emitter.ts",
+  "summary": "EventEmitter with on/off/once/emit; multiple listeners; off by ref"
+}

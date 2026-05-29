@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/math-roman",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "lib/roman.ts",
+  "summary": "toRoman/fromRoman for 1..3999 with strict canonical validation and round-trip"
+}

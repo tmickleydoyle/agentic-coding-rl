@@ -1,0 +1,8 @@
+{
+  "task_id": "nextjs/card-with-parts",
+  "framework": "nextjs",
+  "split": "test",
+  "difficulty": "medium-simple",
+  "entry_point": "components/Card.tsx",
+  "summary": "Parent Card composes CardHeader/Body/Footer subcomponents across 4 files"
+}

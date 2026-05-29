@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/api-workflow-engine",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/api/workflow/route.ts",
+  "summary": "Guarded order state machine with audit history; 409 on invalid transition or guard"
+}

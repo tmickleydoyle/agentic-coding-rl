@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/fix-counter-step",
+  "framework": "nextjs",
+  "difficulty": "easy",
+  "entry_point": "components/Counter.tsx",
+  "summary": "Counter +/- buttons; increment jumps by 2 instead of 1"
+}

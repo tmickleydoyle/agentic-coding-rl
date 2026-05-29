@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/wizard-three-step",
+  "framework": "nextjs",
+  "difficulty": "medium-simple",
+  "entry_point": "components/Wizard.tsx",
+  "summary": "3-step wizard with shared state, back preserves values, submit terminates"
+}

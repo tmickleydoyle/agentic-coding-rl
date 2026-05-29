@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/util-dijkstra",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "lib/dijkstra.ts",
+  "summary": "Dijkstra dist/prev over weighted adjacency list + shortestPath reconstruction"
+}

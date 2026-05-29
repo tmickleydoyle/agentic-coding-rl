@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/parse-semver",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "lib/semver.ts",
+  "summary": "Semver parse/compare/satisfies with ^ ~ comparators, x wildcards, prerelease ordering"
+}

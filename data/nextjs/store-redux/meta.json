@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/store-redux",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "lib/store.ts",
+  "summary": "Redux-like createStore with subscribe/unsubscribe, combineReducers, middleware wrapDispatch"
+}

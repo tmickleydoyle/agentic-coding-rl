@@ -16,14 +16,24 @@ from typing import Any
 from acrl.sandbox.runner import run_python_task
 
 _FENCE_RE = re.compile(r"```(?:python|py)?\s*\n(.*?)```", re.DOTALL | re.IGNORECASE)
+_JS_FENCE_RE = re.compile(r"```(?:javascript|js|typescript|ts)?\s*\n(.*?)```", re.DOTALL | re.IGNORECASE)
 
 
-def extract_code(text: str) -> str:
-    """Pull a Python code block from a model completion.
+def extract_code(text: str, framework: str = "python") -> str:
+    """Pull a fenced code block from a model completion.
 
-    Prefer a fenced block; among multiple, prefer one that defines a function.
-    Fall back to the raw text (some models emit code without fences).
+    Prefer a fenced block; among multiple, prefer one with a function definition for the
+    target language. Fall back to the raw text (some models emit code without fences).
     """
+    if framework in ("js", "ts"):
+        blocks = _JS_FENCE_RE.findall(text)
+        if blocks:
+            for b in blocks:
+                if "function " in b or "=>" in b:
+                    return b.strip()
+            return blocks[0].strip()
+        return text.strip()
+    # default: python
     blocks = _FENCE_RE.findall(text)
     if blocks:
         for b in blocks:
@@ -48,18 +58,46 @@ def verifiable_reward(
     completions: list[Any],
     tests: list[list[str]] | None = None,
     setup: list[str] | None = None,
+    framework: list[str] | None = None,
+    workdir: list[str] | None = None,
+    task_dir: list[str] | None = None,
     timeout: float = 10.0,
     **kwargs: Any,
 ) -> list[float]:
-    n = len(completions)
-    if tests is None:
-        raise ValueError("verifiable_reward requires a per-row `tests` column from the dataset")
+    """Dispatch on per-row `framework` column. Defaults to 'python' for backward compat.
 
+    'python' / 'js' / 'ts' tasks are single-file: the candidate code is extracted from the
+    completion text and run against per-row `tests`. 'nextjs' tasks are multi-file and
+    agentic — there is no single text completion to score; the reward runs Vitest against
+    the agent's final working directory, supplied per-row via the `workdir` column (with the
+    canonical tests sourced from `task_dir`). The rejection-sampling collector computes this
+    reward directly via `run_nextjs_task`; this branch keeps the dispatch symmetric for any
+    dataset-driven (e.g. GRPO) path that carries those columns.
+    """
+    n = len(completions)
     rewards: list[float] = []
     for i in range(n):
-        code = extract_code(_completion_text(completions[i]))
+        fw = (framework[i] if framework is not None else "python") or "python"
+        if fw == "nextjs":
+            wd = workdir[i] if workdir is not None else None
+            if not wd:
+                rewards.append(0.0)
+                continue
+            from acrl.sandbox.nextjs_runner import run_nextjs_task
+            td = task_dir[i] if task_dir is not None else None
+            result = run_nextjs_task(wd, task_dir=td, timeout=max(timeout, 60.0))
+            rewards.append(result.fraction)
+            continue
+
+        if tests is None:
+            raise ValueError("verifiable_reward requires a per-row `tests` column for non-nextjs tasks")
+        code = extract_code(_completion_text(completions[i]), framework=fw)
         row_tests = tests[i]
         row_setup = setup[i] if setup is not None else ""
-        result = run_python_task(code, row_tests, setup=row_setup, timeout=timeout)
+        if fw in ("js", "ts"):
+            from acrl.sandbox.js_runner import run_js_task
+            result = run_js_task(code, row_tests, timeout=timeout)
+        else:
+            result = run_python_task(code, row_tests, setup=row_setup, timeout=timeout)
         rewards.append(result.fraction)
     return rewards

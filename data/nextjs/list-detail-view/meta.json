@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/list-detail-view",
+  "framework": "nextjs",
+  "difficulty": "medium-simple",
+  "entry_point": "components/Catalog.tsx",
+  "summary": "List ↔ detail navigation, mutually exclusive views"
+}

@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/accessible-menu",
+  "framework": "nextjs",
+  "difficulty": "medium-hard",
+  "entry_point": "components/Menu.tsx",
+  "summary": "Keyboard menu: toggle, Arrow up/down wrap highlight, Enter activates, Escape closes"
+}

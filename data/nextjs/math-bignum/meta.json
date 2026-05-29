@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/math-bignum",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "lib/bignum.ts",
+  "summary": "Arbitrary-precision unsigned int add/subtract/multiply/compare on decimal strings"
+}

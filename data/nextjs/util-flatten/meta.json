@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/util-flatten",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "lib/flatten.ts",
+  "summary": "flatten(arr, depth=Infinity) flattens nested array to given depth"
+}
