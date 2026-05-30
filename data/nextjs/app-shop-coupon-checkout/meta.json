@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-shop-coupon-checkout",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route coupon checkout: cart/coupons/checkout/confirmation, percent/fixed/min-spend coupon rules, validation, recalculated totals, coupons REST API"
+}

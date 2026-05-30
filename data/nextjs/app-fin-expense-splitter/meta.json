@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-fin-expense-splitter",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route shared-expense splitter: dashboard/expenses/people/balances, shared context, per-person balances + settle-up suggestions, REST API"
+}

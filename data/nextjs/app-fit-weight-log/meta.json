@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-fit-weight-log",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route weight log: log/history/goal/insights, shared context, REST API with trend and goal progress"
+}

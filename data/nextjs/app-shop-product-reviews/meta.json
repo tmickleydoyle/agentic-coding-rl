@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-shop-product-reviews",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route product reviews: products/product-reviews/write-review/top-rated, shared context, average ratings + sorting, reviews REST API"
+}

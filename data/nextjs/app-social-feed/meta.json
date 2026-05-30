@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-social-feed",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route social feed: feed/post-detail/profile/explore, like + comment, follow, feed filter, shared context, REST API"
+}

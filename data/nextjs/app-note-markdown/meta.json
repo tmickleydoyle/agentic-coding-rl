@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-note-markdown",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route markdown notes app: list/editor+preview/tags/settings, shared context, notes REST API"
+}

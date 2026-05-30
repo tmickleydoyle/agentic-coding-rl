@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-team-roadmap",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route product roadmap: roadmap/initiative-detail/add/timeline, move initiatives between quarters, per-quarter counts, shared context, REST API"
+}

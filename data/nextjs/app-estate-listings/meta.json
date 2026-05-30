@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-estate-listings",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route property listings: listings/property-detail/favorites/filters, shared context, favorite + price/beds/type filters, listings REST API"
+}

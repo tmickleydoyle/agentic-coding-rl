@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-fin-invoice-manager",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route invoice manager: dashboard/invoices/clients/new-invoice, shared context, statuses + outstanding totals, REST API"
+}

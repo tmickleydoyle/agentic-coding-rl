@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-food-recipes",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route recipe book: recipes/recipe-detail/add/favorites, cuisine filter + search, favorite toggle, shared context, recipes REST API"
+}

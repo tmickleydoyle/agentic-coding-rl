@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-dev-feature-flags",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route feature flags: flags/flag-detail/environments/audit, shared context, per-env toggles + rollout % + audit log, flags REST API"
+}

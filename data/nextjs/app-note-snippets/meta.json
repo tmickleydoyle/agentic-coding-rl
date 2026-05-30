@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-note-snippets",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route code-snippet app: snippets/detail/add/favorites, shared context, snippets REST API"
+}

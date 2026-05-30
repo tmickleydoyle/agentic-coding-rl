@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-crm-tasks",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route CRM follow-up tasks: today/tasks/contacts/done, due dates, complete, per-contact grouping, tasks REST API"
+}

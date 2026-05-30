@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-book-appointments",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route appointment booking: services/book/schedule/my-bookings, shared context, REST API with double-booking prevention"
+}

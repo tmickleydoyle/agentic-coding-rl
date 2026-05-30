@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-social-events",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route community events: events/event-detail/create/my-events, shared context, RSVP + attendee counts, upcoming vs past, events REST API"
+}

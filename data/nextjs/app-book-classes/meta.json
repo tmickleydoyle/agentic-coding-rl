@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-book-classes",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route class enrollment: classes/class-detail/my-classes/waitlist, shared context, REST API with capacity, waitlisting, and promote-on-cancel"
+}

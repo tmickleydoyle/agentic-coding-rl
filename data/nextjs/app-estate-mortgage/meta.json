@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-estate-mortgage",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route mortgage tool: properties/calculator/compare/saved, shared context, amortized monthly-payment calc, save + compare, properties REST API"
+}

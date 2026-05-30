@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-travel-expenses",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route travel expense tracker: trips/expenses/add/summary, expenses by category, per-day breakdown, running totals, shared context, REST API"
+}

@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-fin-subscription-tracker",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route subscription tracker: dashboard/subscriptions/add/upcoming, shared context, normalized monthly cost + renewals due soon + cancel, REST API"
+}

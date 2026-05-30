@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-task-tracker",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route task tracker: dashboard/tasks/new/settings, shared context, REST API"
+}

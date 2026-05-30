@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-team-projects",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route team project manager: projects/project-detail/members/board, member workload + reassign, shared context, REST API"
+}

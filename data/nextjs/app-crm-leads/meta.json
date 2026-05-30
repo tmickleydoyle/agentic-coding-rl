@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-crm-leads",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route CRM leads: leads/lead-detail/qualify/converted, scoring, qualify, convert-to-deal, leads REST API"
+}

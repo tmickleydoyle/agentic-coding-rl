@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-food-mealplan",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route weekly meal planner: week/day-detail/recipes/grocery, assign recipes to day slots, grocery ingredient rollup, shared context, meals REST API"
+}

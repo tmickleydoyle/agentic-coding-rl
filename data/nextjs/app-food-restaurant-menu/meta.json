@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-food-restaurant-menu",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route restaurant menu: menu/item-detail/cart/checkout, category + dietary filter, cart with qty, order total + tax, menu REST API"
+}

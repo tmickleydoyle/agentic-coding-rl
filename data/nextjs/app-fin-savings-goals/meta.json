@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-fin-savings-goals",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route savings goals: goals/goal-detail/add-goal/settings, shared context, contributions + percent progress + projected completion, REST API"
+}

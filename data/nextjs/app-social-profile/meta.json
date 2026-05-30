@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-social-profile",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route social profile: profile/posts/connections/edit, follow/unfollow, follower counts, validated edit, shared context, REST API"
+}

@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-event-venue",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route venue booking: venues/venue-detail/book/bookings, availability by date, capacity check, shared context, REST API for bookings with double-book + capacity validation"
+}

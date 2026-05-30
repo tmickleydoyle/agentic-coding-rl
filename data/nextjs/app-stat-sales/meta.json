@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-stat-sales",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route sales dashboard: overview/products/regions/trends, shared context, revenue rollups, sales REST API"
+}

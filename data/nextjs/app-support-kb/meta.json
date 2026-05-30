@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-support-kb",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route support knowledge base: articles/article-detail/categories/search, shared context, REST API with votes+search"
+}

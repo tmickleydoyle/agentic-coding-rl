@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-learn-gradebook",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route gradebook: students/assignments/gradebook/summary, per-student average + letter grade, REST API"
+}

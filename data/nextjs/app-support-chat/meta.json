@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-support-chat",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route live-chat support: queue/session/history/agents, shared context, REST API with assign+close+transcript"
+}

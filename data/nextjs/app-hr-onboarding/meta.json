@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-hr-onboarding",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route HR onboarding tracker: hires/hire-detail/tasks/progress, checklist tasks with toggle and per-hire percent complete, shared context, REST API"
+}

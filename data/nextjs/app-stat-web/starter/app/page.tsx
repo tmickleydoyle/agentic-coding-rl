@@ -1,0 +1,42 @@
+'use client'
+import { AppStateProvider, useApp } from '../components/AppStateProvider'
+import NavBar from '../components/NavBar'
+import OverviewPage from './overview/page'
+import PagesPage from './pages/page'
+import SourcesPage from './sources/page'
+import SettingsPage from './settings/page'
+
+function ActivePage() {
+  const { route } = useApp()
+  // TODO: render the page matching `route`.
+  switch (route) {
+    case 'pages':
+      return <PagesPage />
+    case 'sources':
+      return <SourcesPage />
+    case 'settings':
+      return <SettingsPage />
+    default:
+      return <OverviewPage />
+  }
+}
+
+function Shell() {
+  // TODO: reflect theme as data-theme on app-root.
+  return (
+    <div data-testid="app-root">
+      <NavBar />
+      <main data-testid="page-content">
+        <ActivePage />
+      </main>
+    </div>
+  )
+}
+
+export default function App() {
+  return (
+    <AppStateProvider>
+      <Shell />
+    </AppStateProvider>
+  )
+}

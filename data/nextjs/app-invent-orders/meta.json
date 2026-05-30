@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-invent-orders",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route purchase-orders app: orders/order-detail/new/suppliers, receive items, derived status, per-supplier aggregates, orders REST API"
+}

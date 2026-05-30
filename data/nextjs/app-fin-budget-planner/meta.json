@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-fin-budget-planner",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route monthly budget planner: overview/categories/add-expense/settings, shared context, planned-vs-actual + over-budget alerts, REST API"
+}

@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-note-notebook",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route notebook app: notebooks/notes/editor/search, shared context, notes REST API"
+}

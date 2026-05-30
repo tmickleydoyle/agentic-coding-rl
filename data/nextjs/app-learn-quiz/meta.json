@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-learn-quiz",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route quiz app: quizzes/take/results/review, shared context, scoring, REST API"
+}

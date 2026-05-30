@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-stat-funnel",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route conversion-funnel dashboard: funnel/steps/segments/settings, shared context, drop-off computation, funnel REST API"
+}

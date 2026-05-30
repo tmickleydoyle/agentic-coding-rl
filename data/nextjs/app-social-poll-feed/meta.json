@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-social-poll-feed",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route poll feed: polls/poll-detail/create/trending, vote once, percentage results, trending by votes, shared context, REST API"
+}

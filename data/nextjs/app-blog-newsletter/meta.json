@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-blog-newsletter",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route newsletter: dashboard/campaigns/subscribers/compose, send + mock open-rate, shared context, REST API"
+}

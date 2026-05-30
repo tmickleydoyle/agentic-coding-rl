@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-task-kanban",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route kanban board: board/add-card/archive/settings, columns with WIP limits, shared context, REST API"
+}

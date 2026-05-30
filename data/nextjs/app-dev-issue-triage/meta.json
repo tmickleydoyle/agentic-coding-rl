@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-dev-issue-triage",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route issue triage: issues/issue-detail/triage/board, shared context, REST API with assign+filter"
+}

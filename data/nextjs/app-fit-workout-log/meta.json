@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-fit-workout-log",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route workout log: log/workout-detail/exercises/records, shared context, REST API with personal records"
+}

@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-shop-order-tracker",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route order tracker: orders/order-detail/track/account, status timeline, reorder, orders REST API"
+}

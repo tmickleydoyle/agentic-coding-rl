@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-task-pomodoro",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route pomodoro app: tasks/focus/stats/settings, per-task session counters, countdown timer, shared context, REST API"
+}

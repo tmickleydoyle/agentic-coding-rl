@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-blog-cms",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route blog CMS: posts/editor/categories/published, draft-publish toggle, shared context, REST API"
+}

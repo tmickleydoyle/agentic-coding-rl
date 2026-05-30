@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-task-recurring",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route recurring task app: today/all-tasks/add/history, daily/weekly schedules, next-due advancement, shared context, REST API"
+}

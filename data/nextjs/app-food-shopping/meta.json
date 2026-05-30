@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-food-shopping",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route grocery shopping list: list/add/aisles/history, group by aisle, check off, clear bought to history, shared context, items REST API"
+}
