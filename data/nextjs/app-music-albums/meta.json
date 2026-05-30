@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-music-albums",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route albums app: albums/album-detail/artists/favorites, shared context, albums REST API"
+}

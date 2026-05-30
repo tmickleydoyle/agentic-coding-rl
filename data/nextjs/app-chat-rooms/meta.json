@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-chat-rooms",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route chat rooms: rooms/room/members/settings, switch room, per-room unread counts, send message, shared context, REST API"
+}

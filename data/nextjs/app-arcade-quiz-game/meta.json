@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-arcade-quiz-game",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route trivia quiz: play/results/leaderboard/categories, pure round + scoring lib, category filter, leaderboard, shared context, REST API"
+}

@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-food-calorie",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route calorie tracker: today/history/add-meal/goals, daily totals vs goal, macros, history by day, shared context, meals REST API"
+}

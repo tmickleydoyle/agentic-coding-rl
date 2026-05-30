@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-folio-rebalance",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route rebalancer: portfolio/targets/rebalance/history, shared context, target vs actual allocation + buy/sell suggestions + applied-rebalance log, REST API"
+}

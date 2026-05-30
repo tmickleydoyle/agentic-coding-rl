@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-travel-bucketlist",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route travel bucket list: list/destination-detail/add/visited, continent filter + grouping, visited toggle, visited/remaining counts, shared context, destinations REST API"
+}

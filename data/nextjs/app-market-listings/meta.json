@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-market-listings",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route classifieds: browse/listing-detail/post/favorites, shared context, REST API"
+}

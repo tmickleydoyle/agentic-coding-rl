@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-music-playlist",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route music playlist app: library/playlist/queue/search, shared context, songs REST API"
+}

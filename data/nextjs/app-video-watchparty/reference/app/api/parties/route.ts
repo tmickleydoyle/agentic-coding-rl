@@ -1,0 +1,59 @@
+import {
+  createParty,
+  deleteParty,
+  filterParties,
+  findParty,
+  listParties,
+} from '../../../lib/store'
+
+export { __reset } from '../../../lib/store'
+
+const json = (body: unknown, status = 200): Response =>
+  new Response(JSON.stringify(body), {
+    status,
+    headers: { 'content-type': 'application/json' },
+  })
+
+const readBody = async (req: Request): Promise<Record<string, unknown>> => {
+  try {
+    const b = await req.json()
+    return b && typeof b === 'object' ? (b as Record<string, unknown>) : {}
+  } catch {
+    return {}
+  }
+}
+
+export async function GET(req: Request): Promise<Response> {
+  const params = new URL(req.url).searchParams
+  const id = params.get('id')
+  if (id) {
+    const party = findParty(id)
+    if (!party) return json({ error: 'not found' }, 404)
+    return json({ party })
+  }
+  const filter = params.get('filter')
+  if (filter === 'upcoming' || filter === 'past') {
+    return json({ parties: filterParties(filter) })
+  }
+  return json({ parties: listParties() })
+}
+
+export async function POST(req: Request): Promise<Response> {
+  const body = await readBody(req)
+  const title = body.title
+  const time = body.time
+  if (typeof title !== 'string' || title.trim().length === 0) {
+    return json({ error: 'title required' }, 400)
+  }
+  if (typeof time !== 'number' || Number.isNaN(time)) {
+    return json({ error: 'time required' }, 400)
+  }
+  return json(createParty(title.trim(), time), 201)
+}
+
+export async function DELETE(req: Request): Promise<Response> {
+  const id = new URL(req.url).searchParams.get('id') ?? ''
+  const ok = deleteParty(id)
+  if (!ok) return json({ error: 'not found' }, 404)
+  return json({ ok: true })
+}

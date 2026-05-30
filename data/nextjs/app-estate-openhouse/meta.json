@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-estate-openhouse",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route open-house app: schedule/detail/register/feedback, visitor counts, shared context, REST API"
+}

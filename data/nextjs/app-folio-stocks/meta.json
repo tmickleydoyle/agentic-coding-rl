@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-folio-stocks",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route simulated stock portfolio: portfolio/holding-detail/add/allocation, shared context, market value + gain/loss vs cost + allocation %, REST API"
+}

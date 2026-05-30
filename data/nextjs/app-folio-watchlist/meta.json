@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-folio-watchlist",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route stock watchlist: watchlist/ticker-detail/add/alerts, shared context, target price + alert-hit flag + add/remove, REST API"
+}

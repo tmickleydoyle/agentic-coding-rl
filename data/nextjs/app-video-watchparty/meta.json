@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-video-watchparty",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route watch party: parties/party-detail/create/my-parties, RSVP + queue + upcoming/past, REST API"
+}

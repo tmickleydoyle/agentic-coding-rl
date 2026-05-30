@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-habit-routine",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route routine tracker: today/routines/builder/stats, shared context, REST API with steps, completion and streaks"
+}

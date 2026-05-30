@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-arcade-memory",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route memory-match game: play/scores/settings/how-to, pure deck + flip/match reducer lib, moves + matches tracking, best score, timer with fake timers, shared context, REST API"
+}

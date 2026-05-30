@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-invent-supplier",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route supplier directory: suppliers/supplier-detail/products/add, category filter, products supplied, lead times + rating, avg lead time, shared context, suppliers REST API"
+}

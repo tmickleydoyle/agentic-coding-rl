@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-folio-crypto",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route simulated crypto portfolio: portfolio/coin-detail/add/allocation, shared context, total value + static 24h change + allocation %, REST API"
+}

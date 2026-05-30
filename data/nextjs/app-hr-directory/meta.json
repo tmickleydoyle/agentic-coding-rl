@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-hr-directory",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route employee directory: directory/profile/departments/org, search + department filter, manager/reports profile, org tree, shared context, employees REST API"
+}

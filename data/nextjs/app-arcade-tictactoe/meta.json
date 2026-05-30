@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-arcade-tictactoe",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route tic-tac-toe vs deterministic AI: play/scores/settings/how-to, pure win-detection + AI move lib, score tally, reset, shared context, REST API"
+}

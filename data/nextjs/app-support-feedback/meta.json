@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-support-feedback",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route feedback inbox: inbox/item-detail/categories/stats, category filter, status workflow, sentiment + status counts, add feedback, shared context, feedback REST API"
+}

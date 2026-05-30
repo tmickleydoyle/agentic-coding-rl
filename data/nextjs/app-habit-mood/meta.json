@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-habit-mood",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route mood log: today/history/add/insights, shared context, REST API with mood scores, triggers and trend insights"
+}

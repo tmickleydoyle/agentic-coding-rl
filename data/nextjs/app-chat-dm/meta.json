@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-chat-dm",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route direct messaging: inbox/thread/people/settings, send, mark read, search people, shared context, REST API"
+}

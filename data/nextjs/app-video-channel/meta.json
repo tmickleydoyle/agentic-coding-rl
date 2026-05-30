@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-video-channel",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route video channel: channel/video-detail/uploads/subscriptions, subscribe + view counts + sort, REST API"
+}

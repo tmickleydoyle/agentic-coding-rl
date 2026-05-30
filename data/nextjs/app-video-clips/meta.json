@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-video-clips",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route clips feed: feed/clip-detail/saved/categories, like + save + category filter, REST API"
+}

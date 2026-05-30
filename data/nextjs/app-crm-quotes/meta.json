@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-crm-quotes",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route quotes app: quotes/detail/new/accepted, line items + computed totals + status, shared context, REST API"
+}

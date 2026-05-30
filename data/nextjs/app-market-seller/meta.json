@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-market-seller",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route seller dashboard: products/orders/add/revenue, shared context, products+orders API"
+}

@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-music-lyrics",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route lyrics app: songs/song-detail/search/favorites, shared context, songs REST API"
+}

@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-bank-budget",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route banking budget dashboard: overview/categories/transactions/budgets, shared context, spending-by-category derived from transactions, per-category limits + over-limit flags, REST API for transactions"
+}

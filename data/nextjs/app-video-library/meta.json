@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-video-library",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route video library: browse/video-detail/watchlist/history, mark watched + watchlist + history, REST API"
+}

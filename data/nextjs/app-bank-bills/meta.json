@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-bank-bills",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route banking bills dashboard: bills/bill-detail/add/upcoming, shared context, pay bill + autopay toggle + due-date upcoming view, REST API for bills"
+}

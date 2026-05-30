@@ -1,0 +1,7 @@
+{
+  "task_id": "nextjs/app-music-podcast",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route podcast app: shows/show-detail/queue/subscriptions, shared context, shows REST API"
+}
