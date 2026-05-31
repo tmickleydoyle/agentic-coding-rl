@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "lib/json.ts",
-  "summary": "Hand-written JSON parser: objects/arrays/strings-with-escapes/numbers, errors on malformed input"
+  "summary": "Hand-written JSON parser: objects/arrays/strings-with-escapes/numbers, errors on malformed input",
+  "split": "train"
 }

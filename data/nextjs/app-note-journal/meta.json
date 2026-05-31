@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/page.tsx",
-  "summary": "Multi-route journal app: today/entries/new/insights, shared context, entries REST API"
+  "summary": "Multi-route journal app: today/entries/new/insights, shared context, entries REST API",
+  "split": "train"
 }

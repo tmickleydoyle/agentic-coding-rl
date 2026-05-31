@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/page.tsx",
-  "summary": "Multi-route conference scheduler: schedule/session-detail/my-agenda/speakers, tracks, personal agenda with time-slot conflict detection, shared context, REST API for sessions"
+  "summary": "Multi-route conference scheduler: schedule/session-detail/my-agenda/speakers, tracks, personal agenda with time-slot conflict detection, shared context, REST API for sessions",
+  "split": "train"
 }

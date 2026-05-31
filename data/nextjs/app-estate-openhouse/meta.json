@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/page.tsx",
-  "summary": "Multi-route open-house app: schedule/detail/register/feedback, visitor counts, shared context, REST API"
+  "summary": "Multi-route open-house app: schedule/detail/register/feedback, visitor counts, shared context, REST API",
+  "split": "train"
 }

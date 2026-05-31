@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "medium",
   "entry_point": "app/api/paginate/route.ts",
-  "summary": "GET paginates a fixed dataset with page/limit, clamps, 400 on bad params"
+  "summary": "GET paginates a fixed dataset with page/limit, clamps, 400 on bad params",
+  "split": "train"
 }

@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "lib/lru-ttl.ts",
-  "summary": "TTLCache<K,V>: ttl expiry + LRU eviction, injectable clock, expiry-first"
+  "summary": "TTLCache<K,V>: ttl expiry + LRU eviction, injectable clock, expiry-first",
+  "split": "train"
 }

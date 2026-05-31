@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "lib/line-diff.ts",
-  "summary": "LCS-based minimal order-preserving line diff emitting eq/add/del entries"
+  "summary": "LCS-based minimal order-preserving line diff emitting eq/add/del entries",
+  "split": "train"
 }

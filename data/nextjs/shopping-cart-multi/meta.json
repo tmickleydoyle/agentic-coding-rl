@@ -2,5 +2,6 @@
   "task_id": "shopping-cart-multi",
   "framework": "nextjs",
   "difficulty": "medium",
-  "entry": "components/Cart.tsx"
+  "entry": "components/Cart.tsx",
+  "split": "train"
 }

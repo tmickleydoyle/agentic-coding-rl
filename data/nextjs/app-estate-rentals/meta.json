@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/page.tsx",
-  "summary": "Multi-route rentals app: units/detail/applications/occupancy, application status + occupancy rate, shared context, two REST APIs"
+  "summary": "Multi-route rentals app: units/detail/applications/occupancy, application status + occupancy rate, shared context, two REST APIs",
+  "split": "train"
 }

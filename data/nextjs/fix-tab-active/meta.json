@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "medium",
   "entry_point": "components/Tabs.tsx",
-  "summary": "Closing the active tab leaves a dangling active index; pick the neighbor"
+  "summary": "Closing the active tab leaves a dangling active index; pick the neighbor",
+  "split": "train"
 }

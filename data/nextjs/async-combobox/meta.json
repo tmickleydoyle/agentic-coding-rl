@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "components/Combobox.tsx",
-  "summary": "Debounced async combobox: loading/empty/error states, keyboard select, latest-query-wins"
+  "summary": "Debounced async combobox: loading/empty/error states, keyboard select, latest-query-wins",
+  "split": "train"
 }

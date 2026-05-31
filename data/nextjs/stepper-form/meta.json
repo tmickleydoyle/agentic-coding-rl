@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "medium-hard",
   "entry_point": "components/Wizard.tsx",
-  "summary": "3-step wizard: per-step validation gates Next, Back preserves values, Submit shows summary"
+  "summary": "3-step wizard: per-step validation gates Next, Back preserves values, Submit shows summary",
+  "split": "train"
 }

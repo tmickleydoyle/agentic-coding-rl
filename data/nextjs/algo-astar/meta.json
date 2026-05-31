@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "lib/astar.ts",
-  "summary": "A* on a 0/1 grid, 4-dir, Manhattan heuristic, optimal path incl. endpoints or null"
+  "summary": "A* on a 0/1 grid, 4-dir, Manhattan heuristic, optimal path incl. endpoints or null",
+  "split": "train"
 }

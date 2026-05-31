@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "easy",
   "entry_point": "components/CharCount.tsx",
-  "summary": "Controlled input with live char count + warning over 100 chars"
+  "summary": "Controlled input with live char count + warning over 100 chars",
+  "split": "train"
 }

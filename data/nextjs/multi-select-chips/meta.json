@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "medium-hard",
   "entry_point": "components/MultiSelect.tsx",
-  "summary": "Multi-select chips: pick from dropdown adds chip, remove deselects, selected hidden from list"
+  "summary": "Multi-select chips: pick from dropdown adds chip, remove deselects, selected hidden from list",
+  "split": "train"
 }

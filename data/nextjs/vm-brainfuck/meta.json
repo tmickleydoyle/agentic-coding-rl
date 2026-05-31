@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "lib/brainfuck.ts",
-  "summary": "Brainfuck interpreter with 8-bit wrap tape, bracket matching, step cap"
+  "summary": "Brainfuck interpreter with 8-bit wrap tape, bracket matching, step cap",
+  "split": "train"
 }

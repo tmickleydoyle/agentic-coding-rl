@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "medium",
   "entry_point": "components/BulkList.tsx",
-  "summary": "Bulk list: per-item checkboxes, select all/clear, live N selected, delete selected rows"
+  "summary": "Bulk list: per-item checkboxes, select all/clear, live N selected, delete selected rows",
+  "split": "train"
 }

@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/page.tsx",
-  "summary": "Multi-route chat rooms: rooms/room/members/settings, switch room, per-room unread counts, send message, shared context, REST API"
+  "summary": "Multi-route chat rooms: rooms/room/members/settings, switch room, per-room unread counts, send message, shared context, REST API",
+  "split": "train"
 }

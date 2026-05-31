@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/page.tsx",
-  "summary": "Multi-route weight log: log/history/goal/insights, shared context, REST API with trend and goal progress"
+  "summary": "Multi-route weight log: log/history/goal/insights, shared context, REST API with trend and goal progress",
+  "split": "train"
 }

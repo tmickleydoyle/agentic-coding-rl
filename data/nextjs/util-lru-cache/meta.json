@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "medium-hard",
   "entry_point": "lib/lru-cache.ts",
-  "summary": "LRUCache<K,V> with get/put; evicts least-recently-used past capacity"
+  "summary": "LRUCache<K,V> with get/put; evicts least-recently-used past capacity",
+  "split": "train"
 }

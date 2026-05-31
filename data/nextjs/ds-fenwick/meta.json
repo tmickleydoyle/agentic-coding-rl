@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "lib/fenwick.ts",
-  "summary": "Fenwick/BIT with update, prefixSum, rangeSum, O(n) fromArray build"
+  "summary": "Fenwick/BIT with update, prefixSum, rangeSum, O(n) fromArray build",
+  "split": "train"
 }

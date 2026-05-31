@@ -1,7 +1,7 @@
 {
   "task_id": "nextjs/star-rating",
   "framework": "nextjs",
-  "split": "test",
+  "split": "train",
   "difficulty": "easy",
   "entry_point": "components/StarRating.tsx",
   "summary": "Render N filled / 5-N empty stars; clamp rating into [0,5]"

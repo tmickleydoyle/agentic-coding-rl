@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "easy",
   "entry_point": "components/Counter.tsx",
-  "summary": "Counter with click handler + state"
+  "summary": "Counter with click handler + state",
+  "split": "train"
 }

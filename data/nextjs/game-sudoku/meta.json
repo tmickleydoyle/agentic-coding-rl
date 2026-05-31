@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "lib/sudoku.ts",
-  "summary": "Sudoku isValid, findConflicts, and backtracking solve (no mutation)"
+  "summary": "Sudoku isValid, findConflicts, and backtracking solve (no mutation)",
+  "split": "train"
 }

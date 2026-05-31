@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/page.tsx",
-  "summary": "Multi-route sales CRM pipeline: pipeline/deal-detail/contacts/forecast, shared context, deals REST API with stage rollup"
+  "summary": "Multi-route sales CRM pipeline: pipeline/deal-detail/contacts/forecast, shared context, deals REST API with stage rollup",
+  "split": "test"
 }

@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "lib/json-patch.ts",
-  "summary": "JSON-patch diff/apply over nested objects+arrays; apply(a,diff(a,b))==b"
+  "summary": "JSON-patch diff/apply over nested objects+arrays; apply(a,diff(a,b))==b",
+  "split": "train"
 }

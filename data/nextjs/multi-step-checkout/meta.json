@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "medium",
   "entry_point": "components/Checkout.tsx",
-  "summary": "3-page checkout (Cart/Shipping/Confirmation) with state preserved across Back"
+  "summary": "3-page checkout (Cart/Shipping/Confirmation) with state preserved across Back",
+  "split": "train"
 }

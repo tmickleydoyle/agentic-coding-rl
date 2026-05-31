@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "medium-simple",
   "entry_point": "components/Wizard.tsx",
-  "summary": "3-step wizard with shared state, back preserves values, submit terminates"
+  "summary": "3-step wizard with shared state, back preserves values, submit terminates",
+  "split": "train"
 }

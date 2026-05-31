@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/page.tsx",
-  "summary": "Multi-route gradebook: students/assignments/gradebook/summary, per-student average + letter grade, REST API"
+  "summary": "Multi-route gradebook: students/assignments/gradebook/summary, per-student average + letter grade, REST API",
+  "split": "train"
 }

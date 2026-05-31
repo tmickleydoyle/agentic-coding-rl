@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "components/Grid.tsx",
-  "summary": "Multi-column sort grid: headers cycle asc/desc/off with priority badges; select-all indeterminate"
+  "summary": "Multi-column sort grid: headers cycle asc/desc/off with priority badges; select-all indeterminate",
+  "split": "train"
 }

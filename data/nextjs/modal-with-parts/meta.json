@@ -2,5 +2,6 @@
   "task_id": "modal-with-parts",
   "framework": "nextjs",
   "difficulty": "medium",
-  "entry": "components/Modal.tsx"
+  "entry": "components/Modal.tsx",
+  "split": "train"
 }

@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "easy",
   "entry_point": "components/SearchFilter.tsx",
-  "summary": "List text filter is case-sensitive; should be case-insensitive substring"
+  "summary": "List text filter is case-sensitive; should be case-insensitive substring",
+  "split": "train"
 }

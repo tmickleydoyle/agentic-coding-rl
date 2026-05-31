@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/page.tsx",
-  "summary": "Multi-route calendar: month grid/event-detail/create/categories, events on a month grid, category filter, day detail, shared context, REST API for events"
+  "summary": "Multi-route calendar: month grid/event-detail/create/categories, events on a month grid, category filter, day detail, shared context, REST API for events",
+  "split": "train"
 }

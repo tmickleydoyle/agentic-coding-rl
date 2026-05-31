@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "components/FieldArray.tsx",
-  "summary": "Field values keyed by array index; removing a middle row shifts values"
+  "summary": "Field values keyed by array index; removing a middle row shifts values",
+  "split": "train"
 }

@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/page.tsx",
-  "summary": "Multi-route video course: courses/course-detail/player/progress, modules+lessons, mark complete + progress, REST API"
+  "summary": "Multi-route video course: courses/course-detail/player/progress, modules+lessons, mark complete + progress, REST API",
+  "split": "train"
 }

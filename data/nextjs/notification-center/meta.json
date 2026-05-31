@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "medium",
   "entry_point": "components/NotificationCenter.tsx",
-  "summary": "Inbox / reader views; opening marks read; unread count survives navigation"
+  "summary": "Inbox / reader views; opening marks read; unread count survives navigation",
+  "split": "train"
 }

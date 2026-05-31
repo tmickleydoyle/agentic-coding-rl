@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "medium-hard",
   "entry_point": "components/Tree.tsx",
-  "summary": "Recursive tree view: per-node expand/collapse, collapsed nodes hide all descendants"
+  "summary": "Recursive tree view: per-node expand/collapse, collapsed nodes hide all descendants",
+  "split": "train"
 }

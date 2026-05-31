@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "easy",
   "entry_point": "components/UppercaseInput.tsx",
-  "summary": "Controlled input + uppercase echo"
+  "summary": "Controlled input + uppercase echo",
+  "split": "train"
 }

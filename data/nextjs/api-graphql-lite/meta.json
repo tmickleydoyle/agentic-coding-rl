@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/api/graphql/route.ts",
-  "summary": "Tiny GraphQL: parse user(id){fields posts{...}}, resolve nested; 400 on bad/unknown field"
+  "summary": "Tiny GraphQL: parse user(id){fields posts{...}}, resolve nested; 400 on bad/unknown field",
+  "split": "train"
 }

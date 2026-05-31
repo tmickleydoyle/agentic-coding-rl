@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/page.tsx",
-  "summary": "Multi-route storefront: catalog/product/cart/checkout, category + price filters, cart with qty, totals/tax, products REST API"
+  "summary": "Multi-route storefront: catalog/product/cart/checkout, category + price filters, cart with qty, totals/tax, products REST API",
+  "split": "train"
 }

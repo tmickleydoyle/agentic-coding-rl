@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/page.tsx",
-  "summary": "Multi-route step tracker: today/history/goals/stats, shared context, REST API with streak and weekly totals"
+  "summary": "Multi-route step tracker: today/history/goals/stats, shared context, REST API with streak and weekly totals",
+  "split": "train"
 }

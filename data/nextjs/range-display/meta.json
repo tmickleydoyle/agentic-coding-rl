@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "easy",
   "entry_point": "components/RangeDisplay.tsx",
-  "summary": "Controlled range input + live numeric display"
+  "summary": "Controlled range input + live numeric display",
+  "split": "train"
 }

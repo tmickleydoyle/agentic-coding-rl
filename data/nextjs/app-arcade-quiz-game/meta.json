@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/page.tsx",
-  "summary": "Multi-route trivia quiz: play/results/leaderboard/categories, pure round + scoring lib, category filter, leaderboard, shared context, REST API"
+  "summary": "Multi-route trivia quiz: play/results/leaderboard/categories, pure round + scoring lib, category filter, leaderboard, shared context, REST API",
+  "split": "train"
 }

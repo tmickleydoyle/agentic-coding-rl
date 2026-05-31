@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "lib/route.ts",
-  "summary": "Express-style route matcher: :param, :param? optional, :path* wildcard tail, static segments, decode"
+  "summary": "Express-style route matcher: :param, :param? optional, :path* wildcard tail, static segments, decode",
+  "split": "test"
 }

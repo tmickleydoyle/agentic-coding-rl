@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "medium",
   "entry_point": "lib/pipe.ts",
-  "summary": "pipe(...fns) left-to-right, compose(...fns) right-to-left; empty=identity"
+  "summary": "pipe(...fns) left-to-right, compose(...fns) right-to-left; empty=identity",
+  "split": "train"
 }

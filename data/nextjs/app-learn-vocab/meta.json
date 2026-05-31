@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/page.tsx",
-  "summary": "Multi-route vocab trainer: lists/practice/add-word/progress, mastery levels, REST API"
+  "summary": "Multi-route vocab trainer: lists/practice/add-word/progress, mastery levels, REST API",
+  "split": "train"
 }

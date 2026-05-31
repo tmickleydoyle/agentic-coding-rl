@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "easy",
   "entry_point": "components/ThemeSwitch.tsx",
-  "summary": "Toggle data-theme attribute light/dark + matching button label"
+  "summary": "Toggle data-theme attribute light/dark + matching button label",
+  "split": "test"
 }

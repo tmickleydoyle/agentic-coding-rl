@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "lib/store.ts",
-  "summary": "Redux-like createStore with subscribe/unsubscribe, combineReducers, middleware wrapDispatch"
+  "summary": "Redux-like createStore with subscribe/unsubscribe, combineReducers, middleware wrapDispatch",
+  "split": "train"
 }

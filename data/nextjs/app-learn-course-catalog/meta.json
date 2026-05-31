@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/page.tsx",
-  "summary": "Multi-route course catalog: catalog/detail/my-courses/progress, enroll + lesson completion, REST API"
+  "summary": "Multi-route course catalog: catalog/detail/my-courses/progress, enroll + lesson completion, REST API",
+  "split": "train"
 }

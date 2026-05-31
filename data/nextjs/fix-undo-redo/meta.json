@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "hooks/useUndoable.ts",
-  "summary": "New edit after undo must clear redo future; undo must stop at initial state"
+  "summary": "New edit after undo must clear redo future; undo must stop at initial state",
+  "split": "train"
 }

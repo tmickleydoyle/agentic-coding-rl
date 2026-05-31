@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/page.tsx",
-  "summary": "Multi-route water intake tracker: today/history/goal/settings, shared context, REST API with daily totals and percent complete"
+  "summary": "Multi-route water intake tracker: today/history/goal/settings, shared context, REST API with daily totals and percent complete",
+  "split": "train"
 }

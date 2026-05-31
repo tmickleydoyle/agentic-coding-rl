@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "medium",
   "entry_point": "lib/memoize.ts",
-  "summary": "memoize<F>(fn) caches by JSON args; one call per distinct arg set"
+  "summary": "memoize<F>(fn) caches by JSON args; one call per distinct arg set",
+  "split": "test"
 }

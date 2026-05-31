@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "components/Feed.tsx",
-  "summary": "Load-more feed: async loader, dedupe by id, loading state, terminal No more when exhausted"
+  "summary": "Load-more feed: async loader, dedupe by id, loading state, terminal No more when exhausted",
+  "split": "train"
 }

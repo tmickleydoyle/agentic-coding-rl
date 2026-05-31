@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "components/Spreadsheet.tsx",
-  "summary": "3x3 grid with =A1+B2 formula engine; live recompute of dependents; #ERR on bad ref/cycle"
+  "summary": "3x3 grid with =A1+B2 formula engine; live recompute of dependents; #ERR on bad ref/cycle",
+  "split": "train"
 }

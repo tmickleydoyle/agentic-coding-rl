@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "easy",
   "entry_point": "components/CheckboxGroup.tsx",
-  "summary": "Multi-select checkboxes with live count"
+  "summary": "Multi-select checkboxes with live count",
+  "split": "train"
 }

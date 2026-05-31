@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/page.tsx",
-  "summary": "Multi-route travel packing-list app: trips/list/add-item/summary, check off items, category grouping, percent-packed, shared context, REST API"
+  "summary": "Multi-route travel packing-list app: trips/list/add-item/summary, check off items, category grouping, percent-packed, shared context, REST API",
+  "split": "train"
 }

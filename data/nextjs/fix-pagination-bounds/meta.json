@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "medium-simple",
   "entry_point": "components/Paginator.tsx",
-  "summary": "Off-by-one lets Next page past the last page; clamp to totalPages"
+  "summary": "Off-by-one lets Next page past the last page; clamp to totalPages",
+  "split": "train"
 }

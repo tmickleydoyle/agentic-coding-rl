@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/page.tsx",
-  "summary": "Multi-route event ticketing: events/event-detail/checkout/my-tickets, ticket tiers + capacity, shared context cart, REST API for events + orders with sold-out + capacity checks"
+  "summary": "Multi-route event ticketing: events/event-detail/checkout/my-tickets, ticket tiers + capacity, shared context cart, REST API for events + orders with sold-out + capacity checks",
+  "split": "train"
 }

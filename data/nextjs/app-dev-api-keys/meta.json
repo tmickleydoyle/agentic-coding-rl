@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/page.tsx",
-  "summary": "Multi-route API key manager: keys/create-key/key-detail/usage, shared context, REST API with revoke + masking"
+  "summary": "Multi-route API key manager: keys/create-key/key-detail/usage, shared context, REST API with revoke + masking",
+  "split": "train"
 }

@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/page.tsx",
-  "summary": "Multi-route banking savings dashboard: pots/pot-detail/create/settings, shared context, allocate from an unallocated pool into goal pots + goal progress, REST API for pots"
+  "summary": "Multi-route banking savings dashboard: pots/pot-detail/create/settings, shared context, allocate from an unallocated pool into goal pots + goal progress, REST API for pots",
+  "split": "test"
 }

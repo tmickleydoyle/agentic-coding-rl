@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/page.tsx",
-  "summary": "Multi-route watch party: parties/party-detail/create/my-parties, RSVP + queue + upcoming/past, REST API"
+  "summary": "Multi-route watch party: parties/party-detail/create/my-parties, RSVP + queue + upcoming/past, REST API",
+  "split": "train"
 }

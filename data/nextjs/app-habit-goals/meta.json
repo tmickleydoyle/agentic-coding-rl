@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/page.tsx",
-  "summary": "Multi-route goal tracker: goals/goal-detail/add/completed, shared context, REST API with milestones, progress % and completion"
+  "summary": "Multi-route goal tracker: goals/goal-detail/add/completed, shared context, REST API with milestones, progress % and completion",
+  "split": "train"
 }

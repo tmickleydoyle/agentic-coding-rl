@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/page.tsx",
-  "summary": "Multi-route web analytics dashboard: overview/pages/sources/settings, shared context, date-range filter, metrics REST API"
+  "summary": "Multi-route web analytics dashboard: overview/pages/sources/settings, shared context, date-range filter, metrics REST API",
+  "split": "train"
 }

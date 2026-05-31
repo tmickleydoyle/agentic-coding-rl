@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/page.tsx",
-  "summary": "Multi-route support knowledge base: articles/article-detail/categories/search, shared context, REST API with votes+search"
+  "summary": "Multi-route support knowledge base: articles/article-detail/categories/search, shared context, REST API with votes+search",
+  "split": "train"
 }

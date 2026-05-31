@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/api/bulk/route.ts",
-  "summary": "Atomic bulk create/update/delete: validate all first, 422 with errors or apply all"
+  "summary": "Atomic bulk create/update/delete: validate all first, 422 with errors or apply all",
+  "split": "train"
 }

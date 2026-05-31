@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/page.tsx",
-  "summary": "Multi-route subscription tracker: dashboard/subscriptions/add/upcoming, shared context, normalized monthly cost + renewals due soon + cancel, REST API"
+  "summary": "Multi-route subscription tracker: dashboard/subscriptions/add/upcoming, shared context, normalized monthly cost + renewals due soon + cancel, REST API",
+  "split": "train"
 }

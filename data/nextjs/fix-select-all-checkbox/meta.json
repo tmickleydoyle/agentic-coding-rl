@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "medium",
   "entry_point": "components/SelectAll.tsx",
-  "summary": "Select-all checkbox state not derived from rows; no indeterminate state"
+  "summary": "Select-all checkbox state not derived from rows; no indeterminate state",
+  "split": "train"
 }

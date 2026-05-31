@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "medium",
   "entry_point": "lib/deep-equal.ts",
-  "summary": "deepEqual(a,b) structural equality; NaN===NaN; arrays != objects"
+  "summary": "deepEqual(a,b) structural equality; NaN===NaN; arrays != objects",
+  "split": "train"
 }

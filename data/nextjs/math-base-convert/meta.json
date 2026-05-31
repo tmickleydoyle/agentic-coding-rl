@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "lib/base-convert.ts",
-  "summary": "Convert arbitrarily large integers between bases 2..36 via digit-array long division"
+  "summary": "Convert arbitrarily large integers between bases 2..36 via digit-array long division",
+  "split": "train"
 }

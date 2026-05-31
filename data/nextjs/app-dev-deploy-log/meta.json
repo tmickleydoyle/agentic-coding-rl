@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/page.tsx",
-  "summary": "Multi-route deploy log: deployments/deploy-detail/environments/stats, shared context, status timeline + rollback + frequency stats, deployments REST API"
+  "summary": "Multi-route deploy log: deployments/deploy-detail/environments/stats, shared context, status timeline + rollback + frequency stats, deployments REST API",
+  "split": "train"
 }

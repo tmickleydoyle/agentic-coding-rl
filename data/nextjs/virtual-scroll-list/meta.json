@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "components/VirtualList.tsx",
-  "summary": "Windowed list: render only rows visible for scrollTop plus overscan, absolutely positioned"
+  "summary": "Windowed list: render only rows visible for scrollTop plus overscan, absolutely positioned",
+  "split": "train"
 }

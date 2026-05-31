@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "components/VirtualList.tsx",
-  "summary": "Virtual list visible-range math drops the last partial row after scroll"
+  "summary": "Virtual list visible-range math drops the last partial row after scroll",
+  "split": "train"
 }

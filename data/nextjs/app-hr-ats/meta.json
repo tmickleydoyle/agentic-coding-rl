@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/page.tsx",
-  "summary": "Multi-route HR applicant-tracking system: jobs/candidates/pipeline/job-detail, pipeline stages with move + advance, shared context, REST API"
+  "summary": "Multi-route HR applicant-tracking system: jobs/candidates/pipeline/job-detail, pipeline stages with move + advance, shared context, REST API",
+  "split": "train"
 }

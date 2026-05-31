@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "lib/bignum.ts",
-  "summary": "Arbitrary-precision unsigned int add/subtract/multiply/compare on decimal strings"
+  "summary": "Arbitrary-precision unsigned int add/subtract/multiply/compare on decimal strings",
+  "split": "test"
 }

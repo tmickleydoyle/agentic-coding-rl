@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "easy",
   "entry_point": "components/GreetByTime.tsx",
-  "summary": "Pure-render greeting based on hour-of-day buckets"
+  "summary": "Pure-render greeting based on hour-of-day buckets",
+  "split": "train"
 }
