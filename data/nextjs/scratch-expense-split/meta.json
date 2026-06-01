@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-expense-split",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a shared-expense splitter from scratch: add people, add expenses, compute net balances and who-pays-whom settlement",
+  "split": "train",
+  "from_scratch": true
+}

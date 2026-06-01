@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-poll",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a poll app from scratch: build polls with dynamic options, vote once, show counts/percentages/bars",
+  "split": "train",
+  "from_scratch": true
+}

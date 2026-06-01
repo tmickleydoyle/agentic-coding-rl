@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-kanban",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a Kanban board from scratch: three columns, add cards, move between columns, live per-column counts",
+  "split": "test",
+  "from_scratch": true
+}

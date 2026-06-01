@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-budget",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a budget tracker from scratch: month-filtered balance, per-category totals, and over-budget warnings",
+  "split": "test",
+  "from_scratch": true
+}

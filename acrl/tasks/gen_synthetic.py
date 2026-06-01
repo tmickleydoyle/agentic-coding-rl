@@ -279,6 +279,249 @@ def _write_task(task: dict) -> Path:
     return out
 
 
+# =========================================================================================
+# Scratch / text-to-app generation (v0 / bolt.new / replit / base44 style).
+# Pure natural-language prompts, BLANK-CANVAS starter, tolerant role/text tests, plus a
+# HELD-OUT hidden suite for generalization. Stricter gates than the component path: reference
+# must pass visible AND hidden; the blank starter must pass NOTHING (no reward-hack surface);
+# only react/react-dom/relative/testing-lib imports allowed.
+# =========================================================================================
+from acrl.sandbox.nextjs_runner import run_nextjs_task  # noqa: E402
+import re as _re  # noqa: E402
+import tempfile as _tempfile  # noqa: E402
+
+_SCRATCH_BLANK_STARTER = (
+    "'use client'\n\n"
+    "// Build the app described in description.md. The root component must be the default export.\n"
+    "export default function App() {\n  return <div />\n}\n"
+)
+_ALLOWED_IMPORT = _re.compile(r"^(react$|react-dom|react/|@testing-library/|vitest$|\.|/)")
+
+# Product-realistic "Build an app that..." ideas. All buildable with react+react-dom only, no
+# timers/animation/network, deterministic. Diverse domains so batches stay varied.
+SCRATCH_ARCHETYPES = [
+    ("url-shortener", "Shorten URLs: validate the input, list shortened entries with a copy action and a per-link click count."),
+    ("invoice-builder", "Build an invoice: add/remove line items (description, qty, unit price), with live subtotal, tax, and total."),
+    ("flashcards", "Study a flashcard deck: flip a card, mark it known/unknown, track progress, and restart."),
+    ("file-tree", "Render an expandable folder/file tree from nested data; expand/collapse folders and show the selected path."),
+    ("chat-ui", "A chat UI: type and send messages into a thread, enforce a character limit, and clear the thread."),
+    ("playlist", "A music playlist: add songs, reorder them up/down, mark a now-playing track, and show total duration."),
+    ("image-gallery", "A thumbnail gallery: click a thumb to open a lightbox with next/prev and close, showing 'n of N'."),
+    ("todo-filters", "A todo list with add, complete toggle, all/active/completed filters, an items-left count, and clear-completed."),
+    ("tip-splitter", "A bill splitter: enter the bill, a tip percent, and number of people; show tip, total, and per-person amount."),
+    ("contact-manager", "A contact manager: add contacts, search by name, edit and delete, with an alphabetized list and a count."),
+    ("inventory", "An inventory tracker: items with stock; increment/decrement stock, flag low-stock below a threshold, show total value."),
+    ("helpdesk", "A support queue: create tickets, move status open -> in progress -> closed, filter by status, show per-status counts."),
+    ("leaderboard", "A leaderboard: add players with scores, award points, rank descending, and highlight the leader."),
+    ("calculator", "A calculator: digits and + - * / with chained operations, a clear, and a running display."),
+    ("pricing-configurator", "A pricing configurator: a base plan plus toggleable add-ons, live total, and a monthly/annual switch with a discount."),
+    ("gradebook", "A gradebook: students with numeric grades; show class average, each student's letter grade, and highest/lowest."),
+    ("menu-order", "A restaurant order: a menu, add items with quantities, remove them, an order total, and a place-order confirmation."),
+    ("seat-booking", "A seat map grid: select/deselect available seats, block already-booked ones, show selected count and price."),
+    ("event-rsvp", "An event RSVP: a guest list with yes/no/maybe, per-status counts, and a capacity-exceeded warning."),
+    ("workout-log", "A workout log: add exercises with sets x reps x weight, per-exercise volume, and total session volume."),
+    ("recipe-scaler", "A recipe with ingredient quantities; scale by a servings factor and show recomputed amounts."),
+    ("password-strength", "A password field with a live rules checklist (length, number, symbol, case) and a weak/medium/strong label."),
+    ("savings-goal", "A savings goal: a target, add contributions, show progress percent, amount remaining, and whether the goal is met."),
+    ("unit-converter", "A unit converter (e.g. length or temperature) that converts a value live and updates when the units change."),
+    ("bracket", "A single-elimination bracket: seed players, pick winners to advance each round, and crown a champion."),
+    ("color-palette", "A palette tool: pick a base color, generate tints/shades, copy a hex, and save palettes to a list."),
+    ("expense-approvals", "An expense approval queue: submit expenses, approve/reject each, filter by status, and show approved total."),
+    ("reading-list", "A reading list: add books with a want/reading/finished status, filter by status, and show counts and a finished percent."),
+]
+
+SCRATCH_SYSTEM_PROMPT = """\
+You generate self-contained, from-scratch "text-to-app" coding tasks for an RL dataset — the
+kind of request a user types into v0 / bolt.new / replit / base44.
+
+Each task:
+  - description.md: a NATURAL-LANGUAGE product request ("Build an application that ..."). It
+    MUST name the concrete visible labels, button text, headings/column names, and the EXACT
+    format of any numbers/totals shown (e.g. `Total: $35.15`, `Page 1 of 3`), because the tests
+    key off those visible strings. Do NOT list data-testids and do NOT dictate the file tree.
+    Seed any fixed data the tests depend on directly in the prompt.
+  - The root component is the default export of app/page.tsx. Use ONLY react + react-dom — no
+    next/* imports, no third-party libraries. In-memory state only; NO network/timers/animation.
+  - reference/ (app/page.tsx plus any components/hooks/lib it wants): a correct working app that
+    passes every test.
+  - tests/: a Vitest suite querying by ROLE / LABEL / VISIBLE TEXT only (getByRole,
+    getByLabelText, getByText, within) — NEVER data-testid. `import App from '../app/page'`.
+    15-25 independent it() blocks. Deterministic.
+  - hidden_test_files: a SEPARATE held-out suite (same tolerant style, FRESH scenarios — other
+    inputs, edge cases, sequences) used only to measure generalization. It must also pass against
+    the reference, and must be different enough that hardcoding the visible strings would fail it.
+
+Hard constraints (these break tests if ignored):
+  - tsconfig lib is ES2022+DOM (no DOM.Iterable): no for..of over Map/Set — use .forEach /
+    Array.from / index loops.
+  - Compose any displayed composite string as ONE text node via a template literal so getByText
+    matches (not `Total: {a} of {b}` which splits into several nodes).
+  - getByLabelText also matches a section's aria-label: give inputs distinct accessible names and
+    don't let a region's aria-label equal an input's label.
+  - Do NOT put the two-word sequence  from "..."  (the word from immediately before a quote)
+    inside any test title or string — a naive import scanner flags it as a forbidden import.
+
+Output ONLY a JSON object — no prose, no code fence. Schema:
+{ "task_id": "scratch-<kebab>", "description": "<markdown>", "difficulty": "hard",
+  "entry_point": "app/page.tsx", "reference_files": {"app/page.tsx": "...", ...},
+  "test_files": {"<name>.test.tsx": "..."}, "hidden_test_files": {"<name>_hidden.test.tsx": "..."} }
+"""
+
+
+def _scratch_few_shot() -> str:
+    """Build the few-shot from the validated scratch-kanban task on disk (stays authoritative)."""
+    base = _DATA_DIR / "scratch-kanban"
+    rd = lambda p: (base / p).read_text()
+    example = {
+        "task_id": "scratch-kanban",
+        "description": rd("description.md"),
+        "difficulty": "hard",
+        "entry_point": "app/page.tsx",
+        "reference_files": {"app/page.tsx": rd("reference/app/page.tsx")},
+        "test_files": {"kanban.test.tsx": rd("tests/kanban.test.tsx")},
+        "hidden_test_files": {"kanban_hidden.test.tsx": rd("tests_hidden/kanban_hidden.test.tsx")},
+    }
+    return json.dumps(example, indent=2)
+
+
+def _claude_generate_scratch(slug: str, idea: str, model: str) -> dict | None:
+    try:
+        import anthropic
+    except ImportError:
+        sys.exit("anthropic SDK not installed. Run: pip install -e \".[judge]\"")
+    client = anthropic.Anthropic()
+    user_msg = (
+        f"Generate ONE from-scratch text-to-app task around this product idea:\n"
+        f"  slug hint: scratch-{slug}\n  idea: {idea}\n\n"
+        f"Follow this VALIDATED example exactly in shape and test style:\n"
+        f"```json\n{_scratch_few_shot()}\n```\n\n"
+        f"Generate a NEW task (not kanban). The description must name the visible labels/totals "
+        f"the tests rely on. Return ONLY the JSON object."
+    )
+    try:
+        resp = client.messages.create(
+            model=model, max_tokens=8192, system=SCRATCH_SYSTEM_PROMPT,
+            messages=[{"role": "user", "content": user_msg}],
+        )
+        text = resp.content[0].text.strip()
+        if text.startswith("```"):
+            text = text.split("\n", 1)[1] if "\n" in text else text[3:]
+            if text.endswith("```"):
+                text = text[:-3]
+        return json.loads(text)
+    except Exception as e:
+        print(f"  [{slug}] generation failed: {type(e).__name__}: {str(e)[:160]}")
+        return None
+
+
+def _forbidden_imports(files: dict) -> list:
+    bad = set()
+    for content in files.values():
+        for m in _re.findall(r"from ['\"]([^'\"]+)['\"]", content):
+            if not _ALLOWED_IMPORT.match(m):
+                bad.add(m)
+    return sorted(bad)
+
+
+def _validate_scratch(task: dict) -> tuple[bool, str]:
+    """Assemble the task in a tmp dir and gate it: reference passes visible AND hidden, blank
+    starter passes NOTHING, no forbidden imports."""
+    if not (task.get("test_files") and task.get("hidden_test_files") and task.get("reference_files")):
+        return False, "missing reference / visible tests / hidden tests"
+    allf = {**task["reference_files"], **task["test_files"], **task["hidden_test_files"]}
+    bad = _forbidden_imports(allf)
+    if bad:
+        return False, f"forbidden imports {bad[:4]}"
+    with _tempfile.TemporaryDirectory(prefix="acrl_scratch_") as d:
+        root = Path(d)
+        for sub, dirn in (("reference_files", "reference"), ("test_files", "tests"),
+                          ("hidden_test_files", "tests_hidden")):
+            for rel, c in task[sub].items():
+                p = root / dirn / rel
+                p.parent.mkdir(parents=True, exist_ok=True)
+                p.write_text(c)
+        (root / "starter" / "app").mkdir(parents=True, exist_ok=True)
+        (root / "starter" / "app" / "page.tsx").write_text(_SCRATCH_BLANK_STARTER)
+
+        ref = run_nextjs_task(root / "reference", task_dir=root)
+        if not ref.all_passed:
+            return False, f"reference fails visible {ref.passed}/{ref.total}"
+        refh = run_nextjs_task(root / "reference", task_dir=root, extra_tests_dir=root / "tests_hidden")
+        if not refh.all_passed:
+            return False, f"reference fails hidden {refh.passed}/{refh.total}"
+        st = run_nextjs_task(root / "starter", task_dir=root)
+        if st.all_passed:
+            return False, "blank starter passes all (trivial)"
+        if st.passed > 0:
+            return False, f"blank starter passes {st.passed} visible tests (hackable)"
+    return True, "ok"
+
+
+def _write_scratch_task(task: dict, split: str) -> Path:
+    tid = task["task_id"]
+    if not tid.startswith("scratch-"):
+        tid = "scratch-" + tid
+    out = _DATA_DIR / tid
+    if out.exists():
+        s = 2
+        while (_DATA_DIR / f"{tid}-{s}").exists():
+            s += 1
+        out = _DATA_DIR / f"{tid}-{s}"
+        tid = out.name
+    out.mkdir(parents=True)
+    (out / "description.md").write_text(task["description"])
+    (out / "meta.json").write_text(json.dumps({
+        "task_id": f"nextjs/{tid}", "framework": "nextjs", "difficulty": task.get("difficulty", "hard"),
+        "entry_point": "app/page.tsx",
+        "summary": task["description"].splitlines()[0].lstrip("# ").strip(),
+        "split": split, "from_scratch": True,
+    }, indent=2))
+    (out / "starter" / "app").mkdir(parents=True)
+    (out / "starter" / "app" / "page.tsx").write_text(_SCRATCH_BLANK_STARTER)
+    for sub, dirn in (("reference_files", "reference"), ("test_files", "tests"),
+                      ("hidden_test_files", "tests_hidden")):
+        for rel, c in (task.get(sub) or {}).items():
+            p = out / dirn / rel
+            p.parent.mkdir(parents=True, exist_ok=True)
+            p.write_text(c)
+    return out
+
+
+def main_scratch(n_attempts: int, keep_target: int, model: str, dry_run: bool, seed: int):
+    rng = random.Random(seed)
+    _load_env_local()
+    if not dry_run and not os.environ.get("ANTHROPIC_API_KEY"):
+        sys.exit("ANTHROPIC_API_KEY not set (env or .env.local).")
+    pool = list(SCRATCH_ARCHETYPES)
+    rng.shuffle(pool)
+    print(f"scratch: {n_attempts} attempts, keep up to {keep_target}, model={model}, seed={seed}")
+    kept = rejected = 0
+    for i in range(n_attempts):
+        slug, idea = pool[i % len(pool)]
+        print(f"[{i+1}/{n_attempts}] scratch archetype={slug}")
+        if dry_run:
+            print("  (dry-run, no API call)")
+            continue
+        task = _claude_generate_scratch(slug, idea, model)
+        if task is None:
+            rejected += 1
+            continue
+        ok, msg = _validate_scratch(task)
+        if not ok:
+            print(f"  reject: {msg}")
+            rejected += 1
+            continue
+        # Mixed split: hold out every 5th kept task for eval.
+        split = "test" if (kept % 5 == 4) else "train"
+        out = _write_scratch_task(task, split)
+        kept += 1
+        print(f"  KEEP -> {out.name} [{split}]   ({kept}/{keep_target})")
+        if kept >= keep_target:
+            break
+    print(f"\n=== scratch done: kept {kept} / rejected {rejected} ===")
+    print("verify: python data/nextjs/probe_hackable.py 'scratch-*' && python data/nextjs/validate_rl.py 'scratch-*'")
+
+
 def main_nextjs(n_attempts: int, keep_target: int, model: str, dry_run: bool, seed: int):
     rng = random.Random(seed)
     _load_env_local()
@@ -321,15 +564,21 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--target", choices=["nextjs"], required=True,
                     help="Which dataset to generate into. Currently only 'nextjs' is wired.")
+    ap.add_argument("--style", choices=["component", "scratch"], default="component",
+                    help="'component' = scaffolded testid tasks (legacy); 'scratch' = from-scratch "
+                         "text-to-app tasks (blank canvas, tolerant tests, hidden suite).")
     ap.add_argument("--n", type=int, default=20, help="Max generation attempts")
-    ap.add_argument("--keep", type=int, default=10, help="Stop early once N valid tasks kept")
+    ap.add_argument("--keep", type=int, default=10, help="Stop early once N valid tasks kept (use 25 for a batch)")
     ap.add_argument("--model", default="claude-sonnet-4-5", help="Anthropic model id")
     ap.add_argument("--seed", type=int, default=42)
     ap.add_argument("--dry-run", action="store_true",
                     help="Print archetypes that would be sent, but don't call the API.")
     args = ap.parse_args()
     if args.target == "nextjs":
-        main_nextjs(args.n, args.keep, args.model, args.dry_run, args.seed)
+        if args.style == "scratch":
+            main_scratch(args.n, args.keep, args.model, args.dry_run, args.seed)
+        else:
+            main_nextjs(args.n, args.keep, args.model, args.dry_run, args.seed)
 
 
 if __name__ == "__main__":
