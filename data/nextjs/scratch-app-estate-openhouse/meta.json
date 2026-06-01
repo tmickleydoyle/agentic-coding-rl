@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-estate-openhouse",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route open-house app: schedule/detail/register/feedback, visitor counts, shared context, REST API",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-estate-openhouse"
+}

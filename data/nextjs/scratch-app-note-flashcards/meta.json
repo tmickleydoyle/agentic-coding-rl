@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-note-flashcards",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route flashcards app: decks/study/add-card/stats, shared context, decks REST API",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-note-flashcards"
+}

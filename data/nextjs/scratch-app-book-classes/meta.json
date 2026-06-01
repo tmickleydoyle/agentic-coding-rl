@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-book-classes",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route class enrollment: classes/class-detail/my-classes/waitlist, shared context, REST API with capacity, waitlisting, and promote-on-cancel",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-book-classes"
+}

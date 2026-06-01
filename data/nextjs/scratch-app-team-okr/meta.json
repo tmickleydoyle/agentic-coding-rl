@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-team-okr",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route OKR tracker: objectives/objective-detail/add/dashboard, key-result progress, company rollup average, shared context, REST API",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-team-okr"
+}

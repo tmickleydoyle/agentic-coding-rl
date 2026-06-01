@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-chat-group",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route group chats: chats/chat-detail/members/create, add/remove members, admin actions, leave, shared context, REST API",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-chat-group"
+}

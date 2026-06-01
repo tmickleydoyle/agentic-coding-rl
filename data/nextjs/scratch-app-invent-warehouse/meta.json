@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-invent-warehouse",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route warehouse app: bins/bin-detail/move/map, move items between bins with capacity checks, usage stats, bins REST API",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-invent-warehouse"
+}

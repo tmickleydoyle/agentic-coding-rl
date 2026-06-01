@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-crm",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a full multi-route sales CRM from scratch: contacts, pipeline board, reports with win-rate, settings",
+  "split": "train",
+  "from_scratch": true
+}

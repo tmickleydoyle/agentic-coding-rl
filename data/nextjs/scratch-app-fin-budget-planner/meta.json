@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-fin-budget-planner",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route monthly budget planner: overview/categories/add-expense/settings, shared context, planned-vs-actual + over-budget alerts, REST API",
+  "split": "test",
+  "from_scratch": true,
+  "repurposed_from": "app-fin-budget-planner"
+}

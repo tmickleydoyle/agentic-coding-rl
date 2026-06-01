@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-dev-ci-dashboard",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route CI dashboard: pipelines/pipeline-detail/builds/stats, shared context, REST API with retry",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-dev-ci-dashboard"
+}

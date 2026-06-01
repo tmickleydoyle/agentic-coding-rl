@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-dev-feature-flags",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route feature flags: flags/flag-detail/environments/audit, shared context, per-env toggles + rollout % + audit log, flags REST API",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-dev-feature-flags"
+}

@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-event-rsvp",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route RSVP app: events/invite-detail/create/responses, RSVP yes/no/maybe + guest counts, headcount totals, shared context, REST API for events with invites",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-event-rsvp"
+}

@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-market-listings",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route classifieds: browse/listing-detail/post/favorites, shared context, REST API",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-market-listings"
+}

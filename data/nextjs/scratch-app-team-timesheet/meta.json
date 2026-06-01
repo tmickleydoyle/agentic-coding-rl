@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-team-timesheet",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route timesheet: week/log-entry/projects/approvals, hours per project/day, weekly totals, submit for approval, shared context, REST API",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-team-timesheet"
+}

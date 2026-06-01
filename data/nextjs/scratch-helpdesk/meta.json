@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-helpdesk",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a Help Desk Support Queue",
+  "split": "train",
+  "from_scratch": true
+}

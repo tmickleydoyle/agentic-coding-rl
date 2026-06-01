@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-invent-orders",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route purchase-orders app: orders/order-detail/new/suppliers, receive items, derived status, per-supplier aggregates, orders REST API",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-invent-orders"
+}

@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-note-notebook",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route notebook app: notebooks/notes/editor/search, shared context, notes REST API",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-note-notebook"
+}

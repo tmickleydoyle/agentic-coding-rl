@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-travel-packing",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route travel packing-list app: trips/list/add-item/summary, check off items, category grouping, percent-packed, shared context, REST API",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-travel-packing"
+}

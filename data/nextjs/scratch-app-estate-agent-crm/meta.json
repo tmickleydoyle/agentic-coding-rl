@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-estate-agent-crm",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route agent CRM: leads/lead-detail/properties/pipeline, shared context, status pipeline (new/touring/offer/closed), assign property, leads REST API",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-estate-agent-crm"
+}

@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-book-doctor",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route doctor appointments: providers/book/appointments/history, shared context, REST API with available-slot booking and upcoming/past split",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-book-doctor"
+}

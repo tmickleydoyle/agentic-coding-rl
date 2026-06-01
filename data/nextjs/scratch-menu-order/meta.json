@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-menu-order",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a Restaurant Order App",
+  "split": "test",
+  "from_scratch": true
+}

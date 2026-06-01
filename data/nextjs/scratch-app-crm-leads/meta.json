@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-crm-leads",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route CRM leads: leads/lead-detail/qualify/converted, scoring, qualify, convert-to-deal, leads REST API",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-crm-leads"
+}

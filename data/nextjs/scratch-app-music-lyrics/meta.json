@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-music-lyrics",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route lyrics app: songs/song-detail/search/favorites, shared context, songs REST API",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-music-lyrics"
+}

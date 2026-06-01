@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-invent-supplier",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route supplier directory: suppliers/supplier-detail/products/add, category filter, products supplied, lead times + rating, avg lead time, shared context, suppliers REST API",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-invent-supplier"
+}

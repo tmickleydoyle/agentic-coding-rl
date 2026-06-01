@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-arcade-hangman",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route hangman: play/stats/words/how-to, pure guess/state/win-loss lib, wins+losses stats, word list, shared context, REST API",
+  "split": "test",
+  "from_scratch": true,
+  "repurposed_from": "app-arcade-hangman"
+}

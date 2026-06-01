@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-task-eisenhower",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route Eisenhower matrix app: matrix/add/focus-list/settings, urgent/important quadrants, per-quadrant counts and actions, shared context, REST API",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-task-eisenhower"
+}

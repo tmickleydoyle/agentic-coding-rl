@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-market-services",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route service gigs: gigs/gig-detail/book/my-bookings, shared context, gigs API",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-market-services"
+}

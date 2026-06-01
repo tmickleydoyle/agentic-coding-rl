@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-arcade-leaderboard",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route arcade leaderboard: games/game-detail/submit/rankings, submit scores, per-game ranking + filter, global rankings, shared context, REST API",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-arcade-leaderboard"
+}

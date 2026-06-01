@@ -297,59 +297,62 @@ _SCRATCH_BLANK_STARTER = (
 )
 _ALLOWED_IMPORT = _re.compile(r"^(react$|react-dom|react/|@testing-library/|vitest$|\.|/)")
 
-# Product-realistic "Build an app that..." ideas. All buildable with react+react-dom only, no
-# timers/animation/network, deterministic. Diverse domains so batches stay varied.
+# Product-scale app ideas — each is a FULL multi-view application (the kind v0/bolt.new emit),
+# NOT a single widget. Every idea names ~4 navigable views with shared state. react+react-dom
+# only, in-memory, deterministic (no timers/animation/network).
 SCRATCH_ARCHETYPES = [
-    ("url-shortener", "Shorten URLs: validate the input, list shortened entries with a copy action and a per-link click count."),
-    ("invoice-builder", "Build an invoice: add/remove line items (description, qty, unit price), with live subtotal, tax, and total."),
-    ("flashcards", "Study a flashcard deck: flip a card, mark it known/unknown, track progress, and restart."),
-    ("file-tree", "Render an expandable folder/file tree from nested data; expand/collapse folders and show the selected path."),
-    ("chat-ui", "A chat UI: type and send messages into a thread, enforce a character limit, and clear the thread."),
-    ("playlist", "A music playlist: add songs, reorder them up/down, mark a now-playing track, and show total duration."),
-    ("image-gallery", "A thumbnail gallery: click a thumb to open a lightbox with next/prev and close, showing 'n of N'."),
-    ("todo-filters", "A todo list with add, complete toggle, all/active/completed filters, an items-left count, and clear-completed."),
-    ("tip-splitter", "A bill splitter: enter the bill, a tip percent, and number of people; show tip, total, and per-person amount."),
-    ("contact-manager", "A contact manager: add contacts, search by name, edit and delete, with an alphabetized list and a count."),
-    ("inventory", "An inventory tracker: items with stock; increment/decrement stock, flag low-stock below a threshold, show total value."),
-    ("helpdesk", "A support queue: create tickets, move status open -> in progress -> closed, filter by status, show per-status counts."),
-    ("leaderboard", "A leaderboard: add players with scores, award points, rank descending, and highlight the leader."),
-    ("calculator", "A calculator: digits and + - * / with chained operations, a clear, and a running display."),
-    ("pricing-configurator", "A pricing configurator: a base plan plus toggleable add-ons, live total, and a monthly/annual switch with a discount."),
-    ("gradebook", "A gradebook: students with numeric grades; show class average, each student's letter grade, and highest/lowest."),
-    ("menu-order", "A restaurant order: a menu, add items with quantities, remove them, an order total, and a place-order confirmation."),
-    ("seat-booking", "A seat map grid: select/deselect available seats, block already-booked ones, show selected count and price."),
-    ("event-rsvp", "An event RSVP: a guest list with yes/no/maybe, per-status counts, and a capacity-exceeded warning."),
-    ("workout-log", "A workout log: add exercises with sets x reps x weight, per-exercise volume, and total session volume."),
-    ("recipe-scaler", "A recipe with ingredient quantities; scale by a servings factor and show recomputed amounts."),
-    ("password-strength", "A password field with a live rules checklist (length, number, symbol, case) and a weak/medium/strong label."),
-    ("savings-goal", "A savings goal: a target, add contributions, show progress percent, amount remaining, and whether the goal is met."),
-    ("unit-converter", "A unit converter (e.g. length or temperature) that converts a value live and updates when the units change."),
-    ("bracket", "A single-elimination bracket: seed players, pick winners to advance each round, and crown a champion."),
-    ("color-palette", "A palette tool: pick a base color, generate tints/shades, copy a hex, and save palettes to a list."),
-    ("expense-approvals", "An expense approval queue: submit expenses, approve/reject each, filter by status, and show approved total."),
-    ("reading-list", "A reading list: add books with a want/reading/finished status, filter by status, and show counts and a finished percent."),
+    ("crm", "A sales CRM with a Contacts list, a Pipeline board (Lead/Qualified/Won), a Reports view (counts + win rate), and Settings."),
+    ("habit", "A habit tracker with a Today checklist, a Weekly grid, a Stats view (streaks/completion %), and Settings."),
+    ("recipes", "A recipe app with a Browse list, a Meal Planner, a Shopping List derived from planned meals, and Settings."),
+    ("finance", "A budgeting app with a Transactions list, a Budgets view (per-category limits + over-budget flags), a Reports view, and Settings."),
+    ("fitness", "A workout app with a Log view, a Routines builder, a Progress view (totals/volume), and Settings."),
+    ("notes", "A notes app with a Notes list, an Editor, a Tags view (filter by tag), and Settings."),
+    ("issues", "An issue tracker with a Board (Open/In Progress/Closed), a Backlog, a Reports view (per-status counts), and Settings."),
+    ("inventory", "An inventory app with a Stock list, a Receiving form, a Low-stock report, and Settings."),
+    ("events", "An event planner with an Agenda, a Guest list (RSVP yes/no/maybe), a Stats view (attendance), and Settings."),
+    ("courses", "A learning app with a Courses list, a Lesson view, a Progress view (% complete), and Settings."),
+    ("support", "A helpdesk with a Tickets queue, a New Ticket form, a Dashboard (per-status counts), and Settings."),
+    ("travel", "A trip planner with an Itinerary, a Packing list, a Budget view, and Settings."),
+    ("store", "A storefront with a Catalog, a Cart, a Checkout summary (subtotal/tax/total), and Settings."),
+    ("jobs", "A job-application tracker with a Listings view, an Applications board (Applied/Interview/Offer), a Stats view, and Settings."),
+    ("library", "A reading app with a Library list, a Currently-Reading shelf, a Stats view (finished count/percent), and Settings."),
+    ("expense", "An expense-report app with an Expenses list, a New Expense form, an Approvals view (approve/reject), and a Totals dashboard."),
+    ("garden", "A garden planner with a Beds list, a Plant catalog, a Care schedule view, and Settings."),
+    ("music", "A music app with a Library, Playlists (add/remove tracks), a Now-Playing queue, and Settings."),
+    ("polls", "A polling app with a Create view, an Active-polls list (vote once), a Results dashboard (counts/percentages), and Settings."),
+    ("realestate", "A listings app with a Listings grid, a Saved/Favorites view, a Compare view, and Settings."),
 ]
 
 SCRATCH_SYSTEM_PROMPT = """\
 You generate self-contained, from-scratch "text-to-app" coding tasks for an RL dataset — the
-kind of request a user types into v0 / bolt.new / replit / base44.
+kind of FULL APPLICATION a user gets from v0 / bolt.new / replit / base44. NOT a single widget:
+each task is a complete multi-view app.
 
-Each task:
-  - description.md: a NATURAL-LANGUAGE product request ("Build an application that ..."). It
-    MUST name the concrete visible labels, button text, headings/column names, and the EXACT
-    format of any numbers/totals shown (e.g. `Total: $35.15`, `Page 1 of 3`), because the tests
-    key off those visible strings. Do NOT list data-testids and do NOT dictate the file tree.
-    Seed any fixed data the tests depend on directly in the prompt.
-  - The root component is the default export of app/page.tsx. Use ONLY react + react-dom — no
-    next/* imports, no third-party libraries. In-memory state only; NO network/timers/animation.
-  - reference/ (app/page.tsx plus any components/hooks/lib it wants): a correct working app that
-    passes every test.
-  - tests/: a Vitest suite querying by ROLE / LABEL / VISIBLE TEXT only (getByRole,
-    getByLabelText, getByText, within) — NEVER data-testid. `import App from '../app/page'`.
-    15-25 independent it() blocks. Deterministic.
-  - hidden_test_files: a SEPARATE held-out suite (same tolerant style, FRESH scenarios — other
-    inputs, edge cases, sequences) used only to measure generalization. It must also pass against
-    the reference, and must be different enough that hardcoding the visible strings would fail it.
+Scope (REQUIRED — match the worked example's shape):
+  - 4 navigable views switched by an in-app nav bar (NOT the Next.js router). State is SHARED
+    across views via a React Context provider + a use<App> hook; navigating away and back
+    preserves state. At least one view is a derived/stats/dashboard view computed from the others,
+    and at least one interaction in one view changes data shown in another (cross-view state).
+  - MULTI-FILE reference: split into app/page.tsx (default export App = the Context provider
+    wrapping an inner Shell that reads context and renders nav + the active view), plus
+    components/, hooks/, and lib/ files. app/page.tsx is the entry the tests import.
+  - Use ONLY react + react-dom — NO next/* imports, NO third-party libraries. In-memory state
+    only; NO network/timers/animation. Routing is in-app state.
+
+description.md: a NATURAL-LANGUAGE product request ("Build a ... app with these views: ..."). It
+  MUST name the views, the visible labels/buttons/headings, and the EXACT format of any
+  numbers/totals shown (e.g. `Completion: 50%`, `To Do (2)`, `Total: $35.15`), because the tests
+  key off those visible strings. Do NOT list data-testids and do NOT dictate the file tree. Seed
+  any fixed data the tests need directly in the prompt.
+
+tests/: a Vitest suite querying by ROLE / LABEL / VISIBLE TEXT only (getByRole, getByLabelText,
+  getByText, within) — NEVER data-testid. `import App from '../app/page'`. 20-35 independent it()
+  blocks covering: navigation to every view, each view's core flow, AT LEAST ONE cross-view
+  shared-state interaction, and the derived/stats view. Deterministic.
+
+hidden_test_files: a SEPARATE held-out suite (same tolerant style, FRESH scenarios — other
+  inputs, edge cases, sequences, cross-view paths) used only to measure generalization. It must
+  also pass against the reference and be different enough that hardcoding visible strings fails it.
 
 Hard constraints (these break tests if ignored):
   - tsconfig lib is ES2022+DOM (no DOM.Iterable): no for..of over Map/Set — use .forEach /
@@ -357,29 +360,42 @@ Hard constraints (these break tests if ignored):
   - Compose any displayed composite string as ONE text node via a template literal so getByText
     matches (not `Total: {a} of {b}` which splits into several nodes).
   - getByLabelText also matches a section's aria-label: give inputs distinct accessible names and
-    don't let a region's aria-label equal an input's label.
+    don't let a region's aria-label equal an input's label or a nav button's name.
+  - The root App renders the provider, so it canNOT call use<App>() itself — put an inner Shell
+    inside the provider that consumes context. The provider must supply a non-null value so the
+    app mounts and tests fail on assertions, not a crash.
   - Do NOT put the two-word sequence  from "..."  (the word from immediately before a quote)
     inside any test title or string — a naive import scanner flags it as a forbidden import.
 
 Output ONLY a JSON object — no prose, no code fence. Schema:
-{ "task_id": "scratch-<kebab>", "description": "<markdown>", "difficulty": "hard",
-  "entry_point": "app/page.tsx", "reference_files": {"app/page.tsx": "...", ...},
+{ "task_id": "scratch-app-<kebab>", "description": "<markdown>", "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "reference_files": {"app/page.tsx": "...", "components/...": "...", "hooks/...": "...", "lib/...": "..."},
   "test_files": {"<name>.test.tsx": "..."}, "hidden_test_files": {"<name>_hidden.test.tsx": "..."} }
 """
 
 
 def _scratch_few_shot() -> str:
-    """Build the few-shot from the validated scratch-kanban task on disk (stays authoritative)."""
-    base = _DATA_DIR / "scratch-kanban"
-    rd = lambda p: (base / p).read_text()
+    """Build the few-shot from the validated FULL-APP exemplar on disk (multi-file, multi-view —
+    teaches the model to emit a complete application, not a single widget)."""
+    base = _DATA_DIR / "scratch-app-projecthub"
+
+    def collect(sub: str) -> dict:
+        d = base / sub
+        out = {}
+        for p in sorted(d.rglob("*")):
+            if p.is_file():
+                out[p.relative_to(d).as_posix()] = p.read_text()
+        return out
+
     example = {
-        "task_id": "scratch-kanban",
-        "description": rd("description.md"),
+        "task_id": "scratch-app-projecthub",
+        "description": (base / "description.md").read_text(),
         "difficulty": "hard",
         "entry_point": "app/page.tsx",
-        "reference_files": {"app/page.tsx": rd("reference/app/page.tsx")},
-        "test_files": {"kanban.test.tsx": rd("tests/kanban.test.tsx")},
-        "hidden_test_files": {"kanban_hidden.test.tsx": rd("tests_hidden/kanban_hidden.test.tsx")},
+        "reference_files": collect("reference"),     # multi-file: app/, components/, hooks/, lib/
+        "test_files": collect("tests"),
+        "hidden_test_files": collect("tests_hidden"),
     }
     return json.dumps(example, indent=2)
 
@@ -395,12 +411,13 @@ def _claude_generate_scratch(slug: str, idea: str, model: str) -> dict | None:
         f"  slug hint: scratch-{slug}\n  idea: {idea}\n\n"
         f"Follow this VALIDATED example exactly in shape and test style:\n"
         f"```json\n{_scratch_few_shot()}\n```\n\n"
-        f"Generate a NEW task (not kanban). The description must name the visible labels/totals "
-        f"the tests rely on. Return ONLY the JSON object."
+        f"Generate a NEW full multi-view app (not project management / not the example). The "
+        f"description must name the views and the visible labels/totals the tests rely on. "
+        f"Return ONLY the JSON object."
     )
     try:
         resp = client.messages.create(
-            model=model, max_tokens=8192, system=SCRATCH_SYSTEM_PROMPT,
+            model=model, max_tokens=32000, system=SCRATCH_SYSTEM_PROMPT,
             messages=[{"role": "user", "content": user_msg}],
         )
         text = resp.content[0].text.strip()

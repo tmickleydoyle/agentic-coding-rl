@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-fit-workout-log",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route workout log: log/workout-detail/exercises/records, shared context, REST API with personal records",
+  "split": "test",
+  "from_scratch": true,
+  "repurposed_from": "app-fit-workout-log"
+}

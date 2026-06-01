@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-folio-dividends",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route dividend tracker: dashboard/holding-detail/add/calendar, shared context, annual income per holding + total + month calendar, REST API",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-folio-dividends"
+}

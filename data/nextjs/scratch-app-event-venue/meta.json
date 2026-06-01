@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-event-venue",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route venue booking: venues/venue-detail/book/bookings, availability by date, capacity check, shared context, REST API for bookings with double-book + capacity validation",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-event-venue"
+}

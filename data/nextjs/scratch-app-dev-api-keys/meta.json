@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-dev-api-keys",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route API key manager: keys/create-key/key-detail/usage, shared context, REST API with revoke + masking",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-dev-api-keys"
+}

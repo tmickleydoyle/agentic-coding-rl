@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-learn-gradebook",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route gradebook: students/assignments/gradebook/summary, per-student average + letter grade, REST API",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-learn-gradebook"
+}

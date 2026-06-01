@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-note-journal",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route journal app: today/entries/new/insights, shared context, entries REST API",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-note-journal"
+}

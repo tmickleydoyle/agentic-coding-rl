@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-travel-itinerary",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route travel itinerary planner: trips/trip-detail/add-activity/budget, day-by-day activities with reorder-within-day, total trip cost, shared context, REST API",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-travel-itinerary"
+}

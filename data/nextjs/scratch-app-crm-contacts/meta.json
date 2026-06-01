@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-crm-contacts",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route CRM contacts: contacts/contact-detail/companies/activity, tags, per-contact activity log, contacts REST API",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-crm-contacts"
+}

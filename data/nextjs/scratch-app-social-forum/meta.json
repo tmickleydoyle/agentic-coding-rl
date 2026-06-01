@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-social-forum",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route forum: threads/thread-detail/new-thread/categories, replies, upvotes, sort, shared context, REST API",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-social-forum"
+}

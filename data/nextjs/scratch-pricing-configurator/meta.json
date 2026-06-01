@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-pricing-configurator",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a Pricing Configurator",
+  "split": "train",
+  "from_scratch": true
+}

@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-invent-stock",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route inventory stock app: products/product-detail/adjust/low-stock, quantity adjustments, reorder-point low-stock alerts, products REST API",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-invent-stock"
+}
