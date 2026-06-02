@@ -1,0 +1,19 @@
+'use client'
+import { useApp } from '../hooks/useApp'
+
+export function Stats() {
+  const { assets } = useApp()
+  const total = assets.length
+  const logos = assets.filter((a) => a.type === 'logo').length
+  const icons = assets.filter((a) => a.type === 'icon').length
+  const photos = assets.filter((a) => a.type === 'photo').length
+  return (
+    <section aria-label="Stats view">
+      <h1>Stats</h1>
+      <p>{`Total assets: ${total}`}</p>
+      <p>{`Logos: ${logos}`}</p>
+      <p>{`Icons: ${icons}`}</p>
+      <p>{`Photos: ${photos}`}</p>
+    </section>
+  )
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-med-release-checklist-4",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a Release Checklist app",
+  "split": "train",
+  "from_scratch": true
+}

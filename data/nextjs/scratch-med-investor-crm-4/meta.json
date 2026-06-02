@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-med-investor-crm-4",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Build an Investor CRM app",
+  "split": "train",
+  "from_scratch": true
+}

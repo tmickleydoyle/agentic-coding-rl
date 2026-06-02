@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-med-subscriber-mrr-5",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a Subscriber MRR Tracker",
+  "split": "test",
+  "from_scratch": true
+}

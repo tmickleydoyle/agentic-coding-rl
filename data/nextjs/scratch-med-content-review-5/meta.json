@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-med-content-review-5",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a Content Review Tracker",
+  "split": "train",
+  "from_scratch": true
+}

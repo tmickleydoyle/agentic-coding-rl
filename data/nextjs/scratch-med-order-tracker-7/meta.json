@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-med-order-tracker-7",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Build an Order Tracker app",
+  "split": "train",
+  "from_scratch": true
+}

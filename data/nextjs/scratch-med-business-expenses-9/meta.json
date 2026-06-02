@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-med-business-expenses-9",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a Business Expense Tracker",
+  "split": "test",
+  "from_scratch": true
+}

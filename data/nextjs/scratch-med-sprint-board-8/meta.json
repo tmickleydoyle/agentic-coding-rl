@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-med-sprint-board-8",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a Sprint Task Board app",
+  "split": "train",
+  "from_scratch": true
+}

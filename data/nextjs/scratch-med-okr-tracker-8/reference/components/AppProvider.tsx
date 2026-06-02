@@ -1,0 +1,65 @@
+'use client'
+import { createContext, useState } from 'react'
+import type { ReactNode } from 'react'
+import type { Objective, Route } from '../lib/types'
+
+type Ctx = {
+  objectives: Objective[]
+  route: Route
+  theme: 'light' | 'dark'
+  navigate: (r: Route) => void
+  addObjective: (title: string) => void
+  updateProgress: (id: number, progress: number) => void
+  deleteObjective: (id: number) => void
+  toggleTheme: () => void
+  resetAll: () => void
+}
+
+export const AppContext = createContext<Ctx | null>(null)
+
+export function AppProvider({ children }: { children: ReactNode }) {
+  const [objectives, setObjectives] = useState<Objective[]>([])
+  const [route, setRoute] = useState<Route>('objectives')
+  const [theme, setTheme] = useState<'light' | 'dark'>('light')
+  const [nextId, setNextId] = useState(1)
+
+  function addObjective(title: string) {
+    const t = title.trim()
+    if (!t) return
+    setObjectives((prev) => [...prev, { id: nextId, title: t, progress: 0 }])
+    setNextId((n) => n + 1)
+  }
+
+  function updateProgress(id: number, progress: number) {
+    const clamped = Math.max(0, Math.min(100, Math.round(progress)))
+    setObjectives((prev) =>
+      prev.map((o) => (o.id === id ? { ...o, progress: clamped } : o))
+    )
+  }
+
+  function deleteObjective(id: number) {
+    setObjectives((prev) => prev.filter((o) => o.id !== id))
+  }
+
+  function toggleTheme() {
+    setTheme((t) => (t === 'light' ? 'dark' : 'light'))
+  }
+
+  function resetAll() {
+    setObjectives([])
+  }
+
+  const value: Ctx = {
+    objectives,
+    route,
+    theme,
+    navigate: setRoute,
+    addObjective,
+    updateProgress,
+    deleteObjective,
+    toggleTheme,
+    resetAll,
+  }
+
+  return <AppContext.Provider value={value}>{children}</AppContext.Provider>
+}

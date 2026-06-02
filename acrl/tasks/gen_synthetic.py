@@ -400,6 +400,62 @@ def _scratch_few_shot() -> str:
     return json.dumps(example, indent=2)
 
 
+# Medium tier (GEN_TIER=medium): the CORE-band recipe AND distribution-matched to what real
+# users ask a no-code/AI builder for — small-business owners, product managers, designers, and
+# solo founders building internal tools. Single-entity, list+filter+derived-stat apps the base
+# gets ~30-60% right (not the hard multi-entity/REST-API full apps that calibrate to "dead").
+MEDIUM_ARCHETYPES = [
+    # --- Small business owner ---
+    ("client-roster", "A client list: name + status (active/lead/churned) + lifetime value; filter by status, total value, active count."),
+    ("invoice-tracker", "An invoice list: client + amount + paid/unpaid; mark paid, filter unpaid, total outstanding."),
+    ("appointment-book", "An appointment list: customer + service + status (booked/done/no-show); filter by status, counts."),
+    ("order-tracker", "An order list: customer + status (new/packing/shipped/delivered); advance status, filter, count per status."),
+    ("service-pricing", "A service menu: name + price + active toggle; toggle active, count active, average price."),
+    ("staff-schedule", "A shift list: employee + hours; add, filter by employee, total hours per employee."),
+    ("business-expenses", "A business expense list: vendor + category + amount; filter by category, per-category totals, monthly total."),
+    ("stock-levels", "A product list: name + on-hand + reorder point; adjust stock, low-stock flag, total inventory value."),
+    ("customer-reviews", "A review list: customer + rating + responded toggle; filter unresponded, average rating."),
+    ("quote-tracker", "A quote list: client + amount + status (sent/won/lost); filter, total pending value, win rate."),
+    # --- Product manager ---
+    ("feature-backlog", "A feature backlog: title + priority (P0/P1/P2) + status (idea/building/shipped); filter, count by priority."),
+    ("bug-triage", "A bug list: title + severity + status (open/closed); filter by status, open count by severity."),
+    ("roadmap-board", "A roadmap: item + quarter + status (planned/in-progress/shipped); filter by quarter, shipped count."),
+    ("feedback-inbox", "A feedback list: note + theme + upvotes; sort by upvotes, count per theme."),
+    ("okr-tracker", "An objectives list: objective + progress %; update progress, overall average, on-track (>=70%) count."),
+    ("release-checklist", "A launch checklist: task + owner + done toggle; completion %, count remaining by owner."),
+    ("experiment-log", "An A/B test list: name + status (running/done) + winner; filter running, win rate of finished."),
+    ("user-interviews", "An interview list: participant + segment + key takeaway; filter by segment, count per segment."),
+    ("sprint-board", "A task board: task + status (todo/doing/done) + points; counts and total points per status."),
+    ("stakeholder-map", "A stakeholder list: name + influence (high/med/low) + supportive toggle; filter, count by influence."),
+    # --- Designer (non-technical) ---
+    ("design-requests", "A design-request queue: title + status (new/in-progress/done) + priority; filter by status, count per status."),
+    ("asset-library", "An asset list: name + type (logo/icon/photo) + tags; filter by type, count per type."),
+    ("design-feedback", "A feedback list: note + screen + status (open/addressed); filter open, open count."),
+    ("portfolio-projects", "A project list: title + category + status (live/draft); filter, count live."),
+    ("deliverables", "A deliverables list: item + status (pending/delivered) + due; filter pending, delivered count / total."),
+    ("brand-colors", "A brand-color list: name + hex; add, count, show a swatch and the hex; total colors."),
+    ("handoff-checklist", "A dev-handoff checklist: item + done toggle; completion %, remaining count."),
+    ("content-review", "A content-review list: item + reviewer + status (draft/approved/changes); filter, approved %."),
+    # --- Solo founder ---
+    ("lead-pipeline", "A sales-lead list: company + stage (new/demo/won) + deal value; filter by stage, total pipeline value."),
+    ("waitlist", "A waitlist: email + status (pending/invited) + source; invite, filter, invited count, count per source."),
+    ("content-calendar", "A content list: title + platform + status (draft/scheduled/published); filter, scheduled count."),
+    ("subscriber-mrr", "A subscriber list: name + plan + active toggle (plan has a monthly price); total MRR, active count."),
+    ("investor-crm", "An investor list: firm + stage (intro/pitched/committed) + check size; filter, total committed."),
+    ("metrics-log", "A metrics list: metric name + value + entered order; latest per metric, up/down vs the previous entry."),
+    ("founder-tasks", "A task list: task + priority (high/med/low) + done toggle; filter by priority, done %, count by priority."),
+]
+MEDIUM_ADDENDUM = (
+    "\n\nThis must read like a REAL request from a small-business owner, product manager, designer, "
+    "or solo founder building a simple internal tool — practical and professional, not a personal "
+    "hobby app. Keep it SIMPLER than the example (medium difficulty): exactly 2-3 views (a main list "
+    "view, a stats/summary view, optionally a settings view with a theme toggle); exactly ONE main "
+    "entity; NO app/api/*/route.ts handlers (in-memory state only); and ONE tractable logic feature "
+    "(a filter, sort, count, total/percentage, or status-toggle). 15-25 tests. Aim so a competent "
+    "model gets most of it right but can slip an edge case."
+)
+
+
 def _claude_generate_scratch(slug: str, idea: str, model: str) -> dict | None:
     try:
         import anthropic
@@ -414,12 +470,14 @@ def _claude_generate_scratch(slug: str, idea: str, model: str) -> dict | None:
         f"Generate a NEW full multi-view app (not project management / not the example). The "
         f"description must name the views and the visible labels/totals the tests rely on. "
         f"Return ONLY the JSON object."
+        + (MEDIUM_ADDENDUM if os.environ.get("GEN_TIER") == "medium" else "")
     )
     try:
-        resp = client.messages.create(
+        with client.messages.stream(
             model=model, max_tokens=32000, system=SCRATCH_SYSTEM_PROMPT,
             messages=[{"role": "user", "content": user_msg}],
-        )
+        ) as stream:
+            resp = stream.get_final_message()
         text = resp.content[0].text.strip()
         if text.startswith("```"):
             text = text.split("\n", 1)[1] if "\n" in text else text[3:]
@@ -475,9 +533,13 @@ def _validate_scratch(task: dict) -> tuple[bool, str]:
 
 
 def _write_scratch_task(task: dict, split: str) -> Path:
-    tid = task["task_id"]
-    if not tid.startswith("scratch-"):
-        tid = "scratch-" + tid
+    prefix = os.environ.get("GEN_PREFIX", "scratch-")
+    base = task["task_id"]
+    for p in ("scratch-med-", "scratch-app-", "scratch-"):  # strip whatever the model prepended
+        if base.startswith(p):
+            base = base[len(p):]
+            break
+    tid = prefix + base
     out = _DATA_DIR / tid
     if out.exists():
         s = 2
@@ -509,7 +571,7 @@ def main_scratch(n_attempts: int, keep_target: int, model: str, dry_run: bool, s
     _load_env_local()
     if not dry_run and not os.environ.get("ANTHROPIC_API_KEY"):
         sys.exit("ANTHROPIC_API_KEY not set (env or .env.local).")
-    pool = list(SCRATCH_ARCHETYPES)
+    pool = list(MEDIUM_ARCHETYPES if os.environ.get("GEN_TIER") == "medium" else SCRATCH_ARCHETYPES)
     rng.shuffle(pool)
     print(f"scratch: {n_attempts} attempts, keep up to {keep_target}, model={model}, seed={seed}")
     kept = rejected = 0

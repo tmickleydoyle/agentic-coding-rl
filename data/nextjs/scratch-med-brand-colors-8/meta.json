@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-med-brand-colors-8",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a Brand Color Manager",
+  "split": "train",
+  "from_scratch": true
+}

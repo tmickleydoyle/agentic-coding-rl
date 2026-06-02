@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-med-user-interviews-2",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a User Interview Tracker app",
+  "split": "train",
+  "from_scratch": true
+}

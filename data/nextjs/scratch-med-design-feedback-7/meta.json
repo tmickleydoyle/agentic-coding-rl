@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-med-design-feedback-7",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a Design Feedback Tracker",
+  "split": "train",
+  "from_scratch": true
+}

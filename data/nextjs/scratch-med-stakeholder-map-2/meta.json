@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-med-stakeholder-map-2",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a Stakeholder Map app",
+  "split": "train",
+  "from_scratch": true
+}

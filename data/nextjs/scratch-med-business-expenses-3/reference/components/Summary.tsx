@@ -1,0 +1,25 @@
+'use client'
+import { useApp } from '../hooks/useApp'
+import type { Category } from '../lib/types'
+
+const CATEGORIES: Category[] = ['Food', 'Travel', 'Software', 'Office', 'Other']
+
+export function Summary() {
+  const { expenses } = useApp()
+  const total = expenses.length
+  const monthlyTotal = expenses.reduce((sum, e) => sum + e.amount, 0)
+
+  return (
+    <section aria-label="Summary view">
+      <h1>Summary</h1>
+      <p>{`Total Expenses: ${total}`}</p>
+      <p>{`Monthly Total: $${monthlyTotal.toFixed(2)}`}</p>
+      {CATEGORIES.map((cat) => {
+        const catTotal = expenses
+          .filter((e) => e.category === cat)
+          .reduce((sum, e) => sum + e.amount, 0)
+        return <p key={cat}>{`${cat}: $${catTotal.toFixed(2)}`}</p>
+      })}
+    </section>
+  )
+}

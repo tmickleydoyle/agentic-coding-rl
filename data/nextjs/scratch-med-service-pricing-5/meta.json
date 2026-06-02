@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-med-service-pricing-5",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a Service Pricing Manager",
+  "split": "train",
+  "from_scratch": true
+}

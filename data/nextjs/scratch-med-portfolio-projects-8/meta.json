@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-med-portfolio-projects-8",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a Portfolio Project Tracker",
+  "split": "train",
+  "from_scratch": true
+}
