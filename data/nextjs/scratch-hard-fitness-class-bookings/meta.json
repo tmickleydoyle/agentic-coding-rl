@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-hard-fitness-class-bookings",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a fitness-studio class booking app from scratch: classes with capacity, bookings with waitlist + promotion, a cross-view roster with fill/FULL/waitlist, settings",
+  "split": "train",
+  "from_scratch": true
+}

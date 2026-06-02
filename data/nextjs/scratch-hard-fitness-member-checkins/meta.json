@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-hard-fitness-member-checkins",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a gym member check-in tracker from scratch: members with monthly goals, check-ins, a cross-view progress + ranked leaderboard, settings",
+  "split": "train",
+  "from_scratch": true
+}

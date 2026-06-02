@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-hard-fitness-trainer-sessions",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a trainer scheduling app from scratch: trainers with weekly hour caps, sessions, a cross-view utilization summary with overbook flags and studio percent, settings",
+  "split": "train",
+  "from_scratch": true
+}

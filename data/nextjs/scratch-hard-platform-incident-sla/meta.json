@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-hard-platform-incident-sla",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Single-entity incident tracker with priority-based SLA breach and at-risk detection report",
+  "split": "train",
+  "from_scratch": true
+}

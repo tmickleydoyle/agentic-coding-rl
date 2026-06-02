@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-hard-resto-check-builder",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Restaurant check builder: line items, percent discount, tax, and a computed grand total",
+  "split": "train",
+  "from_scratch": true
+}

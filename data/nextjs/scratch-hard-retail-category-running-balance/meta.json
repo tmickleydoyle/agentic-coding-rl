@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-hard-retail-category-running-balance",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Single-entity cash ledger with per-category running balances and a combined balance report",
+  "split": "train",
+  "from_scratch": true
+}

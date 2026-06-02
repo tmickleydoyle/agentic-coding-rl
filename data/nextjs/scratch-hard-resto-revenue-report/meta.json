@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-hard-resto-revenue-report",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Restaurant menu + orders app with a cross-entity revenue-per-item report derived from line items",
+  "split": "train",
+  "from_scratch": true
+}

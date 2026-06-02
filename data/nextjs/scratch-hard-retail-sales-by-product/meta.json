@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-hard-retail-sales-by-product",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Two-entity retail app: a product catalog and a sales log that join to a revenue-per-product report",
+  "split": "train",
+  "from_scratch": true
+}

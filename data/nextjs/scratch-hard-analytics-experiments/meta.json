@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-hard-analytics-experiments",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Build an A/B experiment analytics app from scratch: experiments, variants with conversion rate, cross-experiment results with per-experiment winner, settings",
+  "split": "train",
+  "from_scratch": true
+}

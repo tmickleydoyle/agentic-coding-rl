@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-hard-freelance-projects-hours",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Two-entity freelancer app: projects and time entries that join to an hours-and-billable-per-project view plus a billable report",
+  "split": "train",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-hard-salon-service-revenue",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a salon sales app from scratch with per-service revenue breakdown (price plus tips), a top-service derived metric, reports, and settings",
+  "split": "train",
+  "from_scratch": true
+}
