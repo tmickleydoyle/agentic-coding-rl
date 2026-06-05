@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-note-markdown",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route markdown notes app: list/editor+preview/tags/settings, shared context, notes REST API",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-note-markdown"
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-habit",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a weekly habit tracker from scratch with current-streak, longest-streak, and completion stats",
+  "split": "train",
+  "from_scratch": true
+}

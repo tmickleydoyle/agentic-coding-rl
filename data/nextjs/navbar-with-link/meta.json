@@ -2,5 +2,6 @@
   "task_id": "navbar-with-link",
   "framework": "nextjs",
   "difficulty": "medium",
-  "entry": "components/Navbar.tsx"
+  "entry": "components/Navbar.tsx",
+  "split": "train"
 }

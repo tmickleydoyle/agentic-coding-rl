@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-med-quote-tracker",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a Quote Tracker app",
+  "split": "test",
+  "from_scratch": true
+}

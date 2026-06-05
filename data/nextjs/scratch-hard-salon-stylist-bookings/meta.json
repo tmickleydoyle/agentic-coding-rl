@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-hard-salon-stylist-bookings",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a salon booking app from scratch: appointments with status lifecycle, per-stylist bookings and earnings derived view, reports with cancellation rate, settings",
+  "split": "train",
+  "from_scratch": true
+}

@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "lib/edit-distance.ts",
-  "summary": "Levenshtein DP distance plus minimal insert/delete/substitute edit script + apply"
+  "summary": "Levenshtein DP distance plus minimal insert/delete/substitute edit script + apply",
+  "split": "train"
 }

@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-chat-dm",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route direct messaging: inbox/thread/people/settings, send, mark read, search people, shared context, REST API",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-chat-dm"
+}

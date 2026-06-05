@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "lib/life.ts",
-  "summary": "Conway's Game of Life on a finite grid: step and stepN, no mutation"
+  "summary": "Conway's Game of Life on a finite grid: step and stepN, no mutation",
+  "split": "train"
 }

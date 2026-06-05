@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "lib/template.ts",
-  "summary": "Mustache-like template engine: dotted interpolation, raw, if/each blocks, this/@index, nesting"
+  "summary": "Mustache-like template engine: dotted interpolation, raw, if/each blocks, this/@index, nesting",
+  "split": "train"
 }

@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/page.tsx",
-  "summary": "Multi-route routine builder: routines/builder/week-plan/library, shared context, REST API with weekday assignment"
+  "summary": "Multi-route routine builder: routines/builder/week-plan/library, shared context, REST API with weekday assignment",
+  "split": "train"
 }

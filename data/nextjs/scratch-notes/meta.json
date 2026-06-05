@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-notes",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a notes app from scratch with a real markdown renderer, tag filtering, and full-text search",
+  "split": "train",
+  "from_scratch": true
+}

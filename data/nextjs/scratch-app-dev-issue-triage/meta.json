@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-dev-issue-triage",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route issue triage: issues/issue-detail/triage/board, shared context, REST API with assign+filter",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-dev-issue-triage"
+}

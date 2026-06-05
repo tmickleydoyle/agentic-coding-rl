@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-dev-deploy-log",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route deploy log: deployments/deploy-detail/environments/stats, shared context, status timeline + rollback + frequency stats, deployments REST API",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-dev-deploy-log"
+}

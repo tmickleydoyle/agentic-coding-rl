@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-finance",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a full multi-route budgeting app from scratch: transactions, budgets with over-limit flags, reports, settings",
+  "split": "train",
+  "from_scratch": true
+}

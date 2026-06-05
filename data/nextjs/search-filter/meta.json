@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "medium-simple",
   "entry_point": "components/SearchFilter.tsx",
-  "summary": "Case-insensitive substring filter of an items list via controlled input"
+  "summary": "Case-insensitive substring filter of an items list via controlled input",
+  "split": "train"
 }

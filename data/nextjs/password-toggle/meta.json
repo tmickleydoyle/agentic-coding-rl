@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "easy",
   "entry_point": "components/PasswordField.tsx",
-  "summary": "Toggle input type password/text + matching button label"
+  "summary": "Toggle input type password/text + matching button label",
+  "split": "train"
 }

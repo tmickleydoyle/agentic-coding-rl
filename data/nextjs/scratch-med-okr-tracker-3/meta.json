@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-med-okr-tracker-3",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Build an OKR Tracker app",
+  "split": "train",
+  "from_scratch": true
+}

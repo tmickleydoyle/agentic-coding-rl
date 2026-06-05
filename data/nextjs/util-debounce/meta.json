@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "medium",
   "entry_point": "lib/debounce.ts",
-  "summary": "debounce(fn, ms) fires only after ms of quiet; resets timer; latest args"
+  "summary": "debounce(fn, ms) fires only after ms of quiet; resets timer; latest args",
+  "split": "train"
 }

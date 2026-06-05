@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-hard-platform-release-tickets",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Two-entity platform app: releases and point-weighted tickets joined to a ship-readiness report",
+  "split": "train",
+  "from_scratch": true
+}

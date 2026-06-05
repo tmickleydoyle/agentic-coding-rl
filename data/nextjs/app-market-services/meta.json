@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/page.tsx",
-  "summary": "Multi-route service gigs: gigs/gig-detail/book/my-bookings, shared context, gigs API"
+  "summary": "Multi-route service gigs: gigs/gig-detail/book/my-bookings, shared context, gigs API",
+  "split": "train"
 }

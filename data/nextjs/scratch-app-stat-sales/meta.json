@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-stat-sales",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route sales dashboard: overview/products/regions/trends, shared context, revenue rollups, sales REST API",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-stat-sales"
+}

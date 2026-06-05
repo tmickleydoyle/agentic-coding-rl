@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "medium",
   "entry_point": "components/Cart.tsx",
-  "summary": "Catalog with Add/Remove, cart quantities, running total"
+  "summary": "Catalog with Add/Remove, cart quantities, running total",
+  "split": "test"
 }

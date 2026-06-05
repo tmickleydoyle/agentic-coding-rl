@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-fin-subscription-tracker",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route subscription tracker: dashboard/subscriptions/add/upcoming, shared context, normalized monthly cost + renewals due soon + cancel, REST API",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-fin-subscription-tracker"
+}

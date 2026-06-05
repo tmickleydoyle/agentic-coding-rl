@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-folio-rebalance",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route rebalancer: portfolio/targets/rebalance/history, shared context, target vs actual allocation + buy/sell suggestions + applied-rebalance log, REST API",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-folio-rebalance"
+}

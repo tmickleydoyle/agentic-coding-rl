@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-projecthub",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a full multi-route project management app from scratch: board, backlog, reports, settings, with shared state",
+  "split": "train",
+  "from_scratch": true
+}

@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "easy",
   "entry_point": "components/Counter.tsx",
-  "summary": "Counter +/- buttons; increment jumps by 2 instead of 1"
+  "summary": "Counter +/- buttons; increment jumps by 2 instead of 1",
+  "split": "train"
 }

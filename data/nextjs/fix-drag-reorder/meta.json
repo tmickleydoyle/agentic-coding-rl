@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "components/ReorderList.tsx",
-  "summary": "Downward reorder insert index not adjusted for the removed element"
+  "summary": "Downward reorder insert index not adjusted for the removed element",
+  "split": "train"
 }

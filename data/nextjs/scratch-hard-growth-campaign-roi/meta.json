@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-hard-growth-campaign-roi",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a growth-marketing app from scratch: campaigns, per-channel CPA rollup, blended CAC/ROAS overview, settings",
+  "split": "train",
+  "from_scratch": true
+}

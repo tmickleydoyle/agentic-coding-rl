@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/page.tsx",
-  "summary": "Multi-route hangman: play/stats/words/how-to, pure guess/state/win-loss lib, wins+losses stats, word list, shared context, REST API"
+  "summary": "Multi-route hangman: play/stats/words/how-to, pure guess/state/win-loss lib, wins+losses stats, word list, shared context, REST API",
+  "split": "test"
 }

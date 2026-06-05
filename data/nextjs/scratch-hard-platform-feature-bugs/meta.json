@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-hard-platform-feature-bugs",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Two-entity platform app: features and bugs that join to an open-bugs-per-feature quality report",
+  "split": "train",
+  "from_scratch": true
+}

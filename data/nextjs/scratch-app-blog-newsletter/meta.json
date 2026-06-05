@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-blog-newsletter",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route newsletter: dashboard/campaigns/subscribers/compose, send + mock open-rate, shared context, REST API",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-blog-newsletter"
+}

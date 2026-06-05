@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-med-deliverables-12",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a Deliverables Tracker app",
+  "split": "test",
+  "from_scratch": true
+}

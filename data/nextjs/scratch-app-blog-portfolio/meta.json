@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-blog-portfolio",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route portfolio: home/projects/writing/project-detail, tags + featured, shared context, REST API",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-blog-portfolio"
+}

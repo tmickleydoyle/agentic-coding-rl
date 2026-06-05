@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "medium-hard",
   "entry_point": "app/api/todos/route.ts",
-  "summary": "In-memory todos CRUD: GET list, POST create, PUT toggle, DELETE"
+  "summary": "In-memory todos CRUD: GET list, POST create, PUT toggle, DELETE",
+  "split": "train"
 }

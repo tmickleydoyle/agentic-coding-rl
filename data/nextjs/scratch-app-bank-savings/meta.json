@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-bank-savings",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route banking savings dashboard: pots/pot-detail/create/settings, shared context, allocate from an unallocated pool into goal pots + goal progress, REST API for pots",
+  "split": "test",
+  "from_scratch": true,
+  "repurposed_from": "app-bank-savings"
+}

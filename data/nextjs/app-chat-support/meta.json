@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/page.tsx",
-  "summary": "Multi-route support chat: queue/chat/canned/history, canned replies, open/closed status, assign agent, shared context, REST API"
+  "summary": "Multi-route support chat: queue/chat/canned/history, canned replies, open/closed status, assign agent, shared context, REST API",
+  "split": "train"
 }

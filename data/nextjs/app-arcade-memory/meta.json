@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/page.tsx",
-  "summary": "Multi-route memory-match game: play/scores/settings/how-to, pure deck + flip/match reducer lib, moves + matches tracking, best score, timer with fake timers, shared context, REST API"
+  "summary": "Multi-route memory-match game: play/scores/settings/how-to, pure deck + flip/match reducer lib, moves + matches tracking, best score, timer with fake timers, shared context, REST API",
+  "split": "train"
 }

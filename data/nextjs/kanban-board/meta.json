@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "medium-hard",
   "entry_point": "components/Board.tsx",
-  "summary": "Kanban board: move cards across To Do/Doing/Done columns, clamped at ends, live counts"
+  "summary": "Kanban board: move cards across To Do/Doing/Done columns, clamped at ends, live counts",
+  "split": "train"
 }

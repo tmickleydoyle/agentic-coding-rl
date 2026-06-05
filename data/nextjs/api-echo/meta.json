@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "easy",
   "entry_point": "app/api/echo/route.ts",
-  "summary": "GET echoes query params; POST echoes JSON body; 400 on bad JSON"
+  "summary": "GET echoes query params; POST echoes JSON body; 400 on bad JSON",
+  "split": "test"
 }

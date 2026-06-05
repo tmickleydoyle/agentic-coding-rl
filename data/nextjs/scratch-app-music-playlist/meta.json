@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-music-playlist",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route music playlist app: library/playlist/queue/search, shared context, songs REST API",
+  "split": "test",
+  "from_scratch": true,
+  "repurposed_from": "app-music-playlist"
+}

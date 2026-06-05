@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-habit-tracker",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route daily habit tracker: today/habits/add/stats, shared context, REST API with check-offs, streaks and completion %",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-habit-tracker"
+}

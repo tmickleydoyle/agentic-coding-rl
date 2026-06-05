@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "medium-simple",
   "entry_point": "components/Quiz.tsx",
-  "summary": "Multi-question quiz with score tally, end screen + restart"
+  "summary": "Multi-question quiz with score tally, end screen + restart",
+  "split": "train"
 }

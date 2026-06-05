@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-shop-order-tracker",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route order tracker: orders/order-detail/track/account, status timeline, reorder, orders REST API",
+  "split": "test",
+  "from_scratch": true,
+  "repurposed_from": "app-shop-order-tracker"
+}

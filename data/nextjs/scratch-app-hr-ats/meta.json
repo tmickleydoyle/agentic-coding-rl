@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-hr-ats",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route HR applicant-tracking system: jobs/candidates/pipeline/job-detail, pipeline stages with move + advance, shared context, REST API",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-hr-ats"
+}

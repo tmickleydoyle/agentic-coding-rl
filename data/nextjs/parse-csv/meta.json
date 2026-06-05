@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "lib/csv.ts",
-  "summary": "RFC-4180 CSV parser: quoted fields, embedded commas/newlines, escaped quotes, CRLF, custom delimiter"
+  "summary": "RFC-4180 CSV parser: quoted fields, embedded commas/newlines, escaped quotes, CRLF, custom delimiter",
+  "split": "train"
 }

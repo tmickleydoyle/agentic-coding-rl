@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "medium-hard",
   "entry_point": "app/api/orders/route.ts",
-  "summary": "Order state machine: POST advances pending->paid->shipped->delivered; GET reads"
+  "summary": "Order state machine: POST advances pending->paid->shipped->delivered; GET reads",
+  "split": "train"
 }

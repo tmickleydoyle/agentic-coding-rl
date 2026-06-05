@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "medium",
   "entry_point": "components/Stopwatch.tsx",
-  "summary": "Start twice spawns a second interval; guard so only one interval runs"
+  "summary": "Start twice spawns a second interval; guard so only one interval runs",
+  "split": "train"
 }

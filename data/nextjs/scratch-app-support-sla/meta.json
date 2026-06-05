@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-support-sla",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route support SLA tracker: tickets/ticket-detail/breaches/dashboard, shared context, REST API with respond+escalate+breach detection",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-support-sla"
+}

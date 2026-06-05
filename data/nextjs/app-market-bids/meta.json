@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/page.tsx",
-  "summary": "Multi-route auctions: auctions/item-detail/my-bids/won, shared context, bids+auctions API"
+  "summary": "Multi-route auctions: auctions/item-detail/my-bids/won, shared context, bids+auctions API",
+  "split": "train"
 }

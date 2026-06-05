@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-hard-growth-email-engagement",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Build an email-engagement app from scratch: blasts, per-list open-rate and CTR rollup, overview, settings",
+  "split": "train",
+  "from_scratch": true
+}

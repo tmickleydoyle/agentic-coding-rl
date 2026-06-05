@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-stat-cohort",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route cohort-retention dashboard: cohorts/retention/breakdown/settings, shared context, retention averages, cohorts REST API",
+  "split": "test",
+  "from_scratch": true,
+  "repurposed_from": "app-stat-cohort"
+}

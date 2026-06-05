@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-med-appointment-book-8",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Build an Appointment Book app",
+  "split": "train",
+  "from_scratch": true
+}

@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "medium",
   "entry_point": "components/SortedList.tsx",
-  "summary": "Component sorts its rows prop in place; must sort a copy instead"
+  "summary": "Component sorts its rows prop in place; must sort a copy instead",
+  "split": "test"
 }

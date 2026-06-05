@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-video-library",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route video library: browse/video-detail/watchlist/history, mark watched + watchlist + history, REST API",
+  "split": "test",
+  "from_scratch": true,
+  "repurposed_from": "app-video-library"
+}

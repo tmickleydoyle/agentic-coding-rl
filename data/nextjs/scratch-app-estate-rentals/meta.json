@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-estate-rentals",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route rentals app: units/detail/applications/occupancy, application status + occupancy rate, shared context, two REST APIs",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-estate-rentals"
+}

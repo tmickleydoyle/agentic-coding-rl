@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "easy",
   "entry_point": "components/ToggleBlock.tsx",
-  "summary": "Show/Hide button toggles a text block; block absent from DOM when hidden"
+  "summary": "Show/Hide button toggles a text block; block absent from DOM when hidden",
+  "split": "train"
 }

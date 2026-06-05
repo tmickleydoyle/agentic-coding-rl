@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "lib/matrix.ts",
-  "summary": "Matrix multiply/transpose/identity/determinant/inverse with dimension checks"
+  "summary": "Matrix multiply/transpose/identity/determinant/inverse with dimension checks",
+  "split": "train"
 }

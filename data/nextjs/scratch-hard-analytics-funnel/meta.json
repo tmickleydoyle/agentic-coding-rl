@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-hard-analytics-funnel",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a conversion funnel analytics app from scratch: funnels, ordered steps, per-step drop-off analysis and overall conversion, settings",
+  "split": "train",
+  "from_scratch": true
+}

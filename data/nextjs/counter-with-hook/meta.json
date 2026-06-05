@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "medium-simple",
   "entry_point": "components/Counter.tsx",
-  "summary": "Counter using a separate hooks/useCounter.ts file; dec is clamped at 0"
+  "summary": "Counter using a separate hooks/useCounter.ts file; dec is clamped at 0",
+  "split": "train"
 }

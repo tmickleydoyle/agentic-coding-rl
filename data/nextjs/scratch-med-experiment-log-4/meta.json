@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-med-experiment-log-4",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Build an A/B Experiment Log app",
+  "split": "train",
+  "from_scratch": true
+}

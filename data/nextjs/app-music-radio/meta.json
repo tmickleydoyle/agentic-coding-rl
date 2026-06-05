@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/page.tsx",
-  "summary": "Multi-route radio app: stations/station-detail/favorites/history, shared context, stations REST API"
+  "summary": "Multi-route radio app: stations/station-detail/favorites/history, shared context, stations REST API",
+  "split": "train"
 }

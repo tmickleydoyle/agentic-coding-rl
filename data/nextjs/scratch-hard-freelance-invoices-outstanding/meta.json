@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-hard-freelance-invoices-outstanding",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Two-entity freelancer app: clients and invoices that join to an outstanding-balance-per-client view plus an aging report",
+  "split": "train",
+  "from_scratch": true
+}

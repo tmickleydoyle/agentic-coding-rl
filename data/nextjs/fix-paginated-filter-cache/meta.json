@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "components/PaginatedList.tsx",
-  "summary": "Page cache keyed by page number ignores active filter; serves stale rows"
+  "summary": "Page cache keyed by page number ignores active filter; serves stale rows",
+  "split": "train"
 }

@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "lib/signals.ts",
-  "summary": "Fine-grained reactive signal/computed/effect with dep tracking, glitch-free diamonds"
+  "summary": "Fine-grained reactive signal/computed/effect with dep tracking, glitch-free diamonds",
+  "split": "train"
 }

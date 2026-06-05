@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "lib/rpn.ts",
-  "summary": "RPN evaluator (+ - * / neg) with errors plus shunting-yard infixToRPN"
+  "summary": "RPN evaluator (+ - * / neg) with errors plus shunting-yard infixToRPN",
+  "split": "train"
 }

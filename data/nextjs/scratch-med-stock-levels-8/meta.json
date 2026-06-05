@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-med-stock-levels-8",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a Stock Levels Manager",
+  "split": "test",
+  "from_scratch": true
+}

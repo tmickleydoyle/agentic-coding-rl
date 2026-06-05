@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-folio-watchlist",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route stock watchlist: watchlist/ticker-detail/add/alerts, shared context, target price + alert-hit flag + add/remove, REST API",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-folio-watchlist"
+}

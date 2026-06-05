@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "lib/stackvm.ts",
-  "summary": "Stack VM: PUSH/ADD/.../DUP/SWAP/PRINT/JZ/JMP/LABEL/HALT with jumps"
+  "summary": "Stack VM: PUSH/ADD/.../DUP/SWAP/PRINT/JZ/JMP/LABEL/HALT with jumps",
+  "split": "train"
 }

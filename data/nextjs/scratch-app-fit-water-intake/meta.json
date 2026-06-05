@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-fit-water-intake",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route water intake tracker: today/history/goal/settings, shared context, REST API with daily totals and percent complete",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-fit-water-intake"
+}

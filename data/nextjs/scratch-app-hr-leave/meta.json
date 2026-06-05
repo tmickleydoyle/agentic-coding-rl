@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-hr-leave",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route HR leave manager: requests/request-detail/balances/calendar, approve/reject decisions, per-employee balances, shared context, REST API",
+  "split": "test",
+  "from_scratch": true,
+  "repurposed_from": "app-hr-leave"
+}

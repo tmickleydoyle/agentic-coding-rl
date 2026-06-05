@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-hard-retail-low-stock-reorder",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "One-entity inventory app with low-stock detection and reorder-quantity math across catalog, restock and report views",
+  "split": "train",
+  "from_scratch": true
+}

@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-shop-storefront",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route storefront: catalog/product/cart/checkout, category + price filters, cart with qty, totals/tax, products REST API",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-shop-storefront"
+}

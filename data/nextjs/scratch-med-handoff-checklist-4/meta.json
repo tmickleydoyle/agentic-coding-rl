@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-med-handoff-checklist-4",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a Dev Handoff Checklist app",
+  "split": "test",
+  "from_scratch": true
+}

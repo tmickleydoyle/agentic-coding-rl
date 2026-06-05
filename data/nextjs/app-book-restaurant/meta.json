@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/page.tsx",
-  "summary": "Multi-route restaurant reservations: availability/reserve/reservations/tables, shared context, REST API with capacity + party-size checks"
+  "summary": "Multi-route restaurant reservations: availability/reserve/reservations/tables, shared context, REST API with capacity + party-size checks",
+  "split": "test"
 }

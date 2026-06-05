@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-workout-log",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a Workout Log",
+  "split": "train",
+  "from_scratch": true
+}

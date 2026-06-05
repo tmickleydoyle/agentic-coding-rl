@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-market-trade",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route barter trades: items/item-detail/offers/my-trades, shared context, offers API",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-market-trade"
+}

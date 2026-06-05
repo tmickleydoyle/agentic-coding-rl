@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/page.tsx",
-  "summary": "Multi-route barter trades: items/item-detail/offers/my-trades, shared context, offers API"
+  "summary": "Multi-route barter trades: items/item-detail/offers/my-trades, shared context, offers API",
+  "split": "train"
 }

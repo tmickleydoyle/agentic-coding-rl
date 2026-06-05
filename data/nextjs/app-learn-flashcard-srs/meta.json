@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/page.tsx",
-  "summary": "Multi-route flashcard SRS: decks/review/add-card/stats, due cards, easy/hard rescheduling, REST API"
+  "summary": "Multi-route flashcard SRS: decks/review/add-card/stats, due cards, easy/hard rescheduling, REST API",
+  "split": "train"
 }

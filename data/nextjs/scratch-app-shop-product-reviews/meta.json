@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-shop-product-reviews",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route product reviews: products/product-reviews/write-review/top-rated, shared context, average ratings + sorting, reviews REST API",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-shop-product-reviews"
+}

@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "easy",
   "entry_point": "components/ItemList.tsx",
-  "summary": "Render items from props with empty-state branch"
+  "summary": "Render items from props with empty-state branch",
+  "split": "train"
 }

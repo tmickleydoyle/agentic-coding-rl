@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/page.tsx",
-  "summary": "Multi-route code-snippet app: snippets/detail/add/favorites, shared context, snippets REST API"
+  "summary": "Multi-route code-snippet app: snippets/detail/add/favorites, shared context, snippets REST API",
+  "split": "train"
 }

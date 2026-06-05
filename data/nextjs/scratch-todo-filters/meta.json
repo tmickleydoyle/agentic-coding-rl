@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-todo-filters",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a Todo List with Filters",
+  "split": "train",
+  "from_scratch": true
+}

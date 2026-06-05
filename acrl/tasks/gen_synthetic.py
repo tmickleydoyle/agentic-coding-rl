@@ -279,6 +279,328 @@ def _write_task(task: dict) -> Path:
     return out
 
 
+# =========================================================================================
+# Scratch / text-to-app generation (v0 / bolt.new / replit / base44 style).
+# Pure natural-language prompts, BLANK-CANVAS starter, tolerant role/text tests, plus a
+# HELD-OUT hidden suite for generalization. Stricter gates than the component path: reference
+# must pass visible AND hidden; the blank starter must pass NOTHING (no reward-hack surface);
+# only react/react-dom/relative/testing-lib imports allowed.
+# =========================================================================================
+from acrl.sandbox.nextjs_runner import run_nextjs_task  # noqa: E402
+import re as _re  # noqa: E402
+import tempfile as _tempfile  # noqa: E402
+
+_SCRATCH_BLANK_STARTER = (
+    "'use client'\n\n"
+    "// Build the app described in description.md. The root component must be the default export.\n"
+    "export default function App() {\n  return <div />\n}\n"
+)
+_ALLOWED_IMPORT = _re.compile(r"^(react$|react-dom|react/|@testing-library/|vitest$|\.|/)")
+
+# Product-scale app ideas — each is a FULL multi-view application (the kind v0/bolt.new emit),
+# NOT a single widget. Every idea names ~4 navigable views with shared state. react+react-dom
+# only, in-memory, deterministic (no timers/animation/network).
+SCRATCH_ARCHETYPES = [
+    ("crm", "A sales CRM with a Contacts list, a Pipeline board (Lead/Qualified/Won), a Reports view (counts + win rate), and Settings."),
+    ("habit", "A habit tracker with a Today checklist, a Weekly grid, a Stats view (streaks/completion %), and Settings."),
+    ("recipes", "A recipe app with a Browse list, a Meal Planner, a Shopping List derived from planned meals, and Settings."),
+    ("finance", "A budgeting app with a Transactions list, a Budgets view (per-category limits + over-budget flags), a Reports view, and Settings."),
+    ("fitness", "A workout app with a Log view, a Routines builder, a Progress view (totals/volume), and Settings."),
+    ("notes", "A notes app with a Notes list, an Editor, a Tags view (filter by tag), and Settings."),
+    ("issues", "An issue tracker with a Board (Open/In Progress/Closed), a Backlog, a Reports view (per-status counts), and Settings."),
+    ("inventory", "An inventory app with a Stock list, a Receiving form, a Low-stock report, and Settings."),
+    ("events", "An event planner with an Agenda, a Guest list (RSVP yes/no/maybe), a Stats view (attendance), and Settings."),
+    ("courses", "A learning app with a Courses list, a Lesson view, a Progress view (% complete), and Settings."),
+    ("support", "A helpdesk with a Tickets queue, a New Ticket form, a Dashboard (per-status counts), and Settings."),
+    ("travel", "A trip planner with an Itinerary, a Packing list, a Budget view, and Settings."),
+    ("store", "A storefront with a Catalog, a Cart, a Checkout summary (subtotal/tax/total), and Settings."),
+    ("jobs", "A job-application tracker with a Listings view, an Applications board (Applied/Interview/Offer), a Stats view, and Settings."),
+    ("library", "A reading app with a Library list, a Currently-Reading shelf, a Stats view (finished count/percent), and Settings."),
+    ("expense", "An expense-report app with an Expenses list, a New Expense form, an Approvals view (approve/reject), and a Totals dashboard."),
+    ("garden", "A garden planner with a Beds list, a Plant catalog, a Care schedule view, and Settings."),
+    ("music", "A music app with a Library, Playlists (add/remove tracks), a Now-Playing queue, and Settings."),
+    ("polls", "A polling app with a Create view, an Active-polls list (vote once), a Results dashboard (counts/percentages), and Settings."),
+    ("realestate", "A listings app with a Listings grid, a Saved/Favorites view, a Compare view, and Settings."),
+]
+
+SCRATCH_SYSTEM_PROMPT = """\
+You generate self-contained, from-scratch "text-to-app" coding tasks for an RL dataset — the
+kind of FULL APPLICATION a user gets from v0 / bolt.new / replit / base44. NOT a single widget:
+each task is a complete multi-view app.
+
+Scope (REQUIRED — match the worked example's shape):
+  - 4 navigable views switched by an in-app nav bar (NOT the Next.js router). State is SHARED
+    across views via a React Context provider + a use<App> hook; navigating away and back
+    preserves state. At least one view is a derived/stats/dashboard view computed from the others,
+    and at least one interaction in one view changes data shown in another (cross-view state).
+  - MULTI-FILE reference: split into app/page.tsx (default export App = the Context provider
+    wrapping an inner Shell that reads context and renders nav + the active view), plus
+    components/, hooks/, and lib/ files. app/page.tsx is the entry the tests import.
+  - Use ONLY react + react-dom — NO next/* imports, NO third-party libraries. In-memory state
+    only; NO network/timers/animation. Routing is in-app state.
+
+description.md: a NATURAL-LANGUAGE product request ("Build a ... app with these views: ..."). It
+  MUST name the views, the visible labels/buttons/headings, and the EXACT format of any
+  numbers/totals shown (e.g. `Completion: 50%`, `To Do (2)`, `Total: $35.15`), because the tests
+  key off those visible strings. Do NOT list data-testids and do NOT dictate the file tree. Seed
+  any fixed data the tests need directly in the prompt.
+
+tests/: a Vitest suite querying by ROLE / LABEL / VISIBLE TEXT only (getByRole, getByLabelText,
+  getByText, within) — NEVER data-testid. `import App from '../app/page'`. 20-35 independent it()
+  blocks covering: navigation to every view, each view's core flow, AT LEAST ONE cross-view
+  shared-state interaction, and the derived/stats view. Deterministic.
+
+hidden_test_files: a SEPARATE held-out suite (same tolerant style, FRESH scenarios — other
+  inputs, edge cases, sequences, cross-view paths) used only to measure generalization. It must
+  also pass against the reference and be different enough that hardcoding visible strings fails it.
+
+Hard constraints (these break tests if ignored):
+  - tsconfig lib is ES2022+DOM (no DOM.Iterable): no for..of over Map/Set — use .forEach /
+    Array.from / index loops.
+  - Compose any displayed composite string as ONE text node via a template literal so getByText
+    matches (not `Total: {a} of {b}` which splits into several nodes).
+  - getByLabelText also matches a section's aria-label: give inputs distinct accessible names and
+    don't let a region's aria-label equal an input's label or a nav button's name.
+  - The root App renders the provider, so it canNOT call use<App>() itself — put an inner Shell
+    inside the provider that consumes context. The provider must supply a non-null value so the
+    app mounts and tests fail on assertions, not a crash.
+  - Do NOT put the two-word sequence  from "..."  (the word from immediately before a quote)
+    inside any test title or string — a naive import scanner flags it as a forbidden import.
+
+Output ONLY a JSON object — no prose, no code fence. Schema:
+{ "task_id": "scratch-app-<kebab>", "description": "<markdown>", "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "reference_files": {"app/page.tsx": "...", "components/...": "...", "hooks/...": "...", "lib/...": "..."},
+  "test_files": {"<name>.test.tsx": "..."}, "hidden_test_files": {"<name>_hidden.test.tsx": "..."} }
+"""
+
+
+def _scratch_few_shot() -> str:
+    """Build the few-shot from the validated FULL-APP exemplar on disk (multi-file, multi-view —
+    teaches the model to emit a complete application, not a single widget)."""
+    base = _DATA_DIR / "scratch-app-projecthub"
+
+    def collect(sub: str) -> dict:
+        d = base / sub
+        out = {}
+        for p in sorted(d.rglob("*")):
+            if p.is_file():
+                out[p.relative_to(d).as_posix()] = p.read_text()
+        return out
+
+    example = {
+        "task_id": "scratch-app-projecthub",
+        "description": (base / "description.md").read_text(),
+        "difficulty": "hard",
+        "entry_point": "app/page.tsx",
+        "reference_files": collect("reference"),     # multi-file: app/, components/, hooks/, lib/
+        "test_files": collect("tests"),
+        "hidden_test_files": collect("tests_hidden"),
+    }
+    return json.dumps(example, indent=2)
+
+
+# Medium tier (GEN_TIER=medium): the CORE-band recipe AND distribution-matched to what real
+# users ask a no-code/AI builder for — small-business owners, product managers, designers, and
+# solo founders building internal tools. Single-entity, list+filter+derived-stat apps the base
+# gets ~30-60% right (not the hard multi-entity/REST-API full apps that calibrate to "dead").
+MEDIUM_ARCHETYPES = [
+    # --- Small business owner ---
+    ("client-roster", "A client list: name + status (active/lead/churned) + lifetime value; filter by status, total value, active count."),
+    ("invoice-tracker", "An invoice list: client + amount + paid/unpaid; mark paid, filter unpaid, total outstanding."),
+    ("appointment-book", "An appointment list: customer + service + status (booked/done/no-show); filter by status, counts."),
+    ("order-tracker", "An order list: customer + status (new/packing/shipped/delivered); advance status, filter, count per status."),
+    ("service-pricing", "A service menu: name + price + active toggle; toggle active, count active, average price."),
+    ("staff-schedule", "A shift list: employee + hours; add, filter by employee, total hours per employee."),
+    ("business-expenses", "A business expense list: vendor + category + amount; filter by category, per-category totals, monthly total."),
+    ("stock-levels", "A product list: name + on-hand + reorder point; adjust stock, low-stock flag, total inventory value."),
+    ("customer-reviews", "A review list: customer + rating + responded toggle; filter unresponded, average rating."),
+    ("quote-tracker", "A quote list: client + amount + status (sent/won/lost); filter, total pending value, win rate."),
+    # --- Product manager ---
+    ("feature-backlog", "A feature backlog: title + priority (P0/P1/P2) + status (idea/building/shipped); filter, count by priority."),
+    ("bug-triage", "A bug list: title + severity + status (open/closed); filter by status, open count by severity."),
+    ("roadmap-board", "A roadmap: item + quarter + status (planned/in-progress/shipped); filter by quarter, shipped count."),
+    ("feedback-inbox", "A feedback list: note + theme + upvotes; sort by upvotes, count per theme."),
+    ("okr-tracker", "An objectives list: objective + progress %; update progress, overall average, on-track (>=70%) count."),
+    ("release-checklist", "A launch checklist: task + owner + done toggle; completion %, count remaining by owner."),
+    ("experiment-log", "An A/B test list: name + status (running/done) + winner; filter running, win rate of finished."),
+    ("user-interviews", "An interview list: participant + segment + key takeaway; filter by segment, count per segment."),
+    ("sprint-board", "A task board: task + status (todo/doing/done) + points; counts and total points per status."),
+    ("stakeholder-map", "A stakeholder list: name + influence (high/med/low) + supportive toggle; filter, count by influence."),
+    # --- Designer (non-technical) ---
+    ("design-requests", "A design-request queue: title + status (new/in-progress/done) + priority; filter by status, count per status."),
+    ("asset-library", "An asset list: name + type (logo/icon/photo) + tags; filter by type, count per type."),
+    ("design-feedback", "A feedback list: note + screen + status (open/addressed); filter open, open count."),
+    ("portfolio-projects", "A project list: title + category + status (live/draft); filter, count live."),
+    ("deliverables", "A deliverables list: item + status (pending/delivered) + due; filter pending, delivered count / total."),
+    ("brand-colors", "A brand-color list: name + hex; add, count, show a swatch and the hex; total colors."),
+    ("handoff-checklist", "A dev-handoff checklist: item + done toggle; completion %, remaining count."),
+    ("content-review", "A content-review list: item + reviewer + status (draft/approved/changes); filter, approved %."),
+    # --- Solo founder ---
+    ("lead-pipeline", "A sales-lead list: company + stage (new/demo/won) + deal value; filter by stage, total pipeline value."),
+    ("waitlist", "A waitlist: email + status (pending/invited) + source; invite, filter, invited count, count per source."),
+    ("content-calendar", "A content list: title + platform + status (draft/scheduled/published); filter, scheduled count."),
+    ("subscriber-mrr", "A subscriber list: name + plan + active toggle (plan has a monthly price); total MRR, active count."),
+    ("investor-crm", "An investor list: firm + stage (intro/pitched/committed) + check size; filter, total committed."),
+    ("metrics-log", "A metrics list: metric name + value + entered order; latest per metric, up/down vs the previous entry."),
+    ("founder-tasks", "A task list: task + priority (high/med/low) + done toggle; filter by priority, done %, count by priority."),
+]
+MEDIUM_ADDENDUM = (
+    "\n\nThis must read like a REAL request from a small-business owner, product manager, designer, "
+    "or solo founder building a simple internal tool — practical and professional, not a personal "
+    "hobby app. Keep it SIMPLER than the example (medium difficulty): exactly 2-3 views (a main list "
+    "view, a stats/summary view, optionally a settings view with a theme toggle); exactly ONE main "
+    "entity; NO app/api/*/route.ts handlers (in-memory state only); and ONE tractable logic feature "
+    "(a filter, sort, count, total/percentage, or status-toggle). 15-25 tests. Aim so a competent "
+    "model gets most of it right but can slip an edge case."
+)
+
+
+def _claude_generate_scratch(slug: str, idea: str, model: str) -> dict | None:
+    try:
+        import anthropic
+    except ImportError:
+        sys.exit("anthropic SDK not installed. Run: pip install -e \".[judge]\"")
+    client = anthropic.Anthropic()
+    user_msg = (
+        f"Generate ONE from-scratch text-to-app task around this product idea:\n"
+        f"  slug hint: scratch-{slug}\n  idea: {idea}\n\n"
+        f"Follow this VALIDATED example exactly in shape and test style:\n"
+        f"```json\n{_scratch_few_shot()}\n```\n\n"
+        f"Generate a NEW full multi-view app (not project management / not the example). The "
+        f"description must name the views and the visible labels/totals the tests rely on. "
+        f"Return ONLY the JSON object."
+        + (MEDIUM_ADDENDUM if os.environ.get("GEN_TIER") == "medium" else "")
+    )
+    try:
+        with client.messages.stream(
+            model=model, max_tokens=32000, system=SCRATCH_SYSTEM_PROMPT,
+            messages=[{"role": "user", "content": user_msg}],
+        ) as stream:
+            resp = stream.get_final_message()
+        text = resp.content[0].text.strip()
+        if text.startswith("```"):
+            text = text.split("\n", 1)[1] if "\n" in text else text[3:]
+            if text.endswith("```"):
+                text = text[:-3]
+        return json.loads(text)
+    except Exception as e:
+        print(f"  [{slug}] generation failed: {type(e).__name__}: {str(e)[:160]}")
+        return None
+
+
+def _forbidden_imports(files: dict) -> list:
+    bad = set()
+    for content in files.values():
+        for m in _re.findall(r"from ['\"]([^'\"]+)['\"]", content):
+            if not _ALLOWED_IMPORT.match(m):
+                bad.add(m)
+    return sorted(bad)
+
+
+def _validate_scratch(task: dict) -> tuple[bool, str]:
+    """Assemble the task in a tmp dir and gate it: reference passes visible AND hidden, blank
+    starter passes NOTHING, no forbidden imports."""
+    if not (task.get("test_files") and task.get("hidden_test_files") and task.get("reference_files")):
+        return False, "missing reference / visible tests / hidden tests"
+    allf = {**task["reference_files"], **task["test_files"], **task["hidden_test_files"]}
+    bad = _forbidden_imports(allf)
+    if bad:
+        return False, f"forbidden imports {bad[:4]}"
+    with _tempfile.TemporaryDirectory(prefix="acrl_scratch_") as d:
+        root = Path(d)
+        for sub, dirn in (("reference_files", "reference"), ("test_files", "tests"),
+                          ("hidden_test_files", "tests_hidden")):
+            for rel, c in task[sub].items():
+                p = root / dirn / rel
+                p.parent.mkdir(parents=True, exist_ok=True)
+                p.write_text(c)
+        (root / "starter" / "app").mkdir(parents=True, exist_ok=True)
+        (root / "starter" / "app" / "page.tsx").write_text(_SCRATCH_BLANK_STARTER)
+
+        ref = run_nextjs_task(root / "reference", task_dir=root)
+        if not ref.all_passed:
+            return False, f"reference fails visible {ref.passed}/{ref.total}"
+        refh = run_nextjs_task(root / "reference", task_dir=root, extra_tests_dir=root / "tests_hidden")
+        if not refh.all_passed:
+            return False, f"reference fails hidden {refh.passed}/{refh.total}"
+        st = run_nextjs_task(root / "starter", task_dir=root)
+        if st.all_passed:
+            return False, "blank starter passes all (trivial)"
+        if st.passed > 0:
+            return False, f"blank starter passes {st.passed} visible tests (hackable)"
+    return True, "ok"
+
+
+def _write_scratch_task(task: dict, split: str) -> Path:
+    prefix = os.environ.get("GEN_PREFIX", "scratch-")
+    base = task["task_id"]
+    for p in ("scratch-med-", "scratch-app-", "scratch-"):  # strip whatever the model prepended
+        if base.startswith(p):
+            base = base[len(p):]
+            break
+    tid = prefix + base
+    out = _DATA_DIR / tid
+    if out.exists():
+        s = 2
+        while (_DATA_DIR / f"{tid}-{s}").exists():
+            s += 1
+        out = _DATA_DIR / f"{tid}-{s}"
+        tid = out.name
+    out.mkdir(parents=True)
+    (out / "description.md").write_text(task["description"])
+    (out / "meta.json").write_text(json.dumps({
+        "task_id": f"nextjs/{tid}", "framework": "nextjs", "difficulty": task.get("difficulty", "hard"),
+        "entry_point": "app/page.tsx",
+        "summary": task["description"].splitlines()[0].lstrip("# ").strip(),
+        "split": split, "from_scratch": True,
+    }, indent=2))
+    (out / "starter" / "app").mkdir(parents=True)
+    (out / "starter" / "app" / "page.tsx").write_text(_SCRATCH_BLANK_STARTER)
+    for sub, dirn in (("reference_files", "reference"), ("test_files", "tests"),
+                      ("hidden_test_files", "tests_hidden")):
+        for rel, c in (task.get(sub) or {}).items():
+            p = out / dirn / rel
+            p.parent.mkdir(parents=True, exist_ok=True)
+            p.write_text(c)
+    return out
+
+
+def main_scratch(n_attempts: int, keep_target: int, model: str, dry_run: bool, seed: int):
+    rng = random.Random(seed)
+    _load_env_local()
+    if not dry_run and not os.environ.get("ANTHROPIC_API_KEY"):
+        sys.exit("ANTHROPIC_API_KEY not set (env or .env.local).")
+    pool = list(MEDIUM_ARCHETYPES if os.environ.get("GEN_TIER") == "medium" else SCRATCH_ARCHETYPES)
+    rng.shuffle(pool)
+    print(f"scratch: {n_attempts} attempts, keep up to {keep_target}, model={model}, seed={seed}")
+    kept = rejected = 0
+    for i in range(n_attempts):
+        slug, idea = pool[i % len(pool)]
+        print(f"[{i+1}/{n_attempts}] scratch archetype={slug}")
+        if dry_run:
+            print("  (dry-run, no API call)")
+            continue
+        task = _claude_generate_scratch(slug, idea, model)
+        if task is None:
+            rejected += 1
+            continue
+        ok, msg = _validate_scratch(task)
+        if not ok:
+            print(f"  reject: {msg}")
+            rejected += 1
+            continue
+        # Mixed split: hold out every 5th kept task for eval.
+        split = "test" if (kept % 5 == 4) else "train"
+        out = _write_scratch_task(task, split)
+        kept += 1
+        print(f"  KEEP -> {out.name} [{split}]   ({kept}/{keep_target})")
+        if kept >= keep_target:
+            break
+    print(f"\n=== scratch done: kept {kept} / rejected {rejected} ===")
+    print("verify: python data/nextjs/probe_hackable.py 'scratch-*' && python data/nextjs/validate_rl.py 'scratch-*'")
+
+
 def main_nextjs(n_attempts: int, keep_target: int, model: str, dry_run: bool, seed: int):
     rng = random.Random(seed)
     _load_env_local()
@@ -321,15 +643,21 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--target", choices=["nextjs"], required=True,
                     help="Which dataset to generate into. Currently only 'nextjs' is wired.")
+    ap.add_argument("--style", choices=["component", "scratch"], default="component",
+                    help="'component' = scaffolded testid tasks (legacy); 'scratch' = from-scratch "
+                         "text-to-app tasks (blank canvas, tolerant tests, hidden suite).")
     ap.add_argument("--n", type=int, default=20, help="Max generation attempts")
-    ap.add_argument("--keep", type=int, default=10, help="Stop early once N valid tasks kept")
+    ap.add_argument("--keep", type=int, default=10, help="Stop early once N valid tasks kept (use 25 for a batch)")
     ap.add_argument("--model", default="claude-sonnet-4-5", help="Anthropic model id")
     ap.add_argument("--seed", type=int, default=42)
     ap.add_argument("--dry-run", action="store_true",
                     help="Print archetypes that would be sent, but don't call the API.")
     args = ap.parse_args()
     if args.target == "nextjs":
-        main_nextjs(args.n, args.keep, args.model, args.dry_run, args.seed)
+        if args.style == "scratch":
+            main_scratch(args.n, args.keep, args.model, args.dry_run, args.seed)
+        else:
+            main_nextjs(args.n, args.keep, args.model, args.dry_run, args.seed)
 
 
 if __name__ == "__main__":

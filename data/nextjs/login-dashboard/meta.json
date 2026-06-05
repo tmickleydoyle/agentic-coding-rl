@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "medium-simple",
   "entry_point": "components/App.tsx",
-  "summary": "Login flow with error state; dashboard with logout; mutually-exclusive views"
+  "summary": "Login flow with error state; dashboard with logout; mutually-exclusive views",
+  "split": "train"
 }

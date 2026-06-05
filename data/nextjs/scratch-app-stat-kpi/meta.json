@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-stat-kpi",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route KPI dashboard: dashboard/kpi-detail/targets/history, on/off-track vs target, trend vs previous, editable targets, sparkline history, shared context, kpis REST API",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-stat-kpi"
+}

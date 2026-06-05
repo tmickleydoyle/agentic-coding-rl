@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-hard-salon-slot-conflicts",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a salon scheduling app from scratch with per-stylist time-slot overlap conflict detection, a conflicts view, reports, and settings",
+  "split": "train",
+  "from_scratch": true
+}

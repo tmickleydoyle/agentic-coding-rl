@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-hr-directory",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route employee directory: directory/profile/departments/org, search + department filter, manager/reports profile, org tree, shared context, employees REST API",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-hr-directory"
+}

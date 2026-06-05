@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-med-client-roster-2",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a Client Roster app",
+  "split": "train",
+  "from_scratch": true
+}

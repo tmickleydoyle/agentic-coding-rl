@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "medium-hard",
   "entry_point": "components/App.tsx",
-  "summary": "Cart Context shared by product list + summary: add/remove updates qty + total live"
+  "summary": "Cart Context shared by product list + summary: add/remove updates qty + total live",
+  "split": "test"
 }

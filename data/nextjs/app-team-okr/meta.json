@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/page.tsx",
-  "summary": "Multi-route OKR tracker: objectives/objective-detail/add/dashboard, key-result progress, company rollup average, shared context, REST API"
+  "summary": "Multi-route OKR tracker: objectives/objective-detail/add/dashboard, key-result progress, company rollup average, shared context, REST API",
+  "split": "train"
 }

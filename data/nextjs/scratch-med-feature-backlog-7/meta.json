@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-med-feature-backlog-7",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a Feature Backlog app",
+  "split": "test",
+  "from_scratch": true
+}

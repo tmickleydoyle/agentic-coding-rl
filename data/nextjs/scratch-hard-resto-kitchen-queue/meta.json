@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-hard-resto-kitchen-queue",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Restaurant kitchen ticket queue with a forward-only status flow, status filter, and live counts",
+  "split": "train",
+  "from_scratch": true
+}

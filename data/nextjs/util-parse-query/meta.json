@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "medium",
   "entry_point": "lib/parse-query.ts",
-  "summary": "parseQuery/stringifyQuery; repeated keys -> array; decode %20 and +"
+  "summary": "parseQuery/stringifyQuery; repeated keys -> array; decode %20 and +",
+  "split": "train"
 }

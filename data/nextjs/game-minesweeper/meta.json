@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "lib/minesweeper.ts",
-  "summary": "Minesweeper reveal with flood-fill on zero cells, countAdjacent, mine hit"
+  "summary": "Minesweeper reveal with flood-fill on zero cells, countAdjacent, mine hit",
+  "split": "test"
 }

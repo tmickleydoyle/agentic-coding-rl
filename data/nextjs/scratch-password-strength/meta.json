@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-password-strength",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a Password Strength Checker",
+  "split": "train",
+  "from_scratch": true
+}

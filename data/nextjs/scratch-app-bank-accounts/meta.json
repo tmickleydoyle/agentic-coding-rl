@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-bank-accounts",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route banking accounts dashboard: accounts/account-detail/transfer/settings, shared context, balances + transfer with funds validation, REST API for accounts + transactions",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-bank-accounts"
+}

@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-shop-wishlist",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route wishlist shop: browse/wishlist/cart/settings, add/remove wishlist, move-to-cart, category + price filters, products REST API",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-shop-wishlist"
+}

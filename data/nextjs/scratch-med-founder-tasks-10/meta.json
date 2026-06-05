@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-med-founder-tasks-10",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a Founder Task Tracker app",
+  "split": "train",
+  "from_scratch": true
+}

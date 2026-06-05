@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "medium-simple",
   "entry_point": "components/Catalog.tsx",
-  "summary": "List ↔ detail navigation, mutually exclusive views"
+  "summary": "List \u2194 detail navigation, mutually exclusive views",
+  "split": "train"
 }

@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "medium-hard",
   "entry_point": "components/Thread.tsx",
-  "summary": "Recursive comment thread: add root + nested replies via a tree hook, unique ids"
+  "summary": "Recursive comment thread: add root + nested replies via a tree hook, unique ids",
+  "split": "train"
 }

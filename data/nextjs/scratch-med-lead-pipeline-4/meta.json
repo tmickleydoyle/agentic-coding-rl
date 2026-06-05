@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-med-lead-pipeline-4",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a Sales Lead Pipeline app",
+  "split": "test",
+  "from_scratch": true
+}

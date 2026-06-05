@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "lib/dijkstra.ts",
-  "summary": "Dijkstra dist/prev over weighted adjacency list + shortestPath reconstruction"
+  "summary": "Dijkstra dist/prev over weighted adjacency list + shortestPath reconstruction",
+  "split": "train"
 }

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-med-invoice-tracker",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Build an Invoice Tracker app",
+  "split": "train",
+  "from_scratch": true
+}

@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/page.tsx",
-  "summary": "Multi-route CI dashboard: pipelines/pipeline-detail/builds/stats, shared context, REST API with retry"
+  "summary": "Multi-route CI dashboard: pipelines/pipeline-detail/builds/stats, shared context, REST API with retry",
+  "split": "train"
 }

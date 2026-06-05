@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "easy",
   "entry_point": "components/Picker.tsx",
-  "summary": "Controlled <select> with picked-value display"
+  "summary": "Controlled <select> with picked-value display",
+  "split": "test"
 }

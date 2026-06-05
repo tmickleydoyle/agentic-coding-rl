@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-med-roadmap-board-2",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a Product Roadmap app",
+  "split": "train",
+  "from_scratch": true
+}

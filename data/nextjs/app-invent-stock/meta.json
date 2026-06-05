@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/page.tsx",
-  "summary": "Multi-route inventory stock app: products/product-detail/adjust/low-stock, quantity adjustments, reorder-point low-stock alerts, products REST API"
+  "summary": "Multi-route inventory stock app: products/product-detail/adjust/low-stock, quantity adjustments, reorder-point low-stock alerts, products REST API",
+  "split": "train"
 }

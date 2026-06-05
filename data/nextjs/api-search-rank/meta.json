@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/api/search/route.ts",
-  "summary": "Weighted TF ranking (title>body), multi-term, paginated; sorted score desc then id asc"
+  "summary": "Weighted TF ranking (title>body), multi-term, paginated; sorted score desc then id asc",
+  "split": "train"
 }

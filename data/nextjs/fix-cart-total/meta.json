@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "medium-simple",
   "entry_point": "components/Cart.tsx",
-  "summary": "Cart total sums unit price ignoring qty; should sum price*qty"
+  "summary": "Cart total sums unit price ignoring qty; should sum price*qty",
+  "split": "test"
 }

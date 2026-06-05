@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-support-chat",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route live-chat support: queue/session/history/agents, shared context, REST API with assign+close+transcript",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-support-chat"
+}

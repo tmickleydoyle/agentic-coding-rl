@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/page.tsx",
-  "summary": "Multi-route meeting-room booking: rooms/book/schedule/my-bookings, shared context, REST API with interval-overlap conflict detection"
+  "summary": "Multi-route meeting-room booking: rooms/book/schedule/my-bookings, shared context, REST API with interval-overlap conflict detection",
+  "split": "train"
 }

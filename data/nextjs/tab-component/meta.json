@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "medium",
   "entry_point": "components/Tabs.tsx",
-  "summary": "Tabs with active state, aria-selected, content panel"
+  "summary": "Tabs with active state, aria-selected, content panel",
+  "split": "train"
 }

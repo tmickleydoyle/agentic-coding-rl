@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/api/auth/route.ts",
-  "summary": "JWT-lite: POST issues signed token with exp; GET verifies Bearer, 401 on tamper/expiry"
+  "summary": "JWT-lite: POST issues signed token with exp; GET verifies Bearer, 401 on tamper/expiry",
+  "split": "train"
 }

@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "lib/roman.ts",
-  "summary": "toRoman/fromRoman for 1..3999 with strict canonical validation and round-trip"
+  "summary": "toRoman/fromRoman for 1..3999 with strict canonical validation and round-trip",
+  "split": "train"
 }

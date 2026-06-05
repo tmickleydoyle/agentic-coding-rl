@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-med-customer-reviews-6",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a Customer Reviews app",
+  "split": "train",
+  "from_scratch": true
+}

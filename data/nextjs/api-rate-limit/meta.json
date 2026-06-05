@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "medium-hard",
   "entry_point": "app/api/limit/route.ts",
-  "summary": "GET increments per-key counter; 429 after max requests; __reset resets"
+  "summary": "GET increments per-key counter; 429 after max requests; __reset resets",
+  "split": "train"
 }

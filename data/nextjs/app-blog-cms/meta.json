@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/page.tsx",
-  "summary": "Multi-route blog CMS: posts/editor/categories/published, draft-publish toggle, shared context, REST API"
+  "summary": "Multi-route blog CMS: posts/editor/categories/published, draft-publish toggle, shared context, REST API",
+  "split": "train"
 }

@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/page.tsx",
-  "summary": "Multi-route comment moderation: posts/post-detail/moderation/settings, approve/spam/pending, shared context, REST API"
+  "summary": "Multi-route comment moderation: posts/post-detail/moderation/settings, approve/spam/pending, shared context, REST API",
+  "split": "train"
 }

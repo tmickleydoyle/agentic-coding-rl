@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-support-kb",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route support knowledge base: articles/article-detail/categories/search, shared context, REST API with votes+search",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-support-kb"
+}

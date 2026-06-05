@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "components/CalendarGrid.tsx",
-  "summary": "Wrong leading weekday offset and leap-year February length in month grid"
+  "summary": "Wrong leading weekday offset and leap-year February length in month grid",
+  "split": "train"
 }

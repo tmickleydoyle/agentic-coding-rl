@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-habit-goals",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route goal tracker: goals/goal-detail/add/completed, shared context, REST API with milestones, progress % and completion",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-habit-goals"
+}

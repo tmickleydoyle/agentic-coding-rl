@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/page.tsx",
-  "summary": "Multi-route daily standup: today/history/team/add-entry, blocker counts, history by date, shared context, REST API"
+  "summary": "Multi-route daily standup: today/history/team/add-entry, blocker counts, history by date, shared context, REST API",
+  "split": "test"
 }

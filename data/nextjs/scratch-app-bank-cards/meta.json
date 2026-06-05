@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-bank-cards",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route banking cards dashboard: cards/card-detail/transactions/settings, shared context, freeze/unfreeze + spend limit + per-card spend tracking, REST API for cards",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-bank-cards"
+}

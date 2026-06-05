@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-quiz",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a multi-question quiz from scratch with navigation, changeable answers, scoring, pass/fail, and review",
+  "split": "train",
+  "from_scratch": true
+}

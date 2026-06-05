@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-hard-growth-referral-funnel",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a referral-program app from scratch: referrals, per-source conversion-rate rollup, funnel overview with bounty owed, settings",
+  "split": "train",
+  "from_scratch": true
+}

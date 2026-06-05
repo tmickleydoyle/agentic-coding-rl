@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/page.tsx",
-  "summary": "Multi-route support tickets: tickets/ticket-detail/new/queue, shared context, REST API with assign+reply+filter"
+  "summary": "Multi-route support tickets: tickets/ticket-detail/new/queue, shared context, REST API with assign+reply+filter",
+  "split": "test"
 }

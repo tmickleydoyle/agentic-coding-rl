@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-video-channel",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route video channel: channel/video-detail/uploads/subscriptions, subscribe + view counts + sort, REST API",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-video-channel"
+}

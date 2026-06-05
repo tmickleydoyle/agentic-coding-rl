@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-habit-reading",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route reading tracker: today/books/log/stats, shared context, REST API with pages/day logs, books and streak totals",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-habit-reading"
+}

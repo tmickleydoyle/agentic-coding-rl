@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "app/page.tsx",
-  "summary": "Multi-route workout log: log/workout-detail/exercises/records, shared context, REST API with personal records"
+  "summary": "Multi-route workout log: log/workout-detail/exercises/records, shared context, REST API with personal records",
+  "split": "test"
 }

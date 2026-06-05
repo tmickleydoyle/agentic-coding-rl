@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-book-appointments",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route appointment booking: services/book/schedule/my-bookings, shared context, REST API with double-booking prevention",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-book-appointments"
+}

@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-chat-threads",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route threaded channel chat: channel/thread/search/settings, threaded replies, reply counts, resolve, shared context, REST API",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-chat-threads"
+}

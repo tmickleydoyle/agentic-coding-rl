@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-med-bug-triage",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a Bug Triage Tool",
+  "split": "train",
+  "from_scratch": true
+}

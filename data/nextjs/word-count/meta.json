@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "easy",
   "entry_point": "components/WordCount.tsx",
-  "summary": "Textarea + whitespace-tolerant word count"
+  "summary": "Textarea + whitespace-tolerant word count",
+  "split": "train"
 }

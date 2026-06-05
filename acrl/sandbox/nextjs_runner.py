@@ -25,6 +25,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import shutil
 import signal
 import subprocess
@@ -37,6 +38,22 @@ from acrl.sandbox.runner import RunResult
 _CONFIG_FILES = ("vitest.config.ts", "vitest.setup.ts", "tsconfig.json", "package.json")
 _REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 _DEFAULT_DATA_ROOT = _REPO_ROOT / "data" / "nextjs"
+
+# Infra-flake signatures: the shared vite transform service crashing / a worker dying — NOT a
+# real candidate bug. Retried once. We deliberately do NOT match genuine assertion failures or
+# a candidate that won't compile (those are real 0s and must not be retried away).
+_FLAKE_RE = re.compile(
+    r"esbuild|Transform failed|The service (was|is) (stopped|no longer)|Cannot start service|"
+    r"EAGAIN|ECONNRESET|ETIMEDOUT|worker.*(exit|terminat)|Segmentation|vite.*internal error",
+    re.I,
+)
+
+
+def _is_flake(r: "RunResult") -> bool:
+    """True only for a suite-didn't-run result carrying a known infra signature."""
+    if r.compiled or r.passed or r.total:
+        return False
+    return bool(_FLAKE_RE.search(" ".join(r.errors or [])))
 
 
 def _infer_task_dir(candidate_dir: Path) -> Path:
@@ -58,37 +75,19 @@ def _copy_candidate(candidate_dir: Path, work: Path) -> None:
             shutil.copy2(item, dest)
 
 
-def run_nextjs_task(
-    candidate_dir: str | os.PathLike,
-    task_dir: str | os.PathLike | None = None,
-    data_root: str | os.PathLike | None = None,
-    timeout: float = 60.0,
-    test_timeout_ms: int = 8000,
-) -> RunResult:
-    """Run the candidate files in `candidate_dir` against the task's canonical Vitest suite.
-
-    candidate_dir: dir holding the model's solution (agent workdir or a reference/ dir).
-    task_dir:      data/nextjs/<task>/ that provides the canonical `tests/`. Inferred from
-                   candidate_dir if omitted.
-    data_root:     dir holding the shared vitest config + node_modules (default data/nextjs/).
-    """
-    candidate_dir = Path(candidate_dir).resolve()
-    task_dir = Path(task_dir).resolve() if task_dir else _infer_task_dir(candidate_dir)
-    data_root = Path(data_root).resolve() if data_root else _DEFAULT_DATA_ROOT
-
-    tests_src = task_dir / "tests"
-    node_modules = data_root / "node_modules"
-    if not tests_src.is_dir():
-        return RunResult(0, 0, compiled=False, timed_out=False,
-                         errors=[f"no tests/ dir at {tests_src}"])
-    if not node_modules.is_dir():
-        return RunResult(0, 0, compiled=False, timed_out=False,
-                         errors=[f"node_modules missing at {node_modules} — run `npm install`"])
-
+def _attempt(candidate_dir: Path, tests_src: Path, data_root: Path, node_modules: Path,
+             timeout: float, test_timeout_ms: int, extra_tests: Path | None) -> RunResult:
+    """Assemble a fresh workdir and run vitest once (a fresh tmpdir avoids cross-run cache state)."""
     with tempfile.TemporaryDirectory(prefix="acrl_next_") as d:
         work = Path(d)
         _copy_candidate(candidate_dir, work)
         shutil.copytree(tests_src, work / "tests", symlinks=False)
+        # Hidden/held-out assertions (generalization eval): overlaid in ADDITION to the visible
+        # suite, never copied into the agent's workdir at rollout time.
+        if extra_tests and extra_tests.is_dir():
+            for f in extra_tests.iterdir():
+                if f.is_file():
+                    shutil.copy2(f, work / "tests" / f.name)
         for cfg in _CONFIG_FILES:
             src = data_root / cfg
             if src.is_file():
@@ -116,6 +115,48 @@ def run_nextjs_task(
             return RunResult(0, 0, compiled=False, timed_out=True, errors=["vitest wall-clock timeout"])
 
         return _parse_vitest(out_file, proc)
+
+
+def run_nextjs_task(
+    candidate_dir: str | os.PathLike,
+    task_dir: str | os.PathLike | None = None,
+    data_root: str | os.PathLike | None = None,
+    timeout: float = 60.0,
+    test_timeout_ms: int = 8000,
+    extra_tests_dir: str | os.PathLike | None = None,
+    retries: int = 1,
+) -> RunResult:
+    """Run the candidate files in `candidate_dir` against the task's canonical Vitest suite.
+
+    candidate_dir:   dir holding the model's solution (agent workdir or a reference/ dir).
+    task_dir:        data/nextjs/<task>/ that provides the canonical `tests/`. Inferred from
+                     candidate_dir if omitted.
+    data_root:       dir holding the shared vitest config + node_modules (default data/nextjs/).
+    extra_tests_dir: optional held-out/hidden tests overlaid IN ADDITION to tests/ — for
+                     measuring generalization at eval (the agent never sees these at rollout).
+    retries:         re-run count on an *infra flake* (vite transform service crash etc.); real
+                     assertion/compile failures are returned immediately, never retried.
+    """
+    candidate_dir = Path(candidate_dir).resolve()
+    task_dir = Path(task_dir).resolve() if task_dir else _infer_task_dir(candidate_dir)
+    data_root = Path(data_root).resolve() if data_root else _DEFAULT_DATA_ROOT
+    extra = Path(extra_tests_dir).resolve() if extra_tests_dir else None
+
+    tests_src = task_dir / "tests"
+    node_modules = data_root / "node_modules"
+    if not tests_src.is_dir():
+        return RunResult(0, 0, compiled=False, timed_out=False,
+                         errors=[f"no tests/ dir at {tests_src}"])
+    if not node_modules.is_dir():
+        return RunResult(0, 0, compiled=False, timed_out=False,
+                         errors=[f"node_modules missing at {node_modules} — run `npm install`"])
+
+    result = _attempt(candidate_dir, tests_src, data_root, node_modules, timeout, test_timeout_ms, extra)
+    attempts = 0
+    while _is_flake(result) and attempts < retries:
+        attempts += 1
+        result = _attempt(candidate_dir, tests_src, data_root, node_modules, timeout, test_timeout_ms, extra)
+    return result
 
 
 def _parse_vitest(out_file: Path, proc: subprocess.CompletedProcess) -> RunResult:

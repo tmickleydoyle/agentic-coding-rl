@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-med-staff-schedule-4",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a Staff Shift Scheduler app",
+  "split": "train",
+  "from_scratch": true
+}

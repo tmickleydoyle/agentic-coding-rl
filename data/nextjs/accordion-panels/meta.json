@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "medium-simple",
   "entry_point": "components/Accordion.tsx",
-  "summary": "Multi-panel accordion; independent toggle per panel, aria-expanded reflects state"
+  "summary": "Multi-panel accordion; independent toggle per panel, aria-expanded reflects state",
+  "split": "train"
 }

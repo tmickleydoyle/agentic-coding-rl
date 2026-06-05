@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-music-albums",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route albums app: albums/album-detail/artists/favorites, shared context, albums REST API",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-music-albums"
+}

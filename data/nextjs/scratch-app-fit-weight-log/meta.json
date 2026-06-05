@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-fit-weight-log",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route weight log: log/history/goal/insights, shared context, REST API with trend and goal progress",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-fit-weight-log"
+}

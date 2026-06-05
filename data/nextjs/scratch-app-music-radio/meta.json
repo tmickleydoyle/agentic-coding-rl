@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-music-radio",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route radio app: stations/station-detail/favorites/history, shared context, stations REST API",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-music-radio"
+}

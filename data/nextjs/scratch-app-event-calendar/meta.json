@@ -1,0 +1,10 @@
+{
+  "task_id": "nextjs/scratch-app-event-calendar",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route calendar: month grid/event-detail/create/categories, events on a month grid, category filter, day detail, shared context, REST API for events",
+  "split": "train",
+  "from_scratch": true,
+  "repurposed_from": "app-event-calendar"
+}

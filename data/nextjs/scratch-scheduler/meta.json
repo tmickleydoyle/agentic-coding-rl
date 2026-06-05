@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-scheduler",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a day scheduler from scratch with interval-overlap conflict detection and free-slot computation",
+  "split": "train",
+  "from_scratch": true
+}

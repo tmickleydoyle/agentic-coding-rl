@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "hard",
   "entry_point": "lib/markdown.ts",
-  "summary": "Markdown subset to HTML: headings, bold/italic/code, lists, links, paragraphs, HTML-escaping"
+  "summary": "Markdown subset to HTML: headings, bold/italic/code, lists, links, paragraphs, HTML-escaping",
+  "split": "train"
 }

@@ -3,5 +3,6 @@
   "framework": "nextjs",
   "difficulty": "easy",
   "entry_point": "components/App.tsx",
-  "summary": "Three-page client-side nav with active aria-current"
+  "summary": "Three-page client-side nav with active aria-current",
+  "split": "train"
 }
