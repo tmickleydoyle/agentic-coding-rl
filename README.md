@@ -1,5 +1,7 @@
 # agentic-coding-rl
 
+https://github.com/user-attachments/assets/75e87356-9dda-48d9-9ad6-727ed8e0ea16
+
 An incremental RL environment for building toward a **Composer-2.5-class agentic coding model**.
 
 The capability we're chasing (an agent that reads/edits files, runs terminal commands, runs tests,
