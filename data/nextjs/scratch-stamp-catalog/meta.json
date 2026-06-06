@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-stamp-catalog",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "A stamp catalog app where users can add stamps, filter by country, and toggle condition.",
+  "split": "test",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-postmortem",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Postmortem tracker for documenting incident reviews with contributing factors and action items",
+  "split": "train",
+  "from_scratch": true
+}

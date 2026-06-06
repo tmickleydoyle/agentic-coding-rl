@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-freelance-tracker",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Freelance project tracker with clients, projects, and invoices management",
+  "split": "train",
+  "from_scratch": true
+}

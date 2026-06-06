@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-author-tracker",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "A single-page app to track favorite authors, their books read, and a personal rating.",
+  "split": "train",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/validate-email",
+  "framework": "nextjs",
+  "difficulty": "easy",
+  "entry_point": "app/api/validate-email/route.ts",
+  "summary": "GET route that validates whether a query-param string is a valid email address",
+  "split": "train",
+  "from_scratch": true
+}

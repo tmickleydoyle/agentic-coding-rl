@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-product-catalog",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "A product catalog app with products, categories, and customer reviews",
+  "split": "train",
+  "from_scratch": true
+}

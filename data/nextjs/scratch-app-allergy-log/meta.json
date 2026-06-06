@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-allergy-log",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Allergy tracking app with reaction logging and trigger frequency analysis",
+  "split": "test",
+  "from_scratch": true
+}

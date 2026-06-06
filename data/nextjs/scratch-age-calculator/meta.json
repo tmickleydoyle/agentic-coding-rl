@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-age-calculator",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "An age calculator that computes exact age in years, months, and days from a birthdate",
+  "split": "test",
+  "from_scratch": true
+}

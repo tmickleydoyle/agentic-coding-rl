@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-campus-events",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Browse and RSVP to campus events with category filtering",
+  "split": "train",
+  "from_scratch": true
+}

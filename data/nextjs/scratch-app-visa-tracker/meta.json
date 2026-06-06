@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-visa-tracker",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route visa tracker with status counts, expiry reminders within 30 days, and visa management",
+  "split": "test",
+  "from_scratch": true
+}

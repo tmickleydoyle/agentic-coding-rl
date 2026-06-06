@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-study-planner",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "A multi-route study planner app with subjects, timed study sessions, and statistics.",
+  "split": "train",
+  "from_scratch": true
+}

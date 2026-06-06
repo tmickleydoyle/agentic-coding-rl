@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-match-log",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Match log app to record, view, and filter game results with win/loss/draw outcomes",
+  "split": "test",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-feature-flags",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Feature flag dashboard with toggle, environment filter, and add/delete",
+  "split": "test",
+  "from_scratch": true
+}

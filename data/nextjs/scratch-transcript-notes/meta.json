@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-transcript-notes",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Annotate podcast transcript quotes with tags, commentary, and inline editing",
+  "split": "train",
+  "from_scratch": true
+}

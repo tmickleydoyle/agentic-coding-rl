@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-listen-log",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Log podcast listening sessions with ratings and compute average score",
+  "split": "test",
+  "from_scratch": true
+}

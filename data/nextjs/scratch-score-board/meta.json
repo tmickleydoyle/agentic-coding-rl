@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-score-board",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-player score board with increment/decrement/reset per player, add/remove players, and leader display.",
+  "split": "train",
+  "from_scratch": true
+}

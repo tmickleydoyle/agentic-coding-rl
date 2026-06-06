@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-guest-list",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "A wedding guest list manager with RSVP tracking, meal preference, and search/filter.",
+  "split": "test",
+  "from_scratch": true
+}

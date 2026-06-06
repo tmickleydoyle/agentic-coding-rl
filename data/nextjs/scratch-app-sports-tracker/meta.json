@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-sports-tracker",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route sports tracker for managing athletes and logging training sessions with dashboard stats",
+  "split": "train",
+  "from_scratch": true
+}

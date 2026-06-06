@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-quiz-bank",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Manage a quiz question bank: add questions, filter by topic, and mark questions as used.",
+  "split": "test",
+  "from_scratch": true
+}

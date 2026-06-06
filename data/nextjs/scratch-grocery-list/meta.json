@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-grocery-list",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Grocery list manager where users add items with quantity and category, check off purchased items",
+  "split": "test",
+  "from_scratch": true
+}

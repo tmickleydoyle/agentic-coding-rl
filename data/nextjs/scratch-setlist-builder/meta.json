@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-setlist-builder",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Setlist builder that lets you add songs, reorder them, and estimate total duration",
+  "split": "train",
+  "from_scratch": true
+}

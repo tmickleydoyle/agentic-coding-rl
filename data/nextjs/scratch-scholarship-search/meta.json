@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-scholarship-search",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Browse and track scholarship opportunities with search and filter",
+  "split": "test",
+  "from_scratch": true
+}

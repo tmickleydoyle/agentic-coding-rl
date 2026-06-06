@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-student-notes",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Create, tag, search, and delete student notes with subject tagging.",
+  "split": "test",
+  "from_scratch": true
+}

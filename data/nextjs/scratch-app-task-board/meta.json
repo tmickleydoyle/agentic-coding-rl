@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-task-board",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route Kanban task board with status columns, CRUD, and settings",
+  "split": "train",
+  "from_scratch": true
+}

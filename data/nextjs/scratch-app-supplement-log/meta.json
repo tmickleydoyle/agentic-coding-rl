@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-supplement-log",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Supplement schedule tracker with dose logging, today's intake status, and add/delete",
+  "split": "test",
+  "from_scratch": true
+}

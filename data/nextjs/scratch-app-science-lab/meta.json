@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-science-lab",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Science lab management app with experiment tracking, equipment inventory, status updates, and measurement logging",
+  "split": "test",
+  "from_scratch": true
+}

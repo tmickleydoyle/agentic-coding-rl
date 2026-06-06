@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-trade-log",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Fantasy trade log with trade history table, add trade form, and status filtering",
+  "split": "train",
+  "from_scratch": true
+}

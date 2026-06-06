@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-print-settings",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Manage 3D printer setting profiles with create, inline edit, duplicate, and delete.",
+  "split": "train",
+  "from_scratch": true
+}

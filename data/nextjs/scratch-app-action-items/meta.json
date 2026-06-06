@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-action-items",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route action items tracker with priority, assignee, completion status, filtering, and completed archive",
+  "split": "train",
+  "from_scratch": true
+}

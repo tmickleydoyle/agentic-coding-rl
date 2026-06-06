@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-rps-game",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Rock Paper Scissors game against the computer with score tracking and reset",
+  "split": "test",
+  "from_scratch": true
+}

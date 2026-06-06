@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-lesson-plan",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Build and manage a weekly lesson plan with activities, durations, and completion tracking.",
+  "split": "train",
+  "from_scratch": true
+}

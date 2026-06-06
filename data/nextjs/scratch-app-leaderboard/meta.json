@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-leaderboard",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "A score leaderboard app where players submit scores, track rankings, and view personal history.",
+  "split": "test",
+  "from_scratch": true
+}

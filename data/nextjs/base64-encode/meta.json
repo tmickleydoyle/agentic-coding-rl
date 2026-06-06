@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/base64-encode",
+  "framework": "nextjs",
+  "difficulty": "easy",
+  "entry_point": "app/api/base64-encode/route.ts",
+  "summary": "POST route that base64-encodes or decodes a string",
+  "split": "test",
+  "from_scratch": true
+}

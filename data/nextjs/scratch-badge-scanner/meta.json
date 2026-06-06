@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-badge-scanner",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Badge scanner simulation to check attendees into conference sessions and track attendance counts",
+  "split": "test",
+  "from_scratch": true
+}

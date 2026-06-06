@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-password-gen",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Password generator with configurable length, character types, strength indicator, and clipboard copy",
+  "split": "test",
+  "from_scratch": true
+}

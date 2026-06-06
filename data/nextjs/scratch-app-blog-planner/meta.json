@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-blog-planner",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Blog planning tool with post ideas, drafts, scheduling, and publication management",
+  "split": "test",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/roman-to-int",
+  "framework": "nextjs",
+  "difficulty": "easy",
+  "entry_point": "app/api/roman-to-int/route.ts",
+  "summary": "GET route that converts a Roman numeral query param to its integer value",
+  "split": "test",
+  "from_scratch": true
+}

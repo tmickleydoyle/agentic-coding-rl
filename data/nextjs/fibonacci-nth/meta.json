@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/fibonacci-nth",
+  "framework": "nextjs",
+  "difficulty": "easy",
+  "entry_point": "app/api/fibonacci-nth/route.ts",
+  "summary": "GET route that returns the Nth Fibonacci number",
+  "split": "test",
+  "from_scratch": true
+}

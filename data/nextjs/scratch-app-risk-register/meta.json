@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-risk-register",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Risk register app with computed risk scores, category/status filtering, and open risk statistics",
+  "split": "test",
+  "from_scratch": true
+}

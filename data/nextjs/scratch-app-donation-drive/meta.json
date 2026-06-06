@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-donation-drive",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Donation drive platform with campaign fundraising, donor management, and leaderboard",
+  "split": "test",
+  "from_scratch": true
+}

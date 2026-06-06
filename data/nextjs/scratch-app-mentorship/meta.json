@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-mentorship",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Mentorship tracking app for managing mentors, sessions, and shared goals",
+  "split": "train",
+  "from_scratch": true
+}

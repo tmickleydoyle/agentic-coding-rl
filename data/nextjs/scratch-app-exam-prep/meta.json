@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-exam-prep",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Exam prep app with exam management, interactive practice quizzes, status tracking, and results history",
+  "split": "test",
+  "from_scratch": true
+}

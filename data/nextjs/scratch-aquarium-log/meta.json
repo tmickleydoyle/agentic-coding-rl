@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-aquarium-log",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Single-page aquarium observation log — add timestamped entries, filter by tank, delete entries.",
+  "split": "train",
+  "from_scratch": true
+}

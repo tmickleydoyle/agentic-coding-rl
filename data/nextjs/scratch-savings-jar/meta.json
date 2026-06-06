@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-savings-jar",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Track savings goals with deposits and withdrawals toward a target amount",
+  "split": "train",
+  "from_scratch": true
+}

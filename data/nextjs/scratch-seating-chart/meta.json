@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-seating-chart",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "A wedding seating chart manager with tables, seat assignments, and guest drag-free assignment UI.",
+  "split": "train",
+  "from_scratch": true
+}

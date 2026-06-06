@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-standings-table",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Fantasy league standings table with sortable columns and playoff picture section",
+  "split": "train",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-note-taker",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route note-taking app with tags, archive, and CRUD",
+  "split": "test",
+  "from_scratch": true
+}

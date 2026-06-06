@@ -1,0 +1,1 @@
+{"task_id":"nextjs/scratch-app-event-planner","framework":"nextjs","difficulty":"hard","entry_point":"app/page.tsx","summary":"Multi-route event planner with events, guest management, and agenda view","split":"train","from_scratch":true}

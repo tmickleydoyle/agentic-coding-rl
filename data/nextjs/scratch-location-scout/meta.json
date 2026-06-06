@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-location-scout",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Location scouting tracker — log potential shoot locations with access info, lighting notes, and rating",
+  "split": "test",
+  "from_scratch": true
+}

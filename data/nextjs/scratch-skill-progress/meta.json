@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-skill-progress",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Craft skill progress tracker: add skills with name/level/hours practiced, increment hours, promote level, filter by level",
+  "split": "test",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-tech-debt-log",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Single-page app to log technical debt items with dual-axis filtering and effort stats.",
+  "split": "train",
+  "from_scratch": true
+}

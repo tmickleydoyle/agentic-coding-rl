@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-link-sharing",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "A link-sharing app with URL submissions, upvoting, comments, and user profiles.",
+  "split": "train",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-draft-board",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Fantasy draft board with player drafting, pick tracking, round counter, and position filters",
+  "split": "test",
+  "from_scratch": true
+}

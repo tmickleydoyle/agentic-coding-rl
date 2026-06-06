@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-craft-supplies",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Craft supplies inventory: track items with name/category/quantity/unit, add new supplies, update quantities, filter by category",
+  "split": "test",
+  "from_scratch": true
+}

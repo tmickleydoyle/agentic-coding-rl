@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-college-apps",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Track college application progress with deadlines and essay status",
+  "split": "train",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-bug-tracker",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Bug tracker with status cycling, priority, assignee, filtering, and delete",
+  "split": "train",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-book-summary",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "A single-page app to log books with title, author, genre, rating, and a short summary.",
+  "split": "train",
+  "from_scratch": true
+}

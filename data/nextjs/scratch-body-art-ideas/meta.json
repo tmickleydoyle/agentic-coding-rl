@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-body-art-ideas",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Body art idea board with tags, favorites, and search filtering",
+  "split": "train",
+  "from_scratch": true
+}

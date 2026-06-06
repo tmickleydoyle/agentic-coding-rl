@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-reflection-journal",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Daily reflection journal with mood tracking, tagging, search filtering, and mood summary",
+  "split": "train",
+  "from_scratch": true
+}

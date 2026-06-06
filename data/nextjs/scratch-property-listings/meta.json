@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-property-listings",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Browse and filter rental property listings by address, type, and max rent",
+  "split": "train",
+  "from_scratch": true
+}

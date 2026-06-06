@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-charity-tracker",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Track donations made to multiple charities with category filtering",
+  "split": "test",
+  "from_scratch": true
+}

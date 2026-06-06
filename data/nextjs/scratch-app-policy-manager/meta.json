@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-policy-manager",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Policy management app with versioning, department/status filtering, and dual-field validation",
+  "split": "test",
+  "from_scratch": true
+}

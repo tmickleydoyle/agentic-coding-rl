@@ -1,0 +1,1 @@
+{"task_id":"nextjs/scratch-app-home-maintenance","framework":"nextjs","difficulty":"hard","entry_point":"app/page.tsx","summary":"Multi-route home maintenance tracker with tasks, history, and room management","split":"test","from_scratch":true}

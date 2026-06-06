@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-coin-counter",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Count US coins by quantity and compute total value in dollars and cents",
+  "split": "test",
+  "from_scratch": true
+}

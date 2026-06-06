@@ -1,0 +1,3 @@
+'use client'
+import React from 'react'
+export function BooksPage() { return <div><h1>Books</h1><select data-testid="book-status-filter"><option value="all">all</option></select><ul data-testid="book-list"></ul><form data-testid="add-book-form"><input data-testid="book-title-input" placeholder="Title"/><input data-testid="book-author-input" placeholder="Author"/><input data-testid="book-genre-input" placeholder="Genre"/><input data-testid="book-year-input" type="number"/><select data-testid="book-status-select"><option value="wishlist">wishlist</option><option value="reading">reading</option><option value="finished">finished</option></select><button data-testid="submit-book" type="submit">Add</button></form></div> }

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-invoice-maker",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Invoice maker with client management, line-item invoices, and revenue tracking",
+  "split": "train",
+  "from_scratch": true
+}

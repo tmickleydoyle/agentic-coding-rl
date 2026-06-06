@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-fantasy-league",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Fantasy league manager with roster add/drop and total points tracking",
+  "split": "train",
+  "from_scratch": true
+}

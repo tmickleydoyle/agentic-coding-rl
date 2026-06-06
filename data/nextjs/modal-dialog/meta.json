@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/modal-dialog",
+  "framework": "nextjs",
+  "difficulty": "easy",
+  "entry_point": "components/ModalDialog.tsx",
+  "summary": "Modal dialog component with open trigger, overlay backdrop, and close button",
+  "split": "train",
+  "from_scratch": true
+}

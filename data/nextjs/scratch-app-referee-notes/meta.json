@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-referee-notes",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route referee notes app for logging match flags, incidents, and generating per-match reports",
+  "split": "train",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-net-worth",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Net worth calculator with assets and liabilities management and live totals",
+  "split": "train",
+  "from_scratch": true
+}

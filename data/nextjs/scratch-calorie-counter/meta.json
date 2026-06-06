@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-calorie-counter",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Track daily calorie intake against a goal with searchable food database and status indicator",
+  "split": "train",
+  "from_scratch": true
+}

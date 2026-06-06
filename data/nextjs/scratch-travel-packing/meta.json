@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-travel-packing",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Travel packing checklist with category filtering, packed toggle, and progress tracking",
+  "split": "train",
+  "from_scratch": true
+}

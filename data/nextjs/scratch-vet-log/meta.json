@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-vet-log",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Veterinary visit log tracker with diagnoses, treatments, and next appointment",
+  "split": "train",
+  "from_scratch": true
+}

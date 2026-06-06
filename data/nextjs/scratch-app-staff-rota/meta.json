@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-staff-rota",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "A staff rota app for managing employee shifts, staff profiles, and shift requests",
+  "split": "train",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-pantry-tracker",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Pantry inventory tracker where users manage food items with quantities and expiry dates",
+  "split": "train",
+  "from_scratch": true
+}

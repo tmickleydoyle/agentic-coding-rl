@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-recipe-builder",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Recipe management app with recipe library, ingredient pantry, and favorites",
+  "split": "test",
+  "from_scratch": true
+}

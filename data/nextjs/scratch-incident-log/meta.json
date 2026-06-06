@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-incident-log",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Incident log for tracking production incidents with status, severity, and timeline notes",
+  "split": "test",
+  "from_scratch": true
+}

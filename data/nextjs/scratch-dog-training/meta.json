@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-dog-training",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Dog training session tracker with commands, progress, and session log",
+  "split": "train",
+  "from_scratch": true
+}

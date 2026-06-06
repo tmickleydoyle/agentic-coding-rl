@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-speaker-schedule",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Speaker schedule manager with time slot assignment, conflict prevention, and track filtering",
+  "split": "test",
+  "from_scratch": true
+}

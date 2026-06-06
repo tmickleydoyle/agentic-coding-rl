@@ -1,0 +1,1 @@
+{"task_id":"nextjs/scratch-app-book-club","framework":"nextjs","difficulty":"hard","entry_point":"app/page.tsx","summary":"Multi-route book club app with book list, member management, and review system","split":"train","from_scratch":true}

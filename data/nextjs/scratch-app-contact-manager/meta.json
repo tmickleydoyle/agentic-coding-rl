@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-contact-manager",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route contact manager with groups, search, and CRUD",
+  "split": "test",
+  "from_scratch": true
+}

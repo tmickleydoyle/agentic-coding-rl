@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-candidate-notes",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Single-page candidate research notes app with add, edit, tag, and search functionality",
+  "split": "test",
+  "from_scratch": true
+}

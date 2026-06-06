@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-election-tracker",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Single-page election results tracker with candidate listings, vote counts, and lead indicator",
+  "split": "train",
+  "from_scratch": true
+}

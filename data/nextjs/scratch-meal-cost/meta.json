@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-meal-cost",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Split a restaurant bill among people with proportional tip allocation and per-person totals",
+  "split": "test",
+  "from_scratch": true
+}

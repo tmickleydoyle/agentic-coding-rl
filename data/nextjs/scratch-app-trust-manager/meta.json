@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-trust-manager",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route trust manager with trusts, distributions, and principal/distributed overview",
+  "split": "test",
+  "from_scratch": true
+}

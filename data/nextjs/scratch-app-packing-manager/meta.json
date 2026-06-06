@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-packing-manager",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route packing list manager with items, check-off state, and master checklist filtering",
+  "split": "test",
+  "from_scratch": true
+}

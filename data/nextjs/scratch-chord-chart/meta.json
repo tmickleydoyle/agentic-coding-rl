@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-chord-chart",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Chord chart reference app with chord name, key, fingering notes, and favorite toggle",
+  "split": "test",
+  "from_scratch": true
+}

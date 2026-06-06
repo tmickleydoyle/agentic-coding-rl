@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-weight-log",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Weight tracking app with daily logging, history view, and statistics",
+  "split": "train",
+  "from_scratch": true
+}

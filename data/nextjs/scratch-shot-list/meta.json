@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-shot-list",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Shot list planner — manage planned shots with subject, type, priority, and completion status",
+  "split": "train",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-stretch-routine",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "A stretch routine logger with seed data, add/delete, and totals for sessions, minutes, and stretches.",
+  "split": "test",
+  "from_scratch": true
+}

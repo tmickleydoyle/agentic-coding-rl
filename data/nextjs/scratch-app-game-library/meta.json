@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-game-library",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Game library manager with collection tracking, wishlist, and gaming statistics",
+  "split": "test",
+  "from_scratch": true
+}

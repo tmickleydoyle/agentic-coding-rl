@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-player-ratings",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Player ratings app where users can rate players 1-5 stars and view average ratings",
+  "split": "test",
+  "from_scratch": true
+}

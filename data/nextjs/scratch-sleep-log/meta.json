@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-sleep-log",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Nightly sleep log with hours calculation, quality rating, and average sleep tracking",
+  "split": "test",
+  "from_scratch": true
+}

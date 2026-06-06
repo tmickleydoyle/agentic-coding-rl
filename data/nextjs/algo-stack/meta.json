@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/algo-stack",
+  "framework": "nextjs",
+  "difficulty": "easy",
+  "entry_point": "lib/stack.ts",
+  "summary": "Implement a generic Stack data structure with standard operations",
+  "split": "test",
+  "from_scratch": true
+}

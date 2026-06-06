@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-sponsor-tracker",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Conference sponsor tracker with tier levels, booth numbers, contact info, and benefit checklist",
+  "split": "train",
+  "from_scratch": true
+}

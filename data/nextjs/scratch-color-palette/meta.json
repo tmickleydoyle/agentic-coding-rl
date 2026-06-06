@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-color-palette",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Color palette builder that displays hex colors with their names and allows adding/removing swatches",
+  "split": "train",
+  "from_scratch": true
+}

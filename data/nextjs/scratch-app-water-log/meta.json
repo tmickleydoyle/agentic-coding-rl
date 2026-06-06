@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-water-log",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Water intake tracker with daily goal, progress display, and history by date",
+  "split": "train",
+  "from_scratch": true
+}

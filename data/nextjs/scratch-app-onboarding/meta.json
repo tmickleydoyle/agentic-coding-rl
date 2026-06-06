@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-onboarding",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Employee onboarding app tracking new hires, task templates, and checklist completion",
+  "split": "train",
+  "from_scratch": true
+}

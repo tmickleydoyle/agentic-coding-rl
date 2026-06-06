@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-diet-log",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Diet log with daily macro summary, multi-meal tracking, and entry management",
+  "split": "train",
+  "from_scratch": true
+}

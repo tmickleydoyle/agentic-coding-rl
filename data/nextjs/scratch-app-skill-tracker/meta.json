@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-skill-tracker",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Skill tracker app for logging learning sessions, resources, and proficiency levels",
+  "split": "train",
+  "from_scratch": true
+}

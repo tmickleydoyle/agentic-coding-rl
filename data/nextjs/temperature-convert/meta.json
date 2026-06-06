@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/temperature-convert",
+  "framework": "nextjs",
+  "difficulty": "easy",
+  "entry_point": "app/api/temperature-convert/route.ts",
+  "summary": "GET route that converts temperatures between celsius, fahrenheit, and kelvin",
+  "split": "train",
+  "from_scratch": true
+}

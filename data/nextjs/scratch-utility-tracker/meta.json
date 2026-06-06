@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-utility-tracker",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Track monthly utility bills with payment status and spending summaries",
+  "split": "test",
+  "from_scratch": true
+}

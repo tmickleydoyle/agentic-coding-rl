@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-event-rsvp",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "RSVP manager for events with capacity tracking, duplicate prevention, and cancellation",
+  "split": "train",
+  "from_scratch": true
+}

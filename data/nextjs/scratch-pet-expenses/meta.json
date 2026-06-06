@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-pet-expenses",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Pet expense tracker with category breakdown and total spending summary",
+  "split": "test",
+  "from_scratch": true
+}

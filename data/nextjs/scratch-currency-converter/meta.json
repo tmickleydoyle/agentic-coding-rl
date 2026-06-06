@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-currency-converter",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Convert amounts between currencies using fixed exchange rates with history log",
+  "split": "train",
+  "from_scratch": true
+}

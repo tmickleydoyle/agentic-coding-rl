@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-tank-maintenance",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Tank maintenance scheduler — add tasks with due dates, mark complete, filter by status.",
+  "split": "test",
+  "from_scratch": true
+}

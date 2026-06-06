@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-calculator-rpn",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Reverse Polish Notation calculator with stack display and computation history",
+  "split": "test",
+  "from_scratch": true
+}

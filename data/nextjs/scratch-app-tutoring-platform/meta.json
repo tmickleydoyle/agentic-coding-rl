@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-tutoring-platform",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Tutoring platform with tutor profiles, booking management, status updates, and subject-based browsing",
+  "split": "train",
+  "from_scratch": true
+}

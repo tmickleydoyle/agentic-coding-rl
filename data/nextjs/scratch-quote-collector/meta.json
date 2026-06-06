@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-quote-collector",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Save and filter inspirational quotes by category with add and remove controls",
+  "split": "test",
+  "from_scratch": true
+}

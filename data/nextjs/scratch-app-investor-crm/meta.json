@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-investor-crm",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Investor CRM for tracking investors, pipeline stages, and fundraising interactions",
+  "split": "test",
+  "from_scratch": true
+}

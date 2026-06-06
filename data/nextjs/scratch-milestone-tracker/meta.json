@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-milestone-tracker",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "A milestone tracker where users can add goals with target dates and mark them complete",
+  "split": "test",
+  "from_scratch": true
+}

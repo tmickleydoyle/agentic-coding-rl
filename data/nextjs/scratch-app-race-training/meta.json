@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-race-training",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route race training app with runs, pace goals, and a training log",
+  "split": "test",
+  "from_scratch": true
+}

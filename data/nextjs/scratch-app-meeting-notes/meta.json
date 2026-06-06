@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-meeting-notes",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route meeting notes app with CRUD, per-meeting agenda management with checkboxes, and full-text search",
+  "split": "test",
+  "from_scratch": true
+}

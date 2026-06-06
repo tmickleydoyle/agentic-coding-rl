@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-local-events",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Local events platform with event calendar, creation form, and registrations management",
+  "split": "train",
+  "from_scratch": true
+}

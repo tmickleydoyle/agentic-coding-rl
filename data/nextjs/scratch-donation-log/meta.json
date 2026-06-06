@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-donation-log",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Log individual donations with donor info, amount, and date filtering",
+  "split": "test",
+  "from_scratch": true
+}

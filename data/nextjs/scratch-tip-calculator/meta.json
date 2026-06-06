@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-tip-calculator",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "A tip calculator that splits a bill among multiple people with configurable tip percentages",
+  "split": "train",
+  "from_scratch": true
+}

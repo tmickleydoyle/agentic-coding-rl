@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-goal-tracker",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Track personal goals with progress updates, percentage display, and completion counting",
+  "split": "test",
+  "from_scratch": true
+}

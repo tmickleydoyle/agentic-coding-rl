@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-typing-practice",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "A typing practice app with timed tests, WPM calculation, leaderboard, and settings.",
+  "split": "test",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-changelog",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Changelog viewer with version type counts, newest-first ordering, filter, and delete",
+  "split": "test",
+  "from_scratch": true
+}

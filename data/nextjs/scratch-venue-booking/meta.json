@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-venue-booking",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Venue booking system with capacity validation, conflict detection, and revenue tracking",
+  "split": "train",
+  "from_scratch": true
+}

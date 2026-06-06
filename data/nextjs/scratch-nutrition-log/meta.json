@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-nutrition-log",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Daily nutrition log where users track meals with calories, protein, carbs, and fat macros",
+  "split": "train",
+  "from_scratch": true
+}

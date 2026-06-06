@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-student-portal",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Student portal with course enrollment, profile management, and progress tracking",
+  "split": "train",
+  "from_scratch": true
+}

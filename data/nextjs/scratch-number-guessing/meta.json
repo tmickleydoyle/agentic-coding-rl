@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-number-guessing",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Number guessing game 1-100 with 10 attempts, hint feedback, guess history, and validation",
+  "split": "test",
+  "from_scratch": true
+}

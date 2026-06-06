@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-tutoring-sessions",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Manage tutoring sessions: add, filter by subject, mark complete, and view session details.",
+  "split": "train",
+  "from_scratch": true
+}

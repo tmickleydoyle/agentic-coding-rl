@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-board-game-log",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Log board game sessions with players, winner, and duration; filter and sort the log",
+  "split": "train",
+  "from_scratch": true
+}

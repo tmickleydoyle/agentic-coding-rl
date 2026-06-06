@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/flip-card",
+  "framework": "nextjs",
+  "difficulty": "easy",
+  "entry_point": "components/FlipCard.tsx",
+  "summary": "Card component that toggles between front and back faces when a flip button is clicked",
+  "split": "test",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-api-mocker",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Mock API endpoint manager where users define routes with method/path/status/body and simulate requests against them.",
+  "split": "test",
+  "from_scratch": true
+}

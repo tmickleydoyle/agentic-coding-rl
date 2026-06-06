@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-livestock-catalog",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Aquarium livestock catalog — add/remove fish entries with species, quantity, tank assignment, and search.",
+  "split": "train",
+  "from_scratch": true
+}

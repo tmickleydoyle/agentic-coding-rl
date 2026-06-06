@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-strategy-notes",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Strategy notes manager for tabletop games with tagging, priority levels, and search",
+  "split": "train",
+  "from_scratch": true
+}

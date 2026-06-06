@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-adoption-tracker",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Pet adoption tracker with status management and applicant notes",
+  "split": "train",
+  "from_scratch": true
+}

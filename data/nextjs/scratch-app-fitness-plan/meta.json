@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-fitness-plan",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route fitness plan manager with workout CRUD, weekly schedule, and progress tracking",
+  "split": "train",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-api-docs",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Interactive API docs viewer with dual filters, deprecated tracking, and add/delete",
+  "split": "train",
+  "from_scratch": true
+}

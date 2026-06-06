@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-net-worth",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Net worth tracker with assets, liabilities, and historical snapshots",
+  "split": "train",
+  "from_scratch": true
+}

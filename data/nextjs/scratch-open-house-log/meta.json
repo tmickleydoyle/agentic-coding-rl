@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-open-house-log",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Log open house visits with address, date, agent, and personal notes",
+  "split": "train",
+  "from_scratch": true
+}

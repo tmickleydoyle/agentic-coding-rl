@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-chess-notation",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Record and display chess moves in algebraic notation with move history and undo",
+  "split": "test",
+  "from_scratch": true
+}

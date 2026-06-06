@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-training-log",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route training log for tracking exercises, workout entries by date, and fitness goals",
+  "split": "test",
+  "from_scratch": true
+}

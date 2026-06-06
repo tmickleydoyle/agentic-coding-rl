@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-home-inventory",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Track household items by room and category with add, delete, filter, and value summary features.",
+  "split": "train",
+  "from_scratch": true
+}

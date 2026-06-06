@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-standup-notes",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Standup notes tracker with yesterday/today/blockers sections per team member and formatted output",
+  "split": "test",
+  "from_scratch": true
+}

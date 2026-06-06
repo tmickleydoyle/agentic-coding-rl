@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-on-call-log",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "On-call log for tracking pages, alerts, and actions taken during on-call shifts",
+  "split": "train",
+  "from_scratch": true
+}

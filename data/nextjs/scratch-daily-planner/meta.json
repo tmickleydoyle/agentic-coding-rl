@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-daily-planner",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Plan daily tasks with time slots and priority levels, track done/pending counts",
+  "split": "train",
+  "from_scratch": true
+}

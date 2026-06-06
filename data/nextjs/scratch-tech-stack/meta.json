@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-tech-stack",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Manage and categorize your personal tech stack with tags and descriptions",
+  "split": "train",
+  "from_scratch": true
+}

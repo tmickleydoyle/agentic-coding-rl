@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-carbon-tracker",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Log carbon-emitting activities by category and track total and average emissions",
+  "split": "test",
+  "from_scratch": true
+}

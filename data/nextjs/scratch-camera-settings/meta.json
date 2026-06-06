@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-camera-settings",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Camera settings manager — track and compare camera configurations with aperture, shutter speed, ISO, and mode",
+  "split": "test",
+  "from_scratch": true
+}

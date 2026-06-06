@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-offer-tracker",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Track offers made on properties with status, price, and contingencies",
+  "split": "test",
+  "from_scratch": true
+}

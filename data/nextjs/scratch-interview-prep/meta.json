@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-interview-prep",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Interview prep app with question bank, practice mode, and performance tracking",
+  "split": "train",
+  "from_scratch": true
+}

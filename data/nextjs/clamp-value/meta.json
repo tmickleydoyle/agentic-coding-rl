@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/clamp-value",
+  "framework": "nextjs",
+  "difficulty": "easy",
+  "entry_point": "app/api/clamp-value/route.ts",
+  "summary": "GET route that clamps a numeric value between min and max bounds",
+  "split": "train",
+  "from_scratch": true
+}

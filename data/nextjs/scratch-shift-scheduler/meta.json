@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-shift-scheduler",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Weekly shift scheduler with employee assignment, slot replacement, and summary",
+  "split": "test",
+  "from_scratch": true
+}

@@ -1,0 +1,1 @@
+{"task_id":"nextjs/scratch-app-portfolio-tracker","framework":"nextjs","difficulty":"hard","entry_point":"app/page.tsx","summary":"Multi-route stock portfolio tracker with holdings, transactions, and performance views","split":"train","from_scratch":true}

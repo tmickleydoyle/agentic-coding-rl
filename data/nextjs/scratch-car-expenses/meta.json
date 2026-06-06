@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-car-expenses",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Track car expenses by category with inline editing, filtering, and spending breakdowns.",
+  "split": "train",
+  "from_scratch": true
+}

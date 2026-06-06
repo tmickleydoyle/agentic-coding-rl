@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-feeding-log",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Baby feeding log tracking method, duration, and oz consumed with running totals.",
+  "split": "test",
+  "from_scratch": true
+}

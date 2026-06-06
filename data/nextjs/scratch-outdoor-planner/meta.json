@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-outdoor-planner",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Outdoor trip planner with per-trip activity checklists, progress tracking, and trip completion status",
+  "split": "train",
+  "from_scratch": true
+}

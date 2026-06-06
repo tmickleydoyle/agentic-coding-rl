@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-fantasy-team",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route fantasy sports team manager with roster, waiver wire, and league standings",
+  "split": "test",
+  "from_scratch": true
+}

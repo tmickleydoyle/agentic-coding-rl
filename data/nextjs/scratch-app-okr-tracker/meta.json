@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-okr-tracker",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route OKR tracker with objectives CRUD, key results management, progress tracking, and status summary",
+  "split": "test",
+  "from_scratch": true
+}

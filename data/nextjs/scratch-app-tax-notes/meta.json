@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-tax-notes",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Tax notes organizer with documents, deductions, and free-form notes",
+  "split": "train",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-toll-calculator",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Track toll payments with dual filters, EZPass/cash breakdowns, and top road stat.",
+  "split": "train",
+  "from_scratch": true
+}

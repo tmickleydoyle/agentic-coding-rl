@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-invoice-builder",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a client invoice composer with line items, tax rate, and live totals",
+  "split": "train",
+  "from_scratch": true
+}

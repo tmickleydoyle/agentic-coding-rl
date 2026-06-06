@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-library-manager",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "A library management app with books, members, and loan tracking",
+  "split": "train",
+  "from_scratch": true
+}

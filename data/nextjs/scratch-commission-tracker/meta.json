@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-commission-tracker",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Commission tracker to manage client art commissions with status, price, and deadline tracking",
+  "split": "train",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-salary-negotiation",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Salary negotiation tracker with counteroffers, tactics notes, and deal timeline",
+  "split": "train",
+  "from_scratch": true
+}

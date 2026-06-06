@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-team-wiki",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Team wiki for documenting processes and knowledge with search and categorization",
+  "split": "test",
+  "from_scratch": true
+}

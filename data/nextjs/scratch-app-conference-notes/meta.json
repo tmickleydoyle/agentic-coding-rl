@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-conference-notes",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Conference notes app for tracking talks, speakers, and notes with search and filtering",
+  "split": "train",
+  "from_scratch": true
+}

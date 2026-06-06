@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-milestone-log",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Baby developmental milestone tracker with category filtering and achieved/pending summary counts.",
+  "split": "train",
+  "from_scratch": true
+}

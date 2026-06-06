@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-model-library",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Browse and manage a 3D model library with search, favorites toggle, and add/remove.",
+  "split": "test",
+  "from_scratch": true
+}

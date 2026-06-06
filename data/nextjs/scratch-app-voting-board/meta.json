@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-voting-board",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "A voting board where users submit proposals, vote for or against them, and track scores.",
+  "split": "train",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-card-game-score",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Track card game scores across rounds for multiple players with running totals and a winner",
+  "split": "train",
+  "from_scratch": true
+}

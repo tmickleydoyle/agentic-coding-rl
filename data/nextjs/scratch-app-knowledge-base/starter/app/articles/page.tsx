@@ -1,0 +1,3 @@
+'use client'
+import React from 'react'
+export function ArticlesPage() { return <div><h1>Articles</h1><select data-testid="article-status-filter"><option value="all">all</option></select><ul data-testid="article-list"></ul><form data-testid="add-article-form"><input data-testid="article-title-input" placeholder="Title"/><select data-testid="article-category-select"></select><input data-testid="article-author-input" placeholder="Author"/><textarea data-testid="article-content-input" placeholder="Content"/><select data-testid="article-status-select"><option value="draft">draft</option><option value="published">published</option></select><button data-testid="submit-article" type="submit">Add</button></form></div> }

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-baby-tracker",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Single-page baby activity tracker with feeding, diaper, and sleep logging, filtering, and summary counts.",
+  "split": "train",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-energy-usage",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Track monthly household energy usage by source with cost summaries and filtering",
+  "split": "test",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-sports-stats",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Sports statistics dashboard showing player stats with filtering by position and sorting by stat columns",
+  "split": "train",
+  "from_scratch": true
+}

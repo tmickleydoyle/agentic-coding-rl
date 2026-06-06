@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-will-notes",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route will drafting app with clauses, witnesses, and completion summary",
+  "split": "test",
+  "from_scratch": true
+}

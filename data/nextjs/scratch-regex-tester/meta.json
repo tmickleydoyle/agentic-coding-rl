@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-regex-tester",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Regex tester with pattern input, flags, match highlighting, and match list",
+  "split": "train",
+  "from_scratch": true
+}

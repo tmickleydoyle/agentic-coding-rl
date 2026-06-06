@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-music-collection",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Music collection manager for albums, playlists, and artist browsing",
+  "split": "train",
+  "from_scratch": true
+}

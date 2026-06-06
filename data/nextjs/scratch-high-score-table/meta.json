@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-high-score-table",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Maintain a high score table for an arcade game with player names, scores, and rank display",
+  "split": "train",
+  "from_scratch": true
+}

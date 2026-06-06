@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-progress-report",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Track student progress across subjects with grade entry, average calculation, and status display.",
+  "split": "train",
+  "from_scratch": true
+}

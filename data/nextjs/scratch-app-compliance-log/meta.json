@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-compliance-log",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Compliance log app with regulation/severity filtering, dashboard stats, and entry management",
+  "split": "train",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-rate-calculator",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Freelance rate calculator that computes effective hourly rate from income goals and hours",
+  "split": "train",
+  "from_scratch": true
+}

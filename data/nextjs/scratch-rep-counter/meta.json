@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-rep-counter",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a rep counter app to track exercise completion during a workout session",
+  "split": "test",
+  "from_scratch": true
+}

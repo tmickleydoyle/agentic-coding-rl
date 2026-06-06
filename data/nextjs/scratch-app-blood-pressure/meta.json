@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-blood-pressure",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Blood pressure tracker with auto-categorization, history, and trend analysis",
+  "split": "test",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-flash-cards",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "A flash card app with decks, card CRUD, study mode with flip animation tracking, and progress view.",
+  "split": "test",
+  "from_scratch": true
+}

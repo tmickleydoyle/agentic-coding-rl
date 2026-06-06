@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-audit-trail",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Immutable audit trail app with actor/action filtering, event detail view, and dashboard action stats",
+  "split": "train",
+  "from_scratch": true
+}

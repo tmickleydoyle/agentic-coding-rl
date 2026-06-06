@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-number-to-words",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Converts integers (0–999,999, including negatives) to their English word representation.",
+  "split": "test",
+  "from_scratch": true
+}

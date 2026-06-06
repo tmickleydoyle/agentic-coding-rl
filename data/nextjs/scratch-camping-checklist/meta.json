@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-camping-checklist",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Camping trip checklist with categories, packed status, add/remove items, and summary stats",
+  "split": "train",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-wedding-planner",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "A wedding planner checklist app with tasks organized by category and completion tracking.",
+  "split": "train",
+  "from_scratch": true
+}

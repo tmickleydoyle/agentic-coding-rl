@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-breathing-exercise",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "A breathing exercise logger with seed data, add/delete, and totals for sessions, rounds, and minutes.",
+  "split": "train",
+  "from_scratch": true
+}

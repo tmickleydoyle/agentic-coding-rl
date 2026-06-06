@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-garden-planner",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Garden planner to manage plants, garden beds, and a gardening activity log",
+  "split": "test",
+  "from_scratch": true
+}

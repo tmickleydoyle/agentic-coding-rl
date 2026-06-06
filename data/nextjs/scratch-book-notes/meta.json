@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-book-notes",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Track personal reading notes with ratings and deletion for a list of books",
+  "split": "train",
+  "from_scratch": true
+}

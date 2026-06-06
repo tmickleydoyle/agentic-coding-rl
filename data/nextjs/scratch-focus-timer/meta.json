@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-focus-timer",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Pomodoro-style focus timer with presets, custom duration, and session log",
+  "split": "test",
+  "from_scratch": true
+}

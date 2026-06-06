@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-networking-log",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Networking contact log to record people met at a conference with follow-up status",
+  "split": "train",
+  "from_scratch": true
+}

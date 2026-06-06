@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-copywriting",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Copywriting workspace managing projects, creative briefs, copy variations, and review workflows",
+  "split": "test",
+  "from_scratch": true
+}

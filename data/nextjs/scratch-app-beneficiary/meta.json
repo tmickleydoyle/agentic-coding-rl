@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-beneficiary",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route beneficiary manager with profiles, asset allocations, and per-beneficiary report",
+  "split": "train",
+  "from_scratch": true
+}

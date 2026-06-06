@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-movie-club",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Movie club tracker with watchlist, reviews, and film discovery",
+  "split": "test",
+  "from_scratch": true
+}

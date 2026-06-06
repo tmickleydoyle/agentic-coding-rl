@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-warranty-tracker",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Track product warranties with computed expiry status, filtering, and summary counts.",
+  "split": "train",
+  "from_scratch": true
+}

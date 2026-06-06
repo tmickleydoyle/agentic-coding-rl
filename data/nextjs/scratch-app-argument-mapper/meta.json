@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-argument-mapper",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route argument mapping app with hierarchical claims, supports, rebuttals, evidence, and type filtering",
+  "split": "test",
+  "from_scratch": true
+}

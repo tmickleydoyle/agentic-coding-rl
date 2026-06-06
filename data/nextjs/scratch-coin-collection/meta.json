@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-coin-collection",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "A coin collection tracker with add, filter by era, and total value calculation.",
+  "split": "train",
+  "from_scratch": true
+}

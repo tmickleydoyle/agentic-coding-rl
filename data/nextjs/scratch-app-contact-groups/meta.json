@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-contact-groups",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Contact book app with groups, favorites, and CSV import simulation",
+  "split": "train",
+  "from_scratch": true
+}

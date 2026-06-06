@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/phone-format",
+  "framework": "nextjs",
+  "difficulty": "easy",
+  "entry_point": "app/api/phone-format/route.ts",
+  "summary": "GET handler that strips and formats a raw phone number into (NXX) NXX-XXXX US format",
+  "split": "test",
+  "from_scratch": true
+}

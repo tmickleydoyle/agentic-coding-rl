@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/algo-memoize",
+  "framework": "nextjs",
+  "difficulty": "easy",
+  "entry_point": "lib/memoize.ts",
+  "summary": "Implement memoize and memoizeWithResolver functions that cache function results by argument key",
+  "split": "test",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/algo-run-length-encode",
+  "framework": "nextjs",
+  "difficulty": "easy",
+  "entry_point": "lib/run-length-encode.ts",
+  "summary": "Implement run-length encoding and decoding for strings",
+  "split": "test",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-maintenance-log",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Log home maintenance tasks with priority, status tracking, and filtering",
+  "split": "train",
+  "from_scratch": true
+}

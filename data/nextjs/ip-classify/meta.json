@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/ip-classify",
+  "framework": "nextjs",
+  "difficulty": "easy",
+  "entry_point": "app/api/ip-classify/route.ts",
+  "summary": "GET handler that classifies an IPv4 address by class (A-E) and private/public status",
+  "split": "test",
+  "from_scratch": true
+}

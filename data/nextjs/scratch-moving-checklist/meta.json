@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-moving-checklist",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Manage a moving checklist with categories, filters, and progress tracking",
+  "split": "train",
+  "from_scratch": true
+}

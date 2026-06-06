@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-competition-log",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route competition log with results entry, podium rankings, and history",
+  "split": "test",
+  "from_scratch": true
+}

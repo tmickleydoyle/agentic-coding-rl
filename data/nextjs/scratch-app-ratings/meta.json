@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-ratings",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Rate and review apps with star ratings, categories, and sorting",
+  "split": "train",
+  "from_scratch": true
+}

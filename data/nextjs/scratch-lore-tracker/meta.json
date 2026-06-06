@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-lore-tracker",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Lore tracker for worldbuilding with entries categorized by type and a favorites system",
+  "split": "train",
+  "from_scratch": true
+}

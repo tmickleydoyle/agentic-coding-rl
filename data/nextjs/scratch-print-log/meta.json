@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-print-log",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Log completed 3D prints with ratings and results, filter by material, and view stats.",
+  "split": "train",
+  "from_scratch": true
+}

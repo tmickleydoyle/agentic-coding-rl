@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-content-calendar",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Content calendar for planning, drafting, and publishing content across channels",
+  "split": "train",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-version-notes",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Version notes changelog app tracking software releases with filters by type, package, and breaking changes",
+  "split": "train",
+  "from_scratch": true
+}

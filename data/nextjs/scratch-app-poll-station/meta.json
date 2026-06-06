@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-poll-station",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "A polling app where users create polls, vote on options, and view results with percentages.",
+  "split": "test",
+  "from_scratch": true
+}

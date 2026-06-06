@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-internship-tracker",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Track internship applications with status updates and notes",
+  "split": "train",
+  "from_scratch": true
+}

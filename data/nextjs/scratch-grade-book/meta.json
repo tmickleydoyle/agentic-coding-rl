@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-grade-book",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Grade book app to track student grades across subjects with class averages",
+  "split": "train",
+  "from_scratch": true
+}

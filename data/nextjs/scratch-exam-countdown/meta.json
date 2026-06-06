@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-exam-countdown",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Track upcoming exams with days-remaining countdown, sorting options, and add/remove functionality",
+  "split": "test",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-word-scramble",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Word scramble game where users unscramble words, tracking score and feedback across 5 rounds.",
+  "split": "test",
+  "from_scratch": true
+}

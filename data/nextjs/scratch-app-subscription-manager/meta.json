@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-subscription-manager",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Subscription manager to track recurring services, billing cycles, and monthly costs",
+  "split": "test",
+  "from_scratch": true
+}

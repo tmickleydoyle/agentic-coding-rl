@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-daily-journal",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Personal daily journal app with entry creation, browsing, search, and deletion",
+  "split": "train",
+  "from_scratch": true
+}

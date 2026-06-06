@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-loan-calculator",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "A loan/mortgage calculator that computes monthly payment, total payment, and total interest",
+  "split": "train",
+  "from_scratch": true
+}

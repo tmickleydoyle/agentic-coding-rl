@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-offer-comparison",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Job offer comparison tool with total compensation calculation and ranking",
+  "split": "test",
+  "from_scratch": true
+}

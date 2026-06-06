@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-pr-review-notes",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Single-page app to capture and manage PR review notes with resolve toggling and category filters.",
+  "split": "test",
+  "from_scratch": true
+}

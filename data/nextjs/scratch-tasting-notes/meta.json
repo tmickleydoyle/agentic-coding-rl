@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-tasting-notes",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Tasting notes journal with add, edit, delete, and search by keyword",
+  "split": "test",
+  "from_scratch": true
+}

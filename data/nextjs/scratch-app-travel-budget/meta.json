@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-travel-budget",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route travel budget tracker with expense logging, budget vs. spent overview, and category breakdown",
+  "split": "test",
+  "from_scratch": true
+}

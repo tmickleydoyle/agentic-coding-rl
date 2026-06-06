@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-release-notes",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Release notes manager with publish/unpublish, dual category+product filters, and delete",
+  "split": "train",
+  "from_scratch": true
+}

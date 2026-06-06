@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-event-signup",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Sign up volunteers for community events with capacity management",
+  "split": "train",
+  "from_scratch": true
+}

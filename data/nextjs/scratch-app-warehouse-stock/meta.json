@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-warehouse-stock",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "A warehouse stock management app with inventory, locations, and stock movements",
+  "split": "train",
+  "from_scratch": true
+}

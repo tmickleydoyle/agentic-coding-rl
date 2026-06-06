@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-http-status-lookup",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "HTTP status code reference tool with search and category filtering",
+  "split": "train",
+  "from_scratch": true
+}

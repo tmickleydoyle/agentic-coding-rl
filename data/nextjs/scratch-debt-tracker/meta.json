@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-debt-tracker",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Debt tracker with payment recording, payoff status, and running totals",
+  "split": "test",
+  "from_scratch": true
+}

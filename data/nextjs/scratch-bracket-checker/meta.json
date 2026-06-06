@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-bracket-checker",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Bracket balance checker with detailed error positions and history",
+  "split": "train",
+  "from_scratch": true
+}

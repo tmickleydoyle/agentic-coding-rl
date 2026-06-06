@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-utilities-tracker",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Utilities tracker to monitor electricity, water, gas bills and usage over time",
+  "split": "train",
+  "from_scratch": true
+}

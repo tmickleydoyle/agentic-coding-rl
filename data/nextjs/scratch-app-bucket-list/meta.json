@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-bucket-list",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Bucket list app for tracking life goals with completion tracking and category organization",
+  "split": "test",
+  "from_scratch": true
+}

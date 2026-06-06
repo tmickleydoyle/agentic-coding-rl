@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-investment-log",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Investment portfolio log with holdings, transactions, and performance tracking",
+  "split": "test",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-dice-roller",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Dice roller with configurable die type and count, showing results and history",
+  "split": "train",
+  "from_scratch": true
+}

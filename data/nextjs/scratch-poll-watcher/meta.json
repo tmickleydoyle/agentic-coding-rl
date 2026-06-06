@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-poll-watcher",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Single-page poll monitoring dashboard to log polling station status and flag issues",
+  "split": "train",
+  "from_scratch": true
+}

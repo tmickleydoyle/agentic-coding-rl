@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-vintage-collection",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "A vintage item collection manager with add, filter by category, and mark-as-sold functionality.",
+  "split": "train",
+  "from_scratch": true
+}

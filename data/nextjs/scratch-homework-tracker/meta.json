@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-homework-tracker",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Track homework assignments with status filters, subject filters, and completion toggling",
+  "split": "train",
+  "from_scratch": true
+}

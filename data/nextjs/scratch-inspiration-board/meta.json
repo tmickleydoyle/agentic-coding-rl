@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-inspiration-board",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Inspiration board app to collect and organize creative inspiration items with categories and notes",
+  "split": "train",
+  "from_scratch": true
+}

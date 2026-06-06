@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-trail-log",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Hiking trail log with difficulty filtering, star ratings, and aggregate stats",
+  "split": "test",
+  "from_scratch": true
+}

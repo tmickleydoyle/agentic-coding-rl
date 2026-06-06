@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-pros-cons",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Pros and cons list builder for comparing decision options",
+  "split": "test",
+  "from_scratch": true
+}

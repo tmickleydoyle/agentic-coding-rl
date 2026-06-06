@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-financial-goals",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Financial goals tracker with milestones, insights, and category grouping",
+  "split": "test",
+  "from_scratch": true
+}

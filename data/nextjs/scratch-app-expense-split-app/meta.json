@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-expense-split-app",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "An expense splitting app for groups, tracking who paid what and computing balances.",
+  "split": "test",
+  "from_scratch": true
+}

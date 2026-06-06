@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-quiz-engine",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Single-page multiple-choice quiz with 5 questions, answer feedback, score tracking, and restart.",
+  "split": "train",
+  "from_scratch": true
+}

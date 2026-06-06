@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-seed-inventory",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "A seed inventory manager where users can track seed packets, quantities, and planting dates.",
+  "split": "train",
+  "from_scratch": true
+}

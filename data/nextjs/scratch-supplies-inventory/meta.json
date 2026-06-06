@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-supplies-inventory",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Art supplies inventory tracker with quantity, category, reorder threshold, and low-stock alerts",
+  "split": "test",
+  "from_scratch": true
+}

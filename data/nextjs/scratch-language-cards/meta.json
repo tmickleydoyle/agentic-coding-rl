@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-language-cards",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Flashcard app for learning vocabulary in a foreign language with flip, mark known, and filter features.",
+  "split": "train",
+  "from_scratch": true
+}

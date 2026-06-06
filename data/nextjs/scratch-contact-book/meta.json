@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-contact-book",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Contact manager with add/delete contacts, real-time search filtering, and alphabetical sort.",
+  "split": "train",
+  "from_scratch": true
+}

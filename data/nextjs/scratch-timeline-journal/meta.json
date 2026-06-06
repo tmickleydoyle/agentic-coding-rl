@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-timeline-journal",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "A timeline journal where users can log dated entries and view them in chronological order",
+  "split": "train",
+  "from_scratch": true
+}

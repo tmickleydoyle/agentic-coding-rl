@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-patient-records",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route patient records app with patient list, appointments, and medical records management",
+  "split": "train",
+  "from_scratch": true
+}

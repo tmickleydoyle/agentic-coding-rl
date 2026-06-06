@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-markdown-preview",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Split-pane markdown editor with live preview, mini-renderer, word/char counts, and clipboard copy",
+  "split": "test",
+  "from_scratch": true
+}

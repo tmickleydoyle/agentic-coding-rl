@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-volunteer-hub",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Volunteer management hub with volunteers list, assignments tracker, and reports dashboard",
+  "split": "train",
+  "from_scratch": true
+}

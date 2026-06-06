@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-season-tracker",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Season tracker showing team standings with points, wins, losses, and draws for multiple teams",
+  "split": "train",
+  "from_scratch": true
+}

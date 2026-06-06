@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-water-params",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Water parameter recorder — log pH, ammonia, nitrite, nitrate readings per tank with status indicators.",
+  "split": "train",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-sleep-schedule",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Baby sleep session tracker with duration, quality ratings, and average duration summary.",
+  "split": "train",
+  "from_scratch": true
+}

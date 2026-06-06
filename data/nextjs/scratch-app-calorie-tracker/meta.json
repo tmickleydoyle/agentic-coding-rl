@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-calorie-tracker",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Calorie tracker with daily goals, progress bar, food log management, and macro totals",
+  "split": "test",
+  "from_scratch": true
+}

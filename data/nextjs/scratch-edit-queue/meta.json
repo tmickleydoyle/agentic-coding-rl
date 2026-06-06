@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-edit-queue",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Photo edit queue — manage a queue of photos pending post-processing with status and editor assignment",
+  "split": "train",
+  "from_scratch": true
+}

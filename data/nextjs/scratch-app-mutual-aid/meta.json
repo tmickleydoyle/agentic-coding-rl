@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-mutual-aid",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Community mutual aid network with requests, offers, and match coordination",
+  "split": "train",
+  "from_scratch": true
+}

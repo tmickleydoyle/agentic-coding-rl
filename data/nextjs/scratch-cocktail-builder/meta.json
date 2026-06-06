@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-cocktail-builder",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Cocktail recipe builder with ingredients list and step-by-step instructions",
+  "split": "train",
+  "from_scratch": true
+}

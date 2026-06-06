@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-mortgage-calc",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Calculate monthly mortgage payments with amortization breakdown",
+  "split": "train",
+  "from_scratch": true
+}

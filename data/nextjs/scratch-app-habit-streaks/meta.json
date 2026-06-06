@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-habit-streaks",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Habit tracker focused on streaks with consecutive-day computation",
+  "split": "test",
+  "from_scratch": true
+}

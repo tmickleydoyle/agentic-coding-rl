@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-unit-converter",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Unit converter with Length/Weight/Temperature categories, swap, and 5-entry history",
+  "split": "train",
+  "from_scratch": true
+}

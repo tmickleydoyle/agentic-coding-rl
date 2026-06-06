@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-homework-helper",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Homework tracker with assignment management, subject notes, status transitions, and per-subject progress stats",
+  "split": "train",
+  "from_scratch": true
+}

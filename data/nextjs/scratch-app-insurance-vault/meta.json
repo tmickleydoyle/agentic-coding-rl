@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-insurance-vault",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Insurance vault app to manage policies, claims, documents, and insurer contacts",
+  "split": "test",
+  "from_scratch": true
+}

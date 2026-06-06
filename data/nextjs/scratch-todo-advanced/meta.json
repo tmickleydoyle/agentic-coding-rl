@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-todo-advanced",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Advanced todo list with priority levels, filtering by status and priority, and item counts",
+  "split": "test",
+  "from_scratch": true
+}

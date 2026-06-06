@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-pantry-manager",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Pantry inventory manager with quantity tracking, low-stock alerts, and expiry dates",
+  "split": "test",
+  "from_scratch": true
+}

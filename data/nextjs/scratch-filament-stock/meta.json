@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-filament-stock",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Track filament spool inventory with add, update remaining, remove, and low stock alerts.",
+  "split": "test",
+  "from_scratch": true
+}

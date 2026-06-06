@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-csv-viewer",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "CSV viewer with parsing, table display, search filtering, column sorting, and CSV download",
+  "split": "train",
+  "from_scratch": true
+}

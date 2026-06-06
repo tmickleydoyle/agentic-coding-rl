@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-coach-notes",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route coaching notes app with athletes, sessions, drills, and review summaries",
+  "split": "test",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/badge-count",
+  "framework": "nextjs",
+  "difficulty": "easy",
+  "entry_point": "components/BadgeCount.tsx",
+  "summary": "Notification badge that shows a count, hidden at zero, with add and clear buttons",
+  "split": "train",
+  "from_scratch": true
+}

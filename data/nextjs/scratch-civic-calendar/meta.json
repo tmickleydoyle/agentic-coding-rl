@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-civic-calendar",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Single-page civic events calendar to add, view, and delete upcoming election-related events",
+  "split": "train",
+  "from_scratch": true
+}

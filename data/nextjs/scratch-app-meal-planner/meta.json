@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-meal-planner",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "A meal planner app with recipe library, weekly meal planning, and shopping list generation.",
+  "split": "test",
+  "from_scratch": true
+}

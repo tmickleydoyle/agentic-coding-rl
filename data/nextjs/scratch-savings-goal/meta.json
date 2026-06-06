@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-savings-goal",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "A savings goal tracker that calculates how much to save per period to reach a target amount",
+  "split": "test",
+  "from_scratch": true
+}

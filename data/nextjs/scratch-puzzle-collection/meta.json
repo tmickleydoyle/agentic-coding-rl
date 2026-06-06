@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-puzzle-collection",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Puzzle collection manager with categories, difficulty ratings, and solve tracking",
+  "split": "test",
+  "from_scratch": true
+}

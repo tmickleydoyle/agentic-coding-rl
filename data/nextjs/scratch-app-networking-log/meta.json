@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-networking-log",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Networking event log app tracking events, connections, and follow-up actions",
+  "split": "test",
+  "from_scratch": true
+}

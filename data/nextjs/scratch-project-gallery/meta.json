@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-project-gallery",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Project gallery app to showcase creative projects with tags, descriptions, and featured status",
+  "split": "test",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-typing-test",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Typing speed test app that measures WPM and accuracy as the user types a fixed passage.",
+  "split": "train",
+  "from_scratch": true
+}

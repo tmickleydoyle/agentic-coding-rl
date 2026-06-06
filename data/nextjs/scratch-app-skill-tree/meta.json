@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-skill-tree",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Skill tree app with skill nodes, learning paths, and learner progress tracking",
+  "split": "test",
+  "from_scratch": true
+}

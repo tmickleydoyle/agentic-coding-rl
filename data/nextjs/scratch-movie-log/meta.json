@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-movie-log",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Movie watchlist with add/remove, star ratings, genre filter, and multi-field sort.",
+  "split": "test",
+  "from_scratch": true
+}

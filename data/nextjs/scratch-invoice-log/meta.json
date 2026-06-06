@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-invoice-log",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Invoice log with add/delete, status updates, and running total of outstanding amounts",
+  "split": "train",
+  "from_scratch": true
+}

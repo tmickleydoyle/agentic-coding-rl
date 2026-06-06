@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-coffee-log",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Coffee brewing journal to track beans, brew logs, and tasting stats",
+  "split": "train",
+  "from_scratch": true
+}

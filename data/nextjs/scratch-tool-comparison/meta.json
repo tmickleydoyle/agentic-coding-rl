@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-tool-comparison",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Compare developer tools side by side across multiple criteria",
+  "split": "test",
+  "from_scratch": true
+}

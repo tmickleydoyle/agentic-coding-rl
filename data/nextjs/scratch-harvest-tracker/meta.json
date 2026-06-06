@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-harvest-tracker",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "A harvest tracker where users can log crop harvests with weight, date, and notes, and view totals by crop.",
+  "split": "test",
+  "from_scratch": true
+}

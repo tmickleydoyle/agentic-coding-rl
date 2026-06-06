@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-recipe-scaler",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Scale recipe ingredient amounts proportionally based on desired serving count",
+  "split": "train",
+  "from_scratch": true
+}

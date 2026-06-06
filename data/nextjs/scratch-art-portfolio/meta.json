@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-art-portfolio",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Art portfolio app to manage and display artwork with title, medium, year, and sale status",
+  "split": "train",
+  "from_scratch": true
+}

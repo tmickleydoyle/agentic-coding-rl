@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-mentor-log",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Log mentorship sessions with topics, ratings, and action items",
+  "split": "test",
+  "from_scratch": true
+}

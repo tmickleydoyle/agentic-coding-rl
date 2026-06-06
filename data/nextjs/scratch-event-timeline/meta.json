@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-event-timeline",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Chronological event timeline with add and delete functionality",
+  "split": "train",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-inheritance-log",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route inheritance log with entries, heir share tracking, and date-sorted timeline",
+  "split": "train",
+  "from_scratch": true
+}

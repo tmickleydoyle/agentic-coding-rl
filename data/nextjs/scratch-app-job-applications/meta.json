@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-job-applications",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Job application tracker with pipeline stages, contacts, and notes",
+  "split": "train",
+  "from_scratch": true
+}

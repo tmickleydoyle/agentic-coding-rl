@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-conference-schedule",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Conference schedule viewer with sessions listed by time slot, track filter, and bookmark toggle",
+  "split": "train",
+  "from_scratch": true
+}

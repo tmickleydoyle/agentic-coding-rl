@@ -1,0 +1,1 @@
+{"task_id":"nextjs/scratch-app-game-tracker","framework":"nextjs","difficulty":"hard","entry_point":"app/page.tsx","summary":"Multi-route game tracker with game library, play sessions, and achievements","split":"test","from_scratch":true}

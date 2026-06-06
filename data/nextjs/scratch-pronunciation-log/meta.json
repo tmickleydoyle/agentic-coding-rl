@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-pronunciation-log",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Log and rate pronunciation practice sessions for words with notes and self-rating.",
+  "split": "train",
+  "from_scratch": true
+}

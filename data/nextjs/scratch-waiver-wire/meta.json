@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-waiver-wire",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Fantasy waiver wire with claim submissions, drop player selection, and claim cancellation",
+  "split": "test",
+  "from_scratch": true
+}

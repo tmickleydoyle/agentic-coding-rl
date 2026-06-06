@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-step-counter",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Step counter app with daily logging, auto-computed distance and calories, and goal management",
+  "split": "test",
+  "from_scratch": true
+}

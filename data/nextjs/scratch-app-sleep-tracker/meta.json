@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-sleep-tracker",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Sleep tracking app with bedtime/wake logging, duration calculation, and sleep insights",
+  "split": "train",
+  "from_scratch": true
+}

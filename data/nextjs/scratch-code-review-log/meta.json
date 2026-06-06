@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-code-review-log",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Single-page app to log and filter code review sessions with stats and CRUD.",
+  "split": "train",
+  "from_scratch": true
+}

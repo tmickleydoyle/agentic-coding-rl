@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-social-scheduler",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Social media scheduling tool with compose, queue management, and account connections",
+  "split": "test",
+  "from_scratch": true
+}

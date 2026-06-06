@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-diff-viewer",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Side-by-side line diff viewer with LCS algorithm, color-coded added/removed/same rows and summary counts",
+  "split": "train",
+  "from_scratch": true
+}

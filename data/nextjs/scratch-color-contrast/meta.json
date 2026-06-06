@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-color-contrast",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Color contrast checker that computes WCAG contrast ratio and AA/AAA pass/fail for two hex colors",
+  "split": "train",
+  "from_scratch": true
+}

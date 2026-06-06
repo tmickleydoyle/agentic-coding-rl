@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-vote-record",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Single-page voter record manager to add, filter, and mark ballots as counted",
+  "split": "test",
+  "from_scratch": true
+}

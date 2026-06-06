@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-unit-test-runner",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Simulated unit test runner UI that runs 6 predefined tests and displays pass/fail results with a summary.",
+  "split": "train",
+  "from_scratch": true
+}

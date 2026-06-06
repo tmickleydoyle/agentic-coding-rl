@@ -1,0 +1,3 @@
+'use client'
+import React from 'react'
+export function GamesPage() { return <div><h1>Games</h1><select data-testid="game-status-filter"><option value="all">all</option></select><ul data-testid="game-list"></ul><form data-testid="add-game-form"><input data-testid="game-title-input" placeholder="Title"/><input data-testid="game-platform-input" placeholder="Platform"/><input data-testid="game-genre-input" placeholder="Genre"/><select data-testid="game-status-select"><option value="not started">not started</option></select><button data-testid="submit-game" type="submit">Add</button></form></div> }

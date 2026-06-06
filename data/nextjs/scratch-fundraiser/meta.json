@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-fundraiser",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Manage fundraising campaigns with goal tracking and donor entries",
+  "split": "train",
+  "from_scratch": true
+}

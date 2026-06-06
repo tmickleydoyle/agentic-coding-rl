@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-savings-tracker",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Savings goal tracker with contributions and progress visualization",
+  "split": "test",
+  "from_scratch": true
+}

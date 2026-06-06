@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-roommate-expenses",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Roommate expense splitting app to track shared costs and settle balances",
+  "split": "test",
+  "from_scratch": true
+}

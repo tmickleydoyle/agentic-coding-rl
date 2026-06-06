@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-asset-register",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route asset register with assets, valuation history, and latest-valuation portfolio summary",
+  "split": "test",
+  "from_scratch": true
+}

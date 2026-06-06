@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-asset-tracker",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Business asset tracker with depreciation calculation and category grouping",
+  "split": "test",
+  "from_scratch": true
+}

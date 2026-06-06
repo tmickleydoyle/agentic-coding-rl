@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-url-parser",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "URL parser that breaks a URL into components and displays them with copy support",
+  "split": "train",
+  "from_scratch": true
+}

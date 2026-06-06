@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-fuel-log",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Track vehicle fuel fill-ups with MPG calculation, sorting, and cost summaries.",
+  "split": "test",
+  "from_scratch": true
+}

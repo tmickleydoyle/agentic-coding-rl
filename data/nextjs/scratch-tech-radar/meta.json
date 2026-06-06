@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-tech-radar",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Tech Radar app to categorize technologies by adoption status with filters and CRUD",
+  "split": "train",
+  "from_scratch": true
+}

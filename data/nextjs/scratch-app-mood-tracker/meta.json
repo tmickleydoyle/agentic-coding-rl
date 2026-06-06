@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-mood-tracker",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Daily mood tracker with 1-5 scale logging, history view, and mood insights",
+  "split": "test",
+  "from_scratch": true
+}

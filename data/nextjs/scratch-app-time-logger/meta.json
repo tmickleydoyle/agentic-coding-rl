@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-time-logger",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route time logging app with projects, time entries, and reports",
+  "split": "test",
+  "from_scratch": true
+}

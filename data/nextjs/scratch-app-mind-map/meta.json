@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-mind-map",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route mind map app with hierarchical node management, tree visualization, and color filtering",
+  "split": "train",
+  "from_scratch": true
+}

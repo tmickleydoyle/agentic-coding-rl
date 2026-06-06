@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-hike-tracker",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Hike planning tracker with planned/completed status, mark done, filters, and aggregate stats",
+  "split": "test",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-travel-journal",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route travel journal app with entry creation, list view, and travel statistics",
+  "split": "train",
+  "from_scratch": true
+}

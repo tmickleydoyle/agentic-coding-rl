@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-auction-tracker",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "An auction item tracker with bidding, status updates, and highest-bid display.",
+  "split": "test",
+  "from_scratch": true
+}

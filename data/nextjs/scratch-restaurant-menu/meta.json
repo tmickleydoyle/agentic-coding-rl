@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-restaurant-menu",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Browse a restaurant menu by category and add items to a cart with a running total",
+  "split": "train",
+  "from_scratch": true
+}

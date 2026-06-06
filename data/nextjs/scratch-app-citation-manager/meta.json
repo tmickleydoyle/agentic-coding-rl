@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-citation-manager",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route citation manager with CRUD, collections, APA export, and search",
+  "split": "test",
+  "from_scratch": true
+}

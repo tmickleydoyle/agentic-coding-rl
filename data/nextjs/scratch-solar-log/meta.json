@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-solar-log",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Log daily solar panel kWh production with stats and note filtering",
+  "split": "train",
+  "from_scratch": true
+}

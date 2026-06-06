@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-piercing-log",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Piercing log to track piercings with location, date, and healing status",
+  "split": "test",
+  "from_scratch": true
+}

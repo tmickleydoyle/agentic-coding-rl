@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-show-tracker",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Track podcast shows with subscription status and episode counts",
+  "split": "train",
+  "from_scratch": true
+}

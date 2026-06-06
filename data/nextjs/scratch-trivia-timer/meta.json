@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-trivia-timer",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Timed trivia quiz with a 15-second countdown per question, tracking score across 5 multiple-choice questions.",
+  "split": "train",
+  "from_scratch": true
+}

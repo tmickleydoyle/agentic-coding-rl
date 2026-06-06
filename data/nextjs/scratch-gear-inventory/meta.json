@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-gear-inventory",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Outdoor gear inventory with category filtering, quantity controls, and condition badges",
+  "split": "train",
+  "from_scratch": true
+}

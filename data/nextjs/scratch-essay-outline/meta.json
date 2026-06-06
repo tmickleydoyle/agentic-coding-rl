@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-essay-outline",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a hierarchical essay outline editor with sections, bullet points, and live title display",
+  "split": "train",
+  "from_scratch": true
+}

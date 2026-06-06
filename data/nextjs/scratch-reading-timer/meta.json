@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-reading-timer",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Log reading sessions with a countdown timer, finish-early control, and total-minutes summary",
+  "split": "train",
+  "from_scratch": true
+}

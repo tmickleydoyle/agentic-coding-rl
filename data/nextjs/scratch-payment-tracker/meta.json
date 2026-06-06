@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-payment-tracker",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Payment tracker that logs received payments, shows balance due per client, and totals",
+  "split": "test",
+  "from_scratch": true
+}

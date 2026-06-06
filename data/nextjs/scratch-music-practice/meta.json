@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-music-practice",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Music practice session tracker with instruments, duration logging, and weekly stats",
+  "split": "train",
+  "from_scratch": true
+}

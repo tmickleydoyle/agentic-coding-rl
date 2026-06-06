@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-subscription-tracker",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Subscription tracker with cycle/category filters, cancel, add, and spending summaries",
+  "split": "train",
+  "from_scratch": true
+}

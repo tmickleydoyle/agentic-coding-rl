@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-kanban-simple",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Three-column Kanban board with task movement and add-task form",
+  "split": "test",
+  "from_scratch": true
+}

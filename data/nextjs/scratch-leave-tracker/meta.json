@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-leave-tracker",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Leave request tracker with status filtering, approve/reject actions, and add form",
+  "split": "train",
+  "from_scratch": true
+}

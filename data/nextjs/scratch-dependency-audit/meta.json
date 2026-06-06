@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-dependency-audit",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Dependency audit dashboard tracking npm package vulnerabilities with filters and resolution actions",
+  "split": "test",
+  "from_scratch": true
+}

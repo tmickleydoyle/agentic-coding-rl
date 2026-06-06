@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-vocab-trainer",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "A vocabulary trainer app with word library, quiz mode, and results tracking.",
+  "split": "train",
+  "from_scratch": true
+}

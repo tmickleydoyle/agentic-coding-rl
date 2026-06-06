@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-expense-form",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Expense tracker with add/delete entries, category filter, and running total.",
+  "split": "test",
+  "from_scratch": true
+}

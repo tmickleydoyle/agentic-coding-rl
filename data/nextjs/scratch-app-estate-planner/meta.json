@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-estate-planner",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route estate planner with assets, beneficiaries, notes, and dashboard summary",
+  "split": "train",
+  "from_scratch": true
+}

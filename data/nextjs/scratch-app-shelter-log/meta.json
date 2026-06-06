@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-shelter-log",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Homeless shelter management with resident intake, bed assignments, and services logging",
+  "split": "train",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-phrase-book",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Phrase book app to browse, favorite, and filter travel phrases by category.",
+  "split": "train",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-decision-log",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route decision log app with CRUD, archive of decided items, status filtering, and statistics",
+  "split": "train",
+  "from_scratch": true
+}

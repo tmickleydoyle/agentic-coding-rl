@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-rent-calculator",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Calculate total monthly housing costs and rent affordability ratio",
+  "split": "test",
+  "from_scratch": true
+}

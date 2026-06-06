@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-aftercare-log",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Aftercare log for tracking daily care steps for tattoos and piercings",
+  "split": "train",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-appliance-log",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Log and manage home appliances with status tracking, filtering, and inline status editing.",
+  "split": "test",
+  "from_scratch": true
+}

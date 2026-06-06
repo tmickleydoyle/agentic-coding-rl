@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-language-flashcards",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Language learning flashcard app with decks, study sessions, and progress stats",
+  "split": "test",
+  "from_scratch": true
+}

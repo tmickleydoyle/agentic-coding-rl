@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-decision-matrix",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Interactive decision matrix that scores options against weighted criteria",
+  "split": "train",
+  "from_scratch": true
+}

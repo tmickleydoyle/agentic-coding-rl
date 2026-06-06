@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-recipe-cost",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Recipe cost calculator where users build recipes from ingredients and see total and per-serving cost",
+  "split": "test",
+  "from_scratch": true
+}

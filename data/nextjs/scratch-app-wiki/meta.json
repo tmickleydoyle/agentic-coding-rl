@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-wiki",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "A multi-route wiki app with articles, edit history, search, and new article creation.",
+  "split": "test",
+  "from_scratch": true
+}

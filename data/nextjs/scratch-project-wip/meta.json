@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-project-wip",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Work-in-progress craft project tracker: log projects with title/type/start date/notes, update progress percentage, sort by progress",
+  "split": "train",
+  "from_scratch": true
+}

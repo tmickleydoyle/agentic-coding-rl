@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-utility-bills",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Track household utility bills with paid/unpaid status and amount summaries",
+  "split": "train",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-run-tracker",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Log running workouts with distance, duration, pace calculation, and aggregate stats",
+  "split": "test",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-puzzle-timer",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Record puzzle solve times with puzzle name and difficulty, display sorted history and best times",
+  "split": "test",
+  "from_scratch": true
+}

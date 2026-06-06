@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/percentage-calc",
+  "framework": "nextjs",
+  "difficulty": "easy",
+  "entry_point": "app/api/percentage-calc/route.ts",
+  "summary": "GET handler that computes (value/total)*100 with configurable decimal rounding",
+  "split": "train",
+  "from_scratch": true
+}

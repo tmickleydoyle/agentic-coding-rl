@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-certificate-tracker",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Certificate tracker app for managing skills, issuing certificates, and viewing achievements",
+  "split": "train",
+  "from_scratch": true
+}

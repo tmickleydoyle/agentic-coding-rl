@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/progress-bar",
+  "framework": "nextjs",
+  "difficulty": "easy",
+  "entry_point": "components/ProgressBar.tsx",
+  "summary": "An interactive progress bar with increase/decrease controls clamped between 0 and 100.",
+  "split": "train",
+  "from_scratch": true
+}

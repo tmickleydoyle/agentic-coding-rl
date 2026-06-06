@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-pomodoro",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Pomodoro timer with Work/Break modes, start/pause/reset controls, pomodoro count, and task checklist.",
+  "split": "test",
+  "from_scratch": true
+}

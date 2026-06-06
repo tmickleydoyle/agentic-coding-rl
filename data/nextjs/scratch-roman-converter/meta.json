@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-roman-converter",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Two-way Roman numeral converter with history tracking",
+  "split": "test",
+  "from_scratch": true
+}

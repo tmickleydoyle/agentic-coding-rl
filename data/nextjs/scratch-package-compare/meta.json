@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-package-compare",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Package comparison app with sortable metrics and side-by-side winner highlighting",
+  "split": "test",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-tutor-sessions",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Tutor session booking app with tutor listings, session scheduling, and booking management",
+  "split": "test",
+  "from_scratch": true
+}

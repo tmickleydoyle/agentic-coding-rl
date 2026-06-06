@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-podcast-notes",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Take and manage timestamped notes on podcast episodes",
+  "split": "train",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-supplier-list",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "A supplier management app with supplier profiles, contacts, and contracts",
+  "split": "test",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-currency-log",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route currency exchange log with per-currency summary and fee tracking",
+  "split": "train",
+  "from_scratch": true
+}

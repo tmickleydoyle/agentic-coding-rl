@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-nutrition-plan",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route nutrition plan manager with meals, foods, daily targets, and macro summary",
+  "split": "train",
+  "from_scratch": true
+}

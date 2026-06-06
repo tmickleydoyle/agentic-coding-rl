@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-calorie-burn",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Estimate calories burned from workout activities with a log and aggregate stats",
+  "split": "train",
+  "from_scratch": true
+}

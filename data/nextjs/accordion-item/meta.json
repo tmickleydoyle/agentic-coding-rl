@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/accordion-item",
+  "framework": "nextjs",
+  "difficulty": "easy",
+  "entry_point": "components/AccordionItem.tsx",
+  "summary": "Accordion item component with toggle header that shows/hides content panel",
+  "split": "test",
+  "from_scratch": true
+}

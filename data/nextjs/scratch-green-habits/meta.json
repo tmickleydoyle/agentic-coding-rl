@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-green-habits",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Track weekly eco-friendly habits with completion counts and on-track progress indicators",
+  "split": "train",
+  "from_scratch": true
+}

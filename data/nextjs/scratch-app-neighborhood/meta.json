@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-neighborhood",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Neighborhood management app with resident directory, issue tracker, and announcements board",
+  "split": "test",
+  "from_scratch": true
+}

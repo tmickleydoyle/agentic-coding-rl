@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-morse-code",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Bidirectional Morse code translator with text-to-morse and morse-to-text modes",
+  "split": "train",
+  "from_scratch": true
+}

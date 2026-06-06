@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-weather-notes",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "A weather notes app where users can log daily weather observations with temperature, conditions, and notes.",
+  "split": "train",
+  "from_scratch": true
+}

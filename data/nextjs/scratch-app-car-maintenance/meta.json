@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-car-maintenance",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Car maintenance tracker with vehicles, service records, and upcoming maintenance reminders",
+  "split": "test",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-class-grades",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Track student grades with averages, letter grades, and class summary stats",
+  "split": "train",
+  "from_scratch": true
+}

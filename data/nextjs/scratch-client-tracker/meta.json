@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-client-tracker",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Freelance client tracker with add/edit/delete and status filtering",
+  "split": "train",
+  "from_scratch": true
+}

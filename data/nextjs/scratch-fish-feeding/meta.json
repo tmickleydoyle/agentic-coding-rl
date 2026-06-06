@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-fish-feeding",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Fish feeding tracker — log feedings per tank, mark as fed, show daily totals.",
+  "split": "test",
+  "from_scratch": true
+}

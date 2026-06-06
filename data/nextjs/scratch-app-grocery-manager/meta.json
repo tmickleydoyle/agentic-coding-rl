@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-grocery-manager",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Grocery shopping list with check-off, categories summary, and add/delete items",
+  "split": "train",
+  "from_scratch": true
+}

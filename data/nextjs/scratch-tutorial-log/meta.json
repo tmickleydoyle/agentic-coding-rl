@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-tutorial-log",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Craft tutorial log: record tutorials with title/source/duration/rating, mark as watched, filter by rating, show total watch time",
+  "split": "train",
+  "from_scratch": true
+}

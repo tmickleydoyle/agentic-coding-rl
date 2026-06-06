@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-newsletter",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Newsletter management tool with campaigns, subscribers, templates, and send stats",
+  "split": "train",
+  "from_scratch": true
+}

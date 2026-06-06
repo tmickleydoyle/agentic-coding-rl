@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-vocabulary-list",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Build a vocabulary list with mastery tracking, filtering, and add/remove controls",
+  "split": "test",
+  "from_scratch": true
+}

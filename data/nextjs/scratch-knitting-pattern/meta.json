@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-knitting-pattern",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Knitting pattern manager: add patterns with name/yarn/needle size/row count, mark as active or complete, filter by status",
+  "split": "train",
+  "from_scratch": true
+}

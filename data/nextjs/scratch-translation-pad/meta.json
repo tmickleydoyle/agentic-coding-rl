@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-translation-pad",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Translation notepad for saving phrase pairs with source and target language, search, and delete.",
+  "split": "test",
+  "from_scratch": true
+}

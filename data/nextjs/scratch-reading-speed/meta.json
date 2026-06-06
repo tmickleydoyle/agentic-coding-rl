@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-reading-speed",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "A single-page app to log reading sessions with pages read and time spent, and display reading speed stats.",
+  "split": "train",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-job-search",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Job search tracker with filters, status management, and application notes",
+  "split": "train",
+  "from_scratch": true
+}

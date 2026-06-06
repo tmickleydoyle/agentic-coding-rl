@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-exchange-rate",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Display and manage a table of currency exchange rates with add and delete",
+  "split": "test",
+  "from_scratch": true
+}

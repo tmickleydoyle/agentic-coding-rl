@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-memory-match",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "4x4 card memory match game with 8 emoji pairs, flip/match logic, moves counter, and win detection",
+  "split": "train",
+  "from_scratch": true
+}

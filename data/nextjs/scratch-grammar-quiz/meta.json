@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-grammar-quiz",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Multiple-choice grammar quiz app with score tracking, answer feedback, and quiz restart.",
+  "split": "test",
+  "from_scratch": true
+}

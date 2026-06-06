@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/word-reverse",
+  "framework": "nextjs",
+  "difficulty": "easy",
+  "entry_point": "app/api/word-reverse/route.ts",
+  "summary": "GET route that reverses each word in a sentence while preserving word order",
+  "split": "train",
+  "from_scratch": true
+}

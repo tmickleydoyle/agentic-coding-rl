@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-library-wishlist",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "A single-page app to maintain a reading wishlist with priority, genre, and notes fields.",
+  "split": "test",
+  "from_scratch": true
+}

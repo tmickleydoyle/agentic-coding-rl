@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-base-converter",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Number base converter between binary, octal, decimal, and hexadecimal with validation",
+  "split": "test",
+  "from_scratch": true
+}

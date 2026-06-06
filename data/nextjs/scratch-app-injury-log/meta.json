@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-injury-log",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route athlete injury tracker with treatments, timeline, and recovery notes",
+  "split": "train",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-employee-directory",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Employee directory with search, department filter, and add-employee form",
+  "split": "train",
+  "from_scratch": true
+}

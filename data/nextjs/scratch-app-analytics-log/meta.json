@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-analytics-log",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Web analytics logging tool for tracking events, computing funnels, and defining user segments",
+  "split": "test",
+  "from_scratch": true
+}

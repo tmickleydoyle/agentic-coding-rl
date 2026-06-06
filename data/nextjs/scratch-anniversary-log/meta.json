@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-anniversary-log",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "An anniversary log app where users can track recurring annual events and see days until next occurrence",
+  "split": "train",
+  "from_scratch": true
+}

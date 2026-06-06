@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-valuation-log",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "A valuation log for collectibles with add entry, edit estimated value, and sort by date.",
+  "split": "train",
+  "from_scratch": true
+}

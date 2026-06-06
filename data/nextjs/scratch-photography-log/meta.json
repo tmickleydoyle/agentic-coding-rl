@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-photography-log",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Photography session log — add, view, and delete photo sessions with date, location, and notes",
+  "split": "train",
+  "from_scratch": true
+}

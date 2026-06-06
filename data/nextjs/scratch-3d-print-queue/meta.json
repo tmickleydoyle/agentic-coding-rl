@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-3d-print-queue",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Manage a 3D print job queue with add, reorder, status tracking, and remove.",
+  "split": "train",
+  "from_scratch": true
+}

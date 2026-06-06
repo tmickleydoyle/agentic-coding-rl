@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-escape-room-log",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Escape room attempt logger with timer, clue tracking, and room completion status",
+  "split": "train",
+  "from_scratch": true
+}

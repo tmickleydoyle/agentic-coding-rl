@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-stock-watchlist",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "A stock watchlist app with price tracking, alerts, and price history.",
+  "split": "train",
+  "from_scratch": true
+}

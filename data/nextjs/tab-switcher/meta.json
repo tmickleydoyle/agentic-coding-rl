@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/tab-switcher",
+  "framework": "nextjs",
+  "difficulty": "easy",
+  "entry_point": "components/TabSwitcher.tsx",
+  "summary": "Tab switcher component that renders tab buttons and displays the active tab's content panel",
+  "split": "test",
+  "from_scratch": true
+}

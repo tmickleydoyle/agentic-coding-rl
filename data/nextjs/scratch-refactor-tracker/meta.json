@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-refactor-tracker",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Single-page app to track refactor tasks with done toggling, dual filters, and progress stats.",
+  "split": "test",
+  "from_scratch": true
+}

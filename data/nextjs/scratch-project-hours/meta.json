@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-project-hours",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Project hours logger that tracks time entries per project and computes totals",
+  "split": "test",
+  "from_scratch": true
+}

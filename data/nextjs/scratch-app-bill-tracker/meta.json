@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-bill-tracker",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Monthly bill tracker with calendar view and active/inactive toggle",
+  "split": "test",
+  "from_scratch": true
+}

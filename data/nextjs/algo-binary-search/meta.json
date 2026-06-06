@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/algo-binary-search",
+  "framework": "nextjs",
+  "difficulty": "easy",
+  "entry_point": "lib/binary-search.ts",
+  "summary": "Implement binary search and related utilities on sorted arrays",
+  "split": "train",
+  "from_scratch": true
+}

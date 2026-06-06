@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/password-strength",
+  "framework": "nextjs",
+  "difficulty": "easy",
+  "entry_point": "components/PasswordStrength.tsx",
+  "summary": "A password input that evaluates and displays strength based on four criteria.",
+  "split": "test",
+  "from_scratch": true
+}

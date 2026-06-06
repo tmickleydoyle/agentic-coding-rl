@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-property-compare",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Select up to 3 properties and compare them side-by-side",
+  "split": "test",
+  "from_scratch": true
+}

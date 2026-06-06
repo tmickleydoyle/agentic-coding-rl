@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-league-manager",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route league manager with teams, match schedule, and computed standings table",
+  "split": "train",
+  "from_scratch": true
+}

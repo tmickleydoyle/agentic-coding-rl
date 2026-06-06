@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-garden-log",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "A garden activity log where users can add, filter, and delete journal entries about their garden work.",
+  "split": "test",
+  "from_scratch": true
+}

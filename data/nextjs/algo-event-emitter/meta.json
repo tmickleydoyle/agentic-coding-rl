@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/algo-event-emitter",
+  "framework": "nextjs",
+  "difficulty": "easy",
+  "entry_point": "lib/event-emitter.ts",
+  "summary": "Implement a typed EventEmitter class with on, off, emit, once, and removeAllListeners",
+  "split": "test",
+  "from_scratch": true
+}

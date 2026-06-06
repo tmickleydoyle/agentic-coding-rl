@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-wine-cellar",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Wine cellar tracker with add, filter by type, and sort by year",
+  "split": "train",
+  "from_scratch": true
+}

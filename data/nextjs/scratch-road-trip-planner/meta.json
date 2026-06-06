@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-road-trip-planner",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Plan road trips with stops, reordering, cost summaries, and city search.",
+  "split": "test",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/toggle-switch",
+  "framework": "nextjs",
+  "difficulty": "easy",
+  "entry_point": "components/ToggleSwitch.tsx",
+  "summary": "A toggle switch component that flips between ON and OFF states.",
+  "split": "train",
+  "from_scratch": true
+}

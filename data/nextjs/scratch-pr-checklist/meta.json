@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-pr-checklist",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "PR checklist manager: create checklists for pull requests with checkable items and completion tracking",
+  "split": "test",
+  "from_scratch": true
+}

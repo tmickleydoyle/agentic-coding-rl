@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-debt-payoff",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Debt payoff planner with avalanche strategy and payment tracking",
+  "split": "train",
+  "from_scratch": true
+}

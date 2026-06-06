@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-athlete-profile",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route athlete profile manager with metrics, events, and achievements",
+  "split": "train",
+  "from_scratch": true
+}

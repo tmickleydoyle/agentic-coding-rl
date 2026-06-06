@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-attendance-sheet",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Track daily student attendance with toggleable status cells and summary statistics",
+  "split": "test",
+  "from_scratch": true
+}

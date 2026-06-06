@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-room-planner",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Plan home rooms with dimensions, floor tracking, dual filters by type and floor, and total area summary.",
+  "split": "train",
+  "from_scratch": true
+}

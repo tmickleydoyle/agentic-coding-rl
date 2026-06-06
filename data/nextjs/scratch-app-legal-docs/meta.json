@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-legal-docs",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Legal document management app with CRUD, category/status filtering, and summary stats",
+  "split": "train",
+  "from_scratch": true
+}

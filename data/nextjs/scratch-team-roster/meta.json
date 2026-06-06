@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-team-roster",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Team roster manager to view, add, and remove players with search and position filtering",
+  "split": "train",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-gig-tracker",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Gig tracker to log past and upcoming performances with venue, pay, and status",
+  "split": "train",
+  "from_scratch": true
+}

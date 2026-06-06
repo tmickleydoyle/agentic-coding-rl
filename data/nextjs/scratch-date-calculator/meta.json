@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-date-calculator",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "A date difference calculator that finds the gap between two dates and can add/subtract days from a date",
+  "split": "train",
+  "from_scratch": true
+}

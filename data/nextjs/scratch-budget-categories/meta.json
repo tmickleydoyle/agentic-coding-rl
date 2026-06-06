@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-budget-categories",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Monthly budget tracker with categories, spend tracking, and variance display",
+  "split": "test",
+  "from_scratch": true
+}

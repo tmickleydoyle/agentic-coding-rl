@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-contract-tracker",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Contract tracking app with value aggregation, status filtering, and multi-field validation",
+  "split": "test",
+  "from_scratch": true
+}

@@ -1,0 +1,11 @@
+export function GET() {
+  return Response.json({ entries: [] });
+}
+
+export async function POST(_req: Request) {
+  return Response.json({ error: "not implemented" }, { status: 501 });
+}
+
+export function DELETE(_req: Request) {
+  return Response.json({ error: "not implemented" }, { status: 501 });
+}

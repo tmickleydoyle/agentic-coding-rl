@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-org-chart",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Org chart with expandable/collapsible tree, add member form, and hierarchy display",
+  "split": "test",
+  "from_scratch": true
+}

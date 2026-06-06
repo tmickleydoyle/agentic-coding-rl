@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-subscription-log",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Track software subscriptions with cost, renewal date, and status filtering",
+  "split": "train",
+  "from_scratch": true
+}

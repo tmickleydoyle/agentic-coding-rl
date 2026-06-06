@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-gym-log",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route gym session logger with exercises, history, and stats",
+  "split": "test",
+  "from_scratch": true
+}

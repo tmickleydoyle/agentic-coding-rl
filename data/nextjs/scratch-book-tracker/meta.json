@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-book-tracker",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Book reading tracker with status filtering, ratings, and average rating display",
+  "split": "test",
+  "from_scratch": true
+}

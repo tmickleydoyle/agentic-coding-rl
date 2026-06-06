@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-game-stats",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route game stats tracker with games log, player management, and points leaderboard",
+  "split": "test",
+  "from_scratch": true
+}

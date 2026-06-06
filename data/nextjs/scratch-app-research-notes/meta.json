@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-research-notes",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route research notes app with CRUD, tagging, source tracking, and full-text search",
+  "split": "train",
+  "from_scratch": true
+}

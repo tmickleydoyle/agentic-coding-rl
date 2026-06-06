@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/title-case",
+  "framework": "nextjs",
+  "difficulty": "easy",
+  "entry_point": "app/api/title-case/route.ts",
+  "summary": "GET route that converts a text string to title case",
+  "split": "test",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/word-counter",
+  "framework": "nextjs",
+  "difficulty": "easy",
+  "entry_point": "components/WordCounter.tsx",
+  "summary": "Textarea component that counts and displays words as the user types, with a clear button",
+  "split": "test",
+  "from_scratch": true
+}

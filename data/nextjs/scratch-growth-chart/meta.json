@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-growth-chart",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Baby growth measurement tracker logging weight, height, and head circumference with latest-measurement summary.",
+  "split": "test",
+  "from_scratch": true
+}

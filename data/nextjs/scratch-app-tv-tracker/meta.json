@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-tv-tracker",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "TV show tracker with watchlist, episode progress, and favorites management",
+  "split": "train",
+  "from_scratch": true
+}

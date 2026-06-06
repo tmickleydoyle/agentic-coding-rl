@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-sprint-planner",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Sprint planner that manages stories with story points, tracks capacity, and shows velocity",
+  "split": "train",
+  "from_scratch": true
+}

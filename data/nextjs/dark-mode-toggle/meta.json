@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/dark-mode-toggle",
+  "framework": "nextjs",
+  "difficulty": "easy",
+  "entry_point": "components/DarkModeToggle.tsx",
+  "summary": "Toggle button that switches between light and dark mode, updating theme attribute and label",
+  "split": "train",
+  "from_scratch": true
+}

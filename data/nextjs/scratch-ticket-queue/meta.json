@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-ticket-queue",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Support ticket queue with priority sorting, status filtering, and inline status updates",
+  "split": "test",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-reading-club",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Personal reading club tracker with reading list management, stats, and book discovery",
+  "split": "train",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-photo-album",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "A photo album app where users can add, view, and delete photos with titles and descriptions",
+  "split": "train",
+  "from_scratch": true
+}

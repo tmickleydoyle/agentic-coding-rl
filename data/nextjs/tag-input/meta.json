@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/tag-input",
+  "framework": "nextjs",
+  "difficulty": "easy",
+  "entry_point": "components/TagInput.tsx",
+  "summary": "Tag input component that lets users add and remove string tags via Enter key",
+  "split": "train",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-parking-tracker",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Track parking sessions with add, delete, filter, and cost summary features.",
+  "split": "train",
+  "from_scratch": true
+}

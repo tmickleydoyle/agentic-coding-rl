@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-prime-sieve",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Sieve of Eratosthenes visualizer with prime/composite grid and statistics",
+  "split": "test",
+  "from_scratch": true
+}

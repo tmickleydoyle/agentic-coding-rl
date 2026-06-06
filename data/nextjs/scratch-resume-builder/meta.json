@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-resume-builder",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Interactive resume builder with sections for experience, education, and skills",
+  "split": "test",
+  "from_scratch": true
+}

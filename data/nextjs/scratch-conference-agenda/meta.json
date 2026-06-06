@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-conference-agenda",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-day conference agenda builder with session management, room filtering, and day tabs",
+  "split": "train",
+  "from_scratch": true
+}

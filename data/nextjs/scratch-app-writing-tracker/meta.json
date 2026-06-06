@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-writing-tracker",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Writing productivity tracker with sessions, word-count goals, and project management",
+  "split": "train",
+  "from_scratch": true
+}

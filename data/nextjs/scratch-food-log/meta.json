@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-food-log",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Daily food diary with add/remove entries and per-meal calorie breakdown",
+  "split": "test",
+  "from_scratch": true
+}

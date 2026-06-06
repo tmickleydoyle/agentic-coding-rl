@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-talk-notes",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Talk notes app for conference attendees to add, edit, and tag notes per session",
+  "split": "test",
+  "from_scratch": true
+}

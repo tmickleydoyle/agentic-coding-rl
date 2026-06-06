@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/color-swatch-picker",
+  "framework": "nextjs",
+  "difficulty": "easy",
+  "entry_point": "components/ColorSwatchPicker.tsx",
+  "summary": "Color swatch picker with five preset colors; clicking selects a color and updates the display",
+  "split": "train",
+  "from_scratch": true
+}

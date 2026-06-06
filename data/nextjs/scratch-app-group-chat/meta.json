@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-group-chat",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "A multi-room group chat app with rooms, messages, member lists, and user profiles.",
+  "split": "test",
+  "from_scratch": true
+}

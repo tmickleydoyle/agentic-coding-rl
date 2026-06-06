@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-jwt-decoder",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "JWT token decoder that parses and displays header, payload, and expiry information",
+  "split": "test",
+  "from_scratch": true
+}

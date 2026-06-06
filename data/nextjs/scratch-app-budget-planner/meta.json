@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-budget-planner",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "A personal budget planner with income/expense tracking, categories, and monthly summaries.",
+  "split": "train",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-attendance-tracker",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Attendance tracking app with daily records, student roster, and summary statistics",
+  "split": "train",
+  "from_scratch": true
+}

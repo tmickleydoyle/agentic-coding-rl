@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/algo-queue",
+  "framework": "nextjs",
+  "difficulty": "easy",
+  "entry_point": "lib/queue.ts",
+  "summary": "Implement a generic Queue data structure and a circular buffer queue",
+  "split": "train",
+  "from_scratch": true
+}

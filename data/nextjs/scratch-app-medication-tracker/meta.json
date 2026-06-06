@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-medication-tracker",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Medication management app with scheduling, dose logging, and active/inactive tracking",
+  "split": "train",
+  "from_scratch": true
+}

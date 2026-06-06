@@ -1,0 +1,3 @@
+'use client'
+import React from 'react'
+export function TransactionsPage() { return <div><h1>Transactions</h1><ul data-testid="transaction-list"></ul><form data-testid="add-transaction-form"><input data-testid="transaction-symbol-input"/><select data-testid="transaction-type-select"><option value="buy">buy</option><option value="sell">sell</option></select><input data-testid="transaction-quantity-input" type="number"/><input data-testid="transaction-price-input" type="number"/><input data-testid="transaction-date-input" type="date"/><button data-testid="submit-transaction" type="submit">Add</button></form></div> }

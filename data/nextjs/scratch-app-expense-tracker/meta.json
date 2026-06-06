@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-expense-tracker",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route expense tracker with categories, CRUD, and summary dashboard",
+  "split": "train",
+  "from_scratch": true
+}

@@ -1,0 +1,3 @@
+'use client'
+import React from 'react'
+export function TasksPage() { return <div><h1>Tasks</h1><select data-testid="task-status-filter"><option value="all">all</option><option value="pending">pending</option><option value="completed">completed</option></select><ul data-testid="task-list"></ul><form data-testid="add-task-form"><input data-testid="task-title-input" placeholder="Title"/><input data-testid="task-room-input" placeholder="Room"/><input data-testid="task-due-date-input" type="date"/><select data-testid="task-priority-select"><option value="low">low</option><option value="medium">medium</option><option value="high">high</option></select><button data-testid="submit-task" type="submit">Add</button></form></div> }

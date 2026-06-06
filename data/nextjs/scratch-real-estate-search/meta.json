@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-real-estate-search",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Search and filter real estate listings by price, bedrooms, and city",
+  "split": "train",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-beer-log",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Beer tasting log with add entry, star rating, and filter by style",
+  "split": "test",
+  "from_scratch": true
+}

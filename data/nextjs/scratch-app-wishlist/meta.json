@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-wishlist",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Personal wishlist app for tracking desired items by category with shareable view",
+  "split": "train",
+  "from_scratch": true
+}

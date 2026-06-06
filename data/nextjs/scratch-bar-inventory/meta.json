@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-bar-inventory",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Bar inventory manager with bottle tracking, low-stock alerts, and category filter",
+  "split": "train",
+  "from_scratch": true
+}

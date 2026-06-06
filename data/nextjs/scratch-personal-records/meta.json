@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-personal-records",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Track personal records for strength exercises with sorted list and stats panel",
+  "split": "train",
+  "from_scratch": true
+}

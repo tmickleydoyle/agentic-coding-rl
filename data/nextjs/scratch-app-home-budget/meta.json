@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-home-budget",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Home budget tracker with expense/income management and category reports",
+  "split": "train",
+  "from_scratch": true
+}

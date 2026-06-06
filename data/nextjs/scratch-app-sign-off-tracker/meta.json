@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-sign-off-tracker",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Sign-off tracker with per-signer checkbox signing, auto-computed status (Pending/In Progress/Complete), and PATCH API",
+  "split": "test",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-memory-book",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "A memory book app where users can record memories with dates, tags, and moods",
+  "split": "test",
+  "from_scratch": true
+}

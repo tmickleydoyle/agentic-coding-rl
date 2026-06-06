@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-itinerary",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route travel itinerary app with day-by-day schedule, location grouping, and activity management",
+  "split": "train",
+  "from_scratch": true
+}

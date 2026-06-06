@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-rent-manager",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Rent manager app with tenant tracking, rent payments, and lease management",
+  "split": "train",
+  "from_scratch": true
+}

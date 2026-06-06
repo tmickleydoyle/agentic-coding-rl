@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-repair-history",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Log home repair jobs with status tracking, filtering, sorting, and total cost summary.",
+  "split": "test",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-habit-daily",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Daily habit tracker with habit management, daily log, and completion stats",
+  "split": "train",
+  "from_scratch": true
+}

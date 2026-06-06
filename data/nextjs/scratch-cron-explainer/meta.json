@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-cron-explainer",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Cron expression explainer that parses a cron string and shows a human-readable description with next run times",
+  "split": "test",
+  "from_scratch": true
+}

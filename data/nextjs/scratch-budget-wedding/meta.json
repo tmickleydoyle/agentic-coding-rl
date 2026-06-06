@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-budget-wedding",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "A wedding budget tracker with expense categories, spending limits, and over-budget alerts.",
+  "split": "test",
+  "from_scratch": true
+}

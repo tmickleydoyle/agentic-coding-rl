@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-approval-flow",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Approval workflow app with Pending/Approved/Rejected lifecycle, inline approve/reject actions, and amount aggregation",
+  "split": "train",
+  "from_scratch": true
+}

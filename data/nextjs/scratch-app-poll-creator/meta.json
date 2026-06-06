@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-poll-creator",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Poll creation, voting, and results visualization app",
+  "split": "test",
+  "from_scratch": true
+}

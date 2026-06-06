@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-podcast-tracker",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Podcast tracker for subscriptions, episode management, and listen history",
+  "split": "test",
+  "from_scratch": true
+}

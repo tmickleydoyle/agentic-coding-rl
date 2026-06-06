@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-document-store",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Document store app to organize files in folders with sharing and full-text search",
+  "split": "train",
+  "from_scratch": true
+}

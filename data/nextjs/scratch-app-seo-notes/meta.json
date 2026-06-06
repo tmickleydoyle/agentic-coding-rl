@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-seo-notes",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "SEO research tool for tracking keywords, page audits, backlinks, and generating reports",
+  "split": "train",
+  "from_scratch": true
+}

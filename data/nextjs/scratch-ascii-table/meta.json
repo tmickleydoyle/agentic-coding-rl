@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-ascii-table",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "ASCII character table browser with search and detail display",
+  "split": "test",
+  "from_scratch": true
+}

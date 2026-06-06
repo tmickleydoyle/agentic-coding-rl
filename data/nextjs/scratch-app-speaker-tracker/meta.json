@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-speaker-tracker",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Speaker tracker app for following speakers, their talks, and speaking events with RSVP",
+  "split": "test",
+  "from_scratch": true
+}

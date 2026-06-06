@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-json-formatter",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "JSON formatter and validator with format, minify, clear, indent options, and clipboard copy",
+  "split": "test",
+  "from_scratch": true
+}

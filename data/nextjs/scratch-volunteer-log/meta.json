@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-volunteer-log",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Track volunteer hours for individuals across multiple activities",
+  "split": "train",
+  "from_scratch": true
+}

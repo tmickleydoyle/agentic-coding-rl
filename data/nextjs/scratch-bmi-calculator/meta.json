@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-bmi-calculator",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "A BMI calculator supporting both metric and imperial units with category classification",
+  "split": "test",
+  "from_scratch": true
+}

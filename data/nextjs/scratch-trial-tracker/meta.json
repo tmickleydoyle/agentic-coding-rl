@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-trial-tracker",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Track free trial sign-ups with expiry dates, status badges, and notes",
+  "split": "test",
+  "from_scratch": true
+}

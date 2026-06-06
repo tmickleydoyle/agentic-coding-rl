@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-plant-care",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "A plant care tracker where users can log watering, fertilizing, and pruning events for a list of houseplants.",
+  "split": "train",
+  "from_scratch": true
+}

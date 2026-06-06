@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-campaign-journal",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Campaign journal for tabletop RPGs with session entries, character tracking, and quest status",
+  "split": "test",
+  "from_scratch": true
+}

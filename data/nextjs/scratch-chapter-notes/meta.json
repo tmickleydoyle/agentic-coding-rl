@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-chapter-notes",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "A single-page app to add and manage chapter-level notes for a book.",
+  "split": "test",
+  "from_scratch": true
+}

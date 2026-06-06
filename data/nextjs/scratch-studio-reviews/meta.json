@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-studio-reviews",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Tattoo/piercing studio review tracker with star ratings and filter by minimum rating",
+  "split": "test",
+  "from_scratch": true
+}

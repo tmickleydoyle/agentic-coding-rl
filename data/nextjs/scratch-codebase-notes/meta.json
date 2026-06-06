@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-codebase-notes",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Codebase notes manager: add, tag, search, and delete developer notes linked to files or modules",
+  "split": "train",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-yoga-log",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "A yoga session logger with seed data, add/delete, and running totals.",
+  "split": "train",
+  "from_scratch": true
+}

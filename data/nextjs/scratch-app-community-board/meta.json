@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-community-board",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Community bulletin board with posts, members roster, and events RSVP",
+  "split": "test",
+  "from_scratch": true
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-classroom",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route classroom management app with roster, schedule, and assignments views",
+  "split": "train",
+  "from_scratch": true
+}

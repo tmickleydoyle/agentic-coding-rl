@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-meal-planning",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Weekly meal planner with 7-day grid, add/delete meals per day and type",
+  "split": "test",
+  "from_scratch": true
+}

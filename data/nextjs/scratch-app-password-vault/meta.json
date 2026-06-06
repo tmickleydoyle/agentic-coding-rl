@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-password-vault",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Password vault app to store credentials, generate passwords, and audit weak entries",
+  "split": "test",
+  "from_scratch": true
+}

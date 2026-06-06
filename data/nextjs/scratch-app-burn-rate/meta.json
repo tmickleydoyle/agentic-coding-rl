@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-burn-rate",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Burn rate tracker logging monthly transactions and forecasting runway",
+  "split": "train",
+  "from_scratch": true
+}

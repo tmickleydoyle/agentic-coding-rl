@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-hostel-reviews",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "Multi-route hostel review app with rating aggregation and top-rated filtering",
+  "split": "train",
+  "from_scratch": true
+}

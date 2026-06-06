@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-band-schedule",
+  "framework": "nextjs",
+  "difficulty": "medium",
+  "entry_point": "app/page.tsx",
+  "summary": "Band rehearsal schedule manager with date, location, attendees, and notes",
+  "split": "test",
+  "from_scratch": true
+}

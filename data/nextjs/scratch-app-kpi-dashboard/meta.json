@@ -1,0 +1,9 @@
+{
+  "task_id": "nextjs/scratch-app-kpi-dashboard",
+  "framework": "nextjs",
+  "difficulty": "hard",
+  "entry_point": "app/page.tsx",
+  "summary": "KPI dashboard tracking startup metrics, goals, and historical trends",
+  "split": "test",
+  "from_scratch": true
+}
